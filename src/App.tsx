@@ -2,7 +2,7 @@ function App() {
   return (
     <>
       <div>
-        <p className="text-5xl">Aishwarya Subash</p>
+        <p className="text-5xl">Aishwarya S</p>
       </div>
     </>
   );
