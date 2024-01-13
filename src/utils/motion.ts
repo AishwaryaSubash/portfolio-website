@@ -1,0 +1,1 @@
+/*all framer motion var */
