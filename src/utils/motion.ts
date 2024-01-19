@@ -1,7 +1,5 @@
 /* all framer motion var */
 
-import {} from "framer-motion";
-
 const hamMenuAnimation = {
   initial: {
     scaleY: 0,
@@ -23,7 +21,7 @@ const hamMenuAnimation = {
   },
 };
 
-const mobileHam = {
+const hamWrapperAnimation = {
   initial: {
     y: "30vh",
     transition: {
@@ -40,7 +38,7 @@ const mobileHam = {
   },
 };
 
-const containerVars = {
+const linkContainer = {
   initial: {
     transition: {
       staggerChildren: 0.09,
@@ -56,4 +54,4 @@ const containerVars = {
   },
 };
 
-export { hamMenuAnimation, mobileHam, containerVars };
+export { hamMenuAnimation, hamWrapperAnimation, linkContainer };

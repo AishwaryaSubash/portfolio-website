@@ -2,7 +2,7 @@ import { useState } from "react";
 import { navLinks } from "../utils/constants";
 import { Link } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
-import { containerVars, hamMenuAnimation, mobileHam } from "../utils/motion";
+import { linkContainer, hamMenuAnimation, hamWrapperAnimation } from "../utils/motion";
 
 const Hamburger = () => {
   const [open, setOpen] = useState(false);
@@ -15,7 +15,7 @@ const Hamburger = () => {
     <>
       <motion.div
         className="flex justify-between items-center p-4 m-4"
-        variants={mobileHam}
+        variants={hamWrapperAnimation}
         initial="initial"
         animate="open"
         exit="exit"
@@ -66,7 +66,7 @@ const Hamburger = () => {
                 </div>
               </div>
               <motion.div
-                variants={containerVars}
+                variants={linkContainer}
                 initial="initial"
                 animate="open"
                 exit="initial"
@@ -74,12 +74,15 @@ const Hamburger = () => {
               >
                 {navLinks.map((item, index) => {
                   return (
-                    <div onClick={toggleHamMenu}>
-                      <MobileNavLink
-                        key={index}
-                        href={item.href}
-                        title={item.title}
-                      ></MobileNavLink>
+                    <div key={index} onClick={toggleHamMenu}>
+                      <div className="overflow-hidden">
+                        <motion.div
+                          variants={hamWrapperAnimation}
+                          className="text-5xl uppercase"
+                        >
+                          <Link to={item.href}>{item.title}</Link>
+                        </motion.div>
+                      </div>
                     </div>
                   );
                 })}
@@ -89,16 +92,6 @@ const Hamburger = () => {
         )}
       </AnimatePresence>
     </>
-  );
-};
-
-const MobileNavLink = ({ title, href }: { title: string; href: string }) => {
-  return (
-    <div className="overflow-hidden">
-      <motion.div variants={mobileHam} className="text-5xl uppercase">
-        <Link to={href}>{title}</Link>
-      </motion.div>
-    </div>
   );
 };
 
