@@ -22,7 +22,6 @@ const Hamburger = () => {
         variants={hamWrapperAnimation}
         initial="initial"
         animate="open"
-        exit="exit"
       >
         <div>
           <Link to="/">Aish</Link>
