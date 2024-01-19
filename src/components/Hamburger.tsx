@@ -46,7 +46,6 @@ const Hamburger = () => {
             variants={hamMenuAnimation}
             initial="initial"
             animate="animate"
-            exit="exit"
             className="fixed left-0 top-0 opacity-95 w-full h-screen origin-top bg-[#d3c1f0] text-[#1d1b26] p-8"
           >
             <div className="flex h-full flex-col">
