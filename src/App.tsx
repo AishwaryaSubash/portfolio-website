@@ -1,5 +1,6 @@
 import { Routes, Route, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
+import MediaQuery from "react-responsive";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Skills from "./pages/Skills";
@@ -7,13 +8,19 @@ import Experience from "./pages/Experience";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
+import Hamburger from "./components/Hamburger";
 
 function App() {
   const location = useLocation();
 
   return (
     <>
-      <Navbar />
+      <MediaQuery maxWidth={767}>
+        <Hamburger />
+      </MediaQuery>
+      <MediaQuery minWidth={768}>
+        <Navbar />
+      </MediaQuery>
       <AnimatePresence mode="wait">
         <Routes location={location} key={location.pathname}>
           <Route index element={<Home />} />
