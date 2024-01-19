@@ -2,7 +2,11 @@ import { useState } from "react";
 import { navLinks } from "../utils/constants";
 import { Link } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
-import { linkContainer, hamMenuAnimation, hamWrapperAnimation } from "../utils/motion";
+import {
+  linkContainer,
+  hamMenuAnimation,
+  hamWrapperAnimation,
+} from "../utils/motion";
 
 const Hamburger = () => {
   const [open, setOpen] = useState(false);
@@ -49,7 +53,9 @@ const Hamburger = () => {
             <div className="flex h-full flex-col">
               <div className="flex justify-between items-center">
                 <div>
-                  <Link to="/">Aish</Link>
+                  <Link to="/" onClick={toggleHamMenu}>
+                    Aish
+                  </Link>
                 </div>
                 <div onClick={toggleHamMenu}>
                   <svg
