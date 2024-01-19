@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { navLinks } from "../utils/constants";
 
 const Navbar = () => {
   return (
@@ -7,24 +8,13 @@ const Navbar = () => {
         <Link to="/">Aish</Link>
       </div>
       <div className="flex items-center justify-evenly gap-6">
-        <div>
-          <Link to="/">Home</Link>
-        </div>
-        <div>
-          <Link to="/about">About</Link>
-        </div>
-        <div>
-          <Link to="/skills">Skills</Link>
-        </div>
-        <div>
-          <Link to="/experience">Experience</Link>
-        </div>
-        <div>
-          <Link to="/projects">Projects</Link>
-        </div>
-        <div>
-          <Link to="/contact">Contact</Link>
-        </div>
+        {navLinks.map((item) => {
+          return (
+            <div>
+              <Link to={item.href}>{item.title}</Link>
+            </div>
+          );
+        })}
       </div>
     </div>
   );
