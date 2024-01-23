@@ -8,9 +8,9 @@ const Navbar = () => {
         <Link to="/">Aish</Link>
       </div>
       <div className="flex items-center justify-evenly gap-6">
-        {navLinks.map((item) => {
+        {navLinks.map((item, index) => {
           return (
-            <div>
+            <div key={index}>
               <Link to={item.href}>{item.title}</Link>
             </div>
           );
