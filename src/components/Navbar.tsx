@@ -3,7 +3,7 @@ import { navLinks } from "../utils/constants";
 
 const Navbar = () => {
   return (
-    <div className="flex items-center justify-between p-8 bg-lightBg text-lightText dark:bg-darkBg dark:text-darkText">
+    <div className="flex items-center justify-between p-8 font-headingFont bg-lightBg text-lightText dark:bg-darkBg dark:text-darkText">
       <div>
         <Link to="/">Aish</Link>
       </div>

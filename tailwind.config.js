@@ -3,6 +3,12 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      fontFamily: {
+        customFont: ['"Manrope"', "sans-serif"],
+        headingFont: ['"Black Ops One"', "system-ui"],
+        bodyFont: ['"Philosopher"', "sans-serif"],
+        textFont: ['"Russo One"', "sans-serif"],
+      },
       colors: {
         lightBg: "#f7f2f5",
         lightText: "#5d0560",
@@ -11,6 +17,6 @@ export default {
       },
     },
   },
-  darkMode:"class",
+  darkMode: "class",
   plugins: [],
 };

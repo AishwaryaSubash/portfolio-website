@@ -2,8 +2,12 @@ import pageTransition from "../utils/pageTransition";
 
 const About = () => {
   return (
-    <div className="flex justify-center items-center text-6xl bg-lightBg text-lightText dark:bg-darkBg dark:text-darkText">
-      <p>About</p>
+    <div className="flex flex-col justify-center items-center bg-lightBg text-lightText dark:bg-darkBg dark:text-darkText">
+      <p className="text-6xl font-headingFont">About</p>
+      <p className="font-textFont p-4">
+        Throughout my career, I have worked on various projects, including
+        e-commerce platforms and customer relationship management systems.
+      </p>
     </div>
   );
 };

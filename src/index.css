@@ -4,15 +4,15 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-  /* font-family: "Manrope", sans-serif; */ /*content*/
-  /* font-family: "Philosopher", sans-serif; */
-  /* font-family: "Russo One", sans-serif; */
-  font-family: "Black Ops One", system-ui;
+/* html {
+  /* font-family: "Manrope", sans-serif; 
+  /* font-family: "Philosopher", sans-serif; 
+  /* font-family: "Russo One", sans-serif; 
+  /* font-family: "Black Ops One", system-ui; 
 
   /* background-color: #f7f2f5;
-  color: #5d0560; */
+  color: #5d0560; 
 
   /* background-color: #1d1b26;
-  color: #d3c1f0; */
-}
+  color: #d3c1f0; 
+} */

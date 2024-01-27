@@ -18,7 +18,7 @@ const Hamburger = () => {
   return (
     <>
       <motion.div
-        className="flex justify-between items-center p-8 bg-lightBg text-lightText dark:bg-darkBg dark:text-darkText"
+        className="flex justify-between items-center p-8 font-headingFont bg-lightBg text-lightText dark:bg-darkBg dark:text-darkText"
         variants={hamWrapperAnimation}
         // initial="initial"
         animate="open"
@@ -47,7 +47,7 @@ const Hamburger = () => {
             initial="initial"
             animate="animate"
             // exit="exit"
-            className="fixed left-0 top-0 opacity-95 w-full h-screen origin-top bg-lightBg text-lightText dark:bg-darkText dark:text-darkBg p-8"
+            className="fixed left-0 top-0 opacity-95 w-full h-screen origin-top font-headingFont bg-lightBg text-lightText dark:bg-darkText dark:text-darkBg p-8"
           >
             <div className="flex h-full flex-col">
               <div className="flex justify-between items-center">
