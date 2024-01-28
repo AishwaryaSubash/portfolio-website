@@ -1,4 +1,5 @@
 import pageTransition from "../utils/pageTransition";
+import "../index.css";
 
 const About = () => {
   return (

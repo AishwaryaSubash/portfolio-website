@@ -7,7 +7,7 @@ const ThemeToggle = ({
 }) => {
   return (
     <div
-      className="absolute cursor-pointer bottom-0 right-0 p-2 m-2 rounded-full bg-lightText text-lightBg dark:bg-darkText dark:text-darkBg"
+      className="fixed cursor-pointer bottom-0 right-0 p-2 m-2 rounded-full bg-lightText text-lightBg dark:bg-darkText dark:text-darkBg"
       onClick={toggleTheme}
     >
       {theme === "light" ? (

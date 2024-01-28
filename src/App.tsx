@@ -1,4 +1,5 @@
 import { Routes, Route, useLocation } from "react-router-dom";
+import { useEffect, useState } from "react";
 import { AnimatePresence } from "framer-motion";
 import MediaQuery from "react-responsive";
 import Navbar from "./components/Navbar";
@@ -9,7 +10,6 @@ import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import Hamburger from "./components/Hamburger";
-import { useEffect, useState } from "react";
 import ThemeToggle from "./components/ThemeToggle";
 
 function App() {
