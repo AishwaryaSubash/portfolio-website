@@ -18,9 +18,30 @@ interface SkillsInterface {
   skillArray: TechSkillsInterface[];
 }
 
+interface TimeInterface {
+  from: number;
+  to: number;
+}
+
+interface EducationDetailsInterface {
+  education: string;
+  institution: string;
+  grade: string;
+  time: TimeInterface;
+}
+
+interface WorkExperienceInterface {
+  position: string;
+  institution: string;
+  description: string;
+  time: string;
+}
+
 export type {
   NavLinksInterface,
   HexPositionsInterface,
   TechSkillsInterface,
   SkillsInterface,
+  EducationDetailsInterface,
+  WorkExperienceInterface,
 };

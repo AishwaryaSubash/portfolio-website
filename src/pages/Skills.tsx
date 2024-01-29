@@ -1,5 +1,6 @@
 import { professionalSkills, skills } from "../utils/constants";
 import pageTransition from "../utils/pageTransition";
+import "../index.css";
 
 const Skills = () => {
   return (
@@ -20,13 +21,15 @@ const Skills = () => {
                   {skill.skillArray.map((item, index) => (
                     <div
                       key={index}
-                      className="flex items-center justify-between m-4 p-4 gap-4 text-center font-textFont border border-lightText dark:border-darkText rounded-xl max-md:flex-col"
+                      className="flex items-center justify-start m-4 p-4 gap-4 text-center font-textFont border border-lightText dark:border-darkText rounded-xl max-md:flex-col"
                     >
                       <div
                         dangerouslySetInnerHTML={{ __html: item.svg }}
                         className="w-16 h-16"
                       />
-                      <h3>{item.name}</h3>
+                      <h3 className="text-center justify-self-center">
+                        {item.name}
+                      </h3>
                     </div>
                   ))}
                 </div>
@@ -44,7 +47,7 @@ const Skills = () => {
             {professionalSkills.map((item, index) => (
               <div
                 key={index}
-                className="flex w-[256px] items-center justify-between m-4 p-4 gap-4 text-center break-words font-textFont border border-lightText dark:border-darkText rounded-xl max-md:flex-col max-md:w-[176px]"
+                className="flex w-[256px] items-center justify-around m-4 p-4 gap-4 text-center break-words font-textFont border border-lightText dark:border-darkText rounded-xl max-md:flex-col max-md:w-[176px]"
               >
                 <div
                   dangerouslySetInnerHTML={{ __html: item.svg }}
@@ -55,6 +58,23 @@ const Skills = () => {
             ))}
           </div>
         </div>
+      </div>
+      <div>
+        <div className="clip-block">
+          <p className="clip-each clip-gradient">
+            <div className="clip-caption">work</div>
+          </p>
+          <a className="clip-each clip-border bg-lightText dark:bg-darkText">
+            <div className="clip-caption">life</div>
+          </a>
+        </div>
+        <svg className="clip-svg">
+          <defs>
+            <clipPath id="hexagon-clip" clipPathUnits="objectBoundingBox">
+              <polygon points="0.25 0.05, 0.75 0.05, 1 0.5, 0.75 0.95, 0.25 0.95, 0 0.5" />
+            </clipPath>
+          </defs>
+        </svg>
       </div>
     </div>
   );

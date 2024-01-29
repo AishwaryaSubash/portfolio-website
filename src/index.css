@@ -114,3 +114,76 @@
     #000 0 var(--f)
   );
 }
+
+/*clippath*/
+.clip-gradient {
+  background: #222;
+  width: 160px;
+  height: 160px;
+}
+
+.clip-gradient .clip-caption {
+  color: #fff;
+}
+
+.clip-border {
+  width: 256px;
+  height: 256px;
+  margin-top: 7px;
+  color: #222;
+}
+
+.clip-border::after {
+  content: "";
+  position: absolute;
+  top: 4%;
+  left: 4%;
+  right: 4%;
+  bottom: 4%;
+  margin: 0 auto;
+  
+  clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+  -webkit-clip-path: url("#hexagon-clip");
+  clip-path: url("#hexagon-clip");
+  z-index: -1;
+}
+
+.clip-svg {
+  width: 0;
+  height: 0;
+}
+
+.clip-caption {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+.clip-each {
+  display: block;
+  position: relative;
+  -webkit-clip-path: polygon(
+    25% 5%,
+    75% 5%,
+    100% 50%,
+    75% 95%,
+    25% 95%,
+    0% 50%
+  );
+  clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+  -webkit-clip-path: url("#hexagon-clip");
+  clip-path: url("#hexagon-clip");
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  margin: 0 auto;
+}
+
+p.clip-each:hover {
+  background: #9e566e;
+  -webkit-transition: all 0.25s ease-in;
+  transition: all 0.25s ease-in;
+}

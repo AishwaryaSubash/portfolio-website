@@ -1,9 +1,12 @@
 /* all textual constants */
+
 import {
   NavLinksInterface,
   HexPositionsInterface,
   TechSkillsInterface,
   SkillsInterface,
+  EducationDetailsInterface,
+  WorkExperienceInterface,
 } from "./types";
 
 const navLinks: NavLinksInterface[] = [
@@ -235,6 +238,60 @@ const professionalSkills: TechSkillsInterface[] = [
   },
 ];
 
+const educationDetails: EducationDetailsInterface[] = [
+  {
+    education: "BTech Information Technology",
+    institution: "Sri Venkateswara College of Engineering",
+    grade: "9.308 CGPA",
+    time: {
+      from: 2020,
+      to: 2024,
+    },
+  },
+  {
+    education: "Senior School Certificate Examination",
+    institution: "Kendriya Vidyalaya AFS Thanjavur",
+    grade: "94.6%",
+    time: {
+      from: 2019,
+      to: 2020,
+    },
+  },
+  {
+    education: "Secondary School Examination",
+    institution: "Kendriya Vidyalaya AFS Thanjavur",
+    grade: "93.4%",
+    time: {
+      from: 2017,
+      to: 2018,
+    },
+  },
+];
+
+const workExperience: WorkExperienceInterface[] = [
+  {
+    position: "Software Developer Intern",
+    institution: "Imprzd Technologies Inc.",
+    description:
+      "Developed engaging and responsive user interfaces using Angular, SASS and EJS, adapting to the dynamic scrum development process",
+    time: "Aug 2022 - Sept 2022",
+  },
+  {
+    position: "Participant",
+    institution: "Smart India Hackathon",
+    description:
+      "Nominated for National Level Smart India Hackathon 2022 Edition. Designed Smart Glasses by programming Arduino Uno and interfacing it with Bluetooth module and LCD display",
+    time: "March 2022",
+  },
+  {
+    position: "Python Instructor",
+    institution: "Self-employed",
+    description:
+      "Designed and delivered an engaging 1-month Python programming course to young programmers in the US and assessed their understanding through weekly tests, culminating in a final project",
+    time: "July 2021",
+  },
+];
+
 export {
   navLinks,
   shortTimeGoals,
@@ -247,4 +304,6 @@ export {
   techSkillsTools,
   skills,
   professionalSkills,
+  educationDetails,
+  workExperience,
 };
