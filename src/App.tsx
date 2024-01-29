@@ -16,6 +16,7 @@ import ErrorPage from "./pages/ErrorPage";
 function App() {
   const location = useLocation();
   const [theme, setTheme] = useState();
+  const [currentRoute, setCurrentRoute] = useState("/");
 
   useEffect(() => {
     if (
@@ -29,6 +30,11 @@ function App() {
     }
   }, [theme]);
 
+  useEffect(() => {
+    console.log(location);
+    setCurrentRoute(location.pathname);
+  }, [location]);
+
   const toggleTheme = () => {
     localStorage.theme = localStorage.theme === "dark" ? "light" : "dark";
     setTheme(localStorage.theme);
@@ -41,7 +47,7 @@ function App() {
         <Hamburger />
       </MediaQuery>
       <MediaQuery minWidth={768}>
-        <Navbar />
+        <Navbar currentRoute={currentRoute} />
       </MediaQuery>
       <AnimatePresence mode="wait">
         <Routes location={location} key={location.pathname}>
