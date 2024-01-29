@@ -14,12 +14,12 @@ const Navbar = ({ currentRoute }: { currentRoute: string }) => {
               key={index}
               className={`flex flex-col justify-between items-center ${
                 item.href === currentRoute &&
-                "text-orange-700 dark:text-lime-300"
+                "text-lightHighlight dark:text-darkHighlight "
               }`}
             >
               <Link
                 to={item.href}
-                className="hover:text-orange-700 dark:hover:text-lime-300"
+                className="hover:text-lightHighlight dark:hover:text-darkHighlight"
               >
                 {item.title}
               </Link>

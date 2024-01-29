@@ -12,8 +12,10 @@ export default {
       colors: {
         lightBg: "#f7f2f5",
         lightText: "#5d0560",
+        lightHighlight: "#c2410c",
         darkBg: "#1d1b26",
         darkText: "#d3c1f0",
+        darkHighlight: "#bef264",
       },
     },
   },
