@@ -11,6 +11,7 @@ import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import Hamburger from "./components/Hamburger";
 import ThemeToggle from "./components/ThemeToggle";
+import ErrorPage from "./pages/ErrorPage";
 
 function App() {
   const location = useLocation();
@@ -50,6 +51,7 @@ function App() {
           <Route path="/experience" element={<Experience />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<ErrorPage />} />
         </Routes>
       </AnimatePresence>
     </>
