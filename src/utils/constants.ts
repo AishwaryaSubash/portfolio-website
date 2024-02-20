@@ -7,6 +7,7 @@ import {
   SkillsInterface,
   EducationDetailsInterface,
   WorkExperienceInterface,
+  ProjectsInterface,
 } from "./types";
 
 const navLinks: NavLinksInterface[] = [
@@ -292,6 +293,56 @@ const workExperience: WorkExperienceInterface[] = [
   },
 ];
 
+const projectsList: ProjectsInterface[] = [
+  {
+    title: "Flutter Websockets Chat Application",
+    websiteUrl: "https://flutter-chat-app.vercel.app/",
+    websiteImg: "chat.png",
+    githubUrl: "https://github.com/Akash-Manikandan/flutter_chat_app",
+    description:
+      "The Chat Application is a real-time messaging platform. It ensures a secure and reliable communication channel for users to connect and engage in conversations, create chat rooms and exchange messages seamlessly. The application enables real-time communication, efficient data storage and a user-friendly interface",
+    techStack: ["Flutter", "Socket.IO", "MongoDB", "Redis", "NestJS"],
+  },
+  {
+    title: "Sample College Site",
+    websiteUrl: "https://svce-website.vercel.app/",
+    websiteImg: "svce.png",
+    githubUrl: "https://github.com/AishwaryaSubash/svce-website",
+    description:
+      "The Sample College Web Application is a responsive and modern website. It serves as a demonstration of a college website, providing information about the college, its programs and other relevant details. This application provides visitors with a user-friendly interface to explore various sections of the college website. They can navigate through different pages, access detailed information about the college and the campus facilities.",
+    techStack: ["Next.js", "SASS"],
+  },
+  {
+    title: "Query Management System",
+    websiteUrl: "https://forum-frontend-steel.vercel.app",
+    websiteImg: "forum.png",
+    githubUrl: "https://github.com/KE2002/forumFrontend",
+    description:
+      "The Query Management Web Application is a comprehensive tool. It aims to streamline the process of managing and tracking queries. This application provides a range of features to facilitate efficient query handling. Users can submit queries, assign them to specific categories. The application allows for advanced search and filtering options, making it easier to locate and prioritize queries based on various parameters.",
+    techStack: ["Angular", "NestJS", "Tailwind CSS", "Neo4j"],
+  },
+  {
+    title: "Wildlife Website",
+    websiteUrl: "https://wildlife-website-aishwarya.vercel.app/",
+    websiteImg: "wildlife.png",
+    githubUrl: "https://github.com/AishwaryaSubash/wildlife-project",
+    description:
+      "The Wildlife Application is a web-based platform that aims to provide users with informative content about various wildlife species and conservation efforts. It serves as a valuable resource for individuals interested in learning more about the diverse wildlife found in different regions.",
+    techStack: ["Next.js"],
+  },
+];
+
+/*
+
+
+
+
+
+
+
+
+*/
+
 export {
   navLinks,
   shortTimeGoals,
@@ -306,4 +357,5 @@ export {
   professionalSkills,
   educationDetails,
   workExperience,
+  projectsList,
 };

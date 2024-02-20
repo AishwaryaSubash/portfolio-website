@@ -59,7 +59,7 @@ const Skills = () => {
           </div>
         </div>
       </div>
-      <div>
+      {/* <div>
         <div className="clip-block">
           <p className="clip-each clip-gradient">
             <div className="clip-caption">work</div>
@@ -75,7 +75,7 @@ const Skills = () => {
             </clipPath>
           </defs>
         </svg>
-      </div>
+      </div> */}
     </div>
   );
 };

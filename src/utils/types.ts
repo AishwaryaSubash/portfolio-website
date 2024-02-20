@@ -37,6 +37,15 @@ interface WorkExperienceInterface {
   time: string;
 }
 
+interface ProjectsInterface {
+  title: string;
+  websiteUrl: string;
+  websiteImg: string;
+  githubUrl: string;
+  description: string;
+  techStack: string[];
+}
+
 export type {
   NavLinksInterface,
   HexPositionsInterface,
@@ -44,4 +53,5 @@ export type {
   SkillsInterface,
   EducationDetailsInterface,
   WorkExperienceInterface,
+  ProjectsInterface,
 };
