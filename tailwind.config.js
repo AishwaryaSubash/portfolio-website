@@ -17,6 +17,15 @@ export default {
         darkText: "#d3c1f0",
         darkHighlight: "#bef264",
       },
+      animation: {
+        marquee: "marquee 25s linear infinite",
+      },
+      keyframes: {
+        marquee: {
+          "0%": { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(-100%)" },
+        },
+      },
     },
   },
   darkMode: "class",
