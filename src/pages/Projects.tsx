@@ -27,7 +27,7 @@ const Projects = () => {
   });
 
   return (
-    <div className="flex flex-col justify-center items-center bg-lightBg text-lightText dark:bg-darkBg dark:text-darkText">
+    <div className="flex flex-col overflow-x-hidden justify-center items-center bg-lightBg text-lightText dark:bg-darkBg dark:text-darkText">
       <div className="flex flex-col items-center mb-8">
         <p className="text-6xl font-headingFont my-4">Projects</p>
         <p className="text-2xl font-headingFont my-4 text-lightHighlight dark:text-darkHighlight">
@@ -37,9 +37,8 @@ const Projects = () => {
       {/* <div className="h-screen w-full"> */}
       {/* <div className="overflow-x-hidden">
         <div className="flex w-full h-screen gap-4"> */}
-
-      <div className="relative flex overflow-x-hidden">
-        <div className="flex gap-8 ">
+      <div className="relative flex h-screen">
+        <div className="flex gap-8 animate-marquee whitespace-nowrap">
           {/* animate-marquee whitespace-nowrap */}
           {projectsList.map((project, index) => {
             return (
@@ -50,7 +49,7 @@ const Projects = () => {
                   width: "900px",
                   height: "400px",
                 }}
-                className={`group flex flex-col items-start justify-between overflow-hidden bg-black text-white rounded-2xl font-textFont`}
+                className={`group flex flex-col items-start justify-between overflow-hidden text-wrap rounded-2xl font-textFont`}
               >
                 {/* <img src={project.websiteImg} height={1500} /> */}
                 <div className="invisible group-hover:visible flex flex-col p-4 bg-lightTextOpacity text-lightBg dark:bg-darkTextOpacity dark:text-darkBg">
