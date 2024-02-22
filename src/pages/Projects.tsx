@@ -1,30 +1,30 @@
 import pageTransition from "../utils/pageTransition";
 import { projectsList } from "../utils/constants";
-import { useEffect, useState } from "react";
+// import { useEffect, useState } from "react";
 
 const Projects = () => {
-  const [hovering] = useState(false);
-  const [currentIndex, setCurrIndex] = useState<number>(0);
+  // const [hovering] = useState(false);
+  // const [currentIndex, setCurrIndex] = useState<number>(0);
 
-  function scrollToNext() {
-    if (!hovering) {
-      const length = projectsList.length - 1;
-      if (currentIndex < length) {
-        setCurrIndex((prevIndex) => prevIndex + 1);
-        setTimeout(scrollToNext, 2000);
-      } else {
-        setCurrIndex(0);
-        setTimeout(scrollToNext, 2000);
-      }
-    } else {
-      setTimeout(scrollToNext, 2000);
-    }
-    console.log(currentIndex);
-  }
+  // function scrollToNext() {
+  //   if (!hovering) {
+  //     const length = projectsList.length - 1;
+  //     if (currentIndex < length) {
+  //       setCurrIndex((prevIndex) => prevIndex + 1);
+  //       setTimeout(scrollToNext, 2000);
+  //     } else {
+  //       setCurrIndex(0);
+  //       setTimeout(scrollToNext, 2000);
+  //     }
+  //   } else {
+  //     setTimeout(scrollToNext, 2000);
+  //   }
+  //   console.log(currentIndex);
+  // }
 
-  useEffect(() => {
-    scrollToNext();
-  });
+  // useEffect(() => {
+  //   scrollToNext();
+  // });
 
   return (
     <div className="flex flex-col overflow-x-hidden justify-center items-center bg-lightBg text-lightText dark:bg-darkBg dark:text-darkText">
@@ -34,12 +34,8 @@ const Projects = () => {
           Take a peek at what I've been building
         </p>
       </div>
-      {/* <div className="h-screen w-full"> */}
-      {/* <div className="overflow-x-hidden">
-        <div className="flex w-full h-screen gap-4"> */}
       <div className="relative flex h-screen">
         <div className="flex gap-8 animate-marquee whitespace-nowrap">
-          {/* animate-marquee whitespace-nowrap */}
           {projectsList.map((project, index) => {
             return (
               <div
@@ -73,7 +69,6 @@ const Projects = () => {
           })}
         </div>
       </div>
-      {/* </div> */}
     </div>
   );
 };
