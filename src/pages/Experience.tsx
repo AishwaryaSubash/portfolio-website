@@ -12,9 +12,9 @@ const Experience = () => {
             return (
               <div
                 key={index}
-                className="w-full flex flex-col p-4 m-4 border border-lightText dark:border-darkText rounded-3xl"
+                className="w-full flex flex-col p-4 m-4 border border-lightText dark:border-darkText rounded-3xl max-sm:gap-4"
               >
-                <div className="flex items-center justify-between">
+                <div className="flex items-center justify-between max-sm:flex-col max-sm:items-start max-sm:gap-2">
                   <p className="text-2xl">{edu.education}</p>
                   <div className="flex rounded-lg p-2 bg-lightText text-lightBg dark:bg-darkText dark:text-darkBg">
                     <p>{edu.time.from}</p>
@@ -38,9 +38,9 @@ const Experience = () => {
             return (
               <div
                 key={index}
-                className="w-full flex flex-col p-4 m-4 border border-lightText dark:border-darkText rounded-3xl"
+                className="w-full flex flex-col p-4 m-4 border border-lightText dark:border-darkText rounded-3xl max-sm:items-start max-sm:gap-4"
               >
-                <div className="flex items-center justify-between">
+                <div className="flex items-center justify-between max-sm:flex-col max-sm:items-start max-sm:gap-2">
                   <p className="text-2xl text-lightHighlight dark:text-darkHighlight">
                     {work.position}
                   </p>
