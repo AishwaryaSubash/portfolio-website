@@ -295,13 +295,22 @@ const workExperience: WorkExperienceInterface[] = [
 
 const projectsList: ProjectsInterface[] = [
   {
+    title: "Expense Tracker Application",
+    websiteUrl: "https://expense-tracker-pi-eight.vercel.app/",
+    websiteImg: "chat.png",
+    githubUrl: "https://github.com/AishwaryaSubash/expense_tracker",
+    description:
+      "A cross-platform full-stack REST-based app used for tracking and managing the expenses, showing monthly and weekly expenses in graphical representations",
+    techStack: ["Flutter", "NestJS", "MongoDB"],
+  },
+  {
     title: "Flutter Websockets Chat Application",
     websiteUrl: "https://flutter-chat-app.vercel.app/",
     websiteImg: "chat.png",
     githubUrl: "https://github.com/Akash-Manikandan/flutter_chat_app",
     description:
-      "The Chat Application is a real-time messaging platform. It ensures a secure and reliable communication channel for users to connect and engage in conversations, create chat rooms and exchange messages seamlessly. The application enables real-time communication, efficient data storage and a user-friendly interface",
-    techStack: ["Flutter", "Socket.IO", "MongoDB", "Redis", "NestJS"],
+      "A real-time cross-platform chat application featuring real-time messaging, group chat, user authentication and end-to-end encryption",
+    techStack: ["Flutter", "NestJS", "MongoDB", "Redis", "Socket.IO"],
   },
   {
     title: "Sample College Site",
@@ -318,7 +327,8 @@ const projectsList: ProjectsInterface[] = [
     websiteImg: "forum.png",
     githubUrl: "https://github.com/KE2002/forumFrontend",
     description:
-      "The Query Management Web Application is a comprehensive tool. It aims to streamline the process of managing and tracking queries. This application provides a range of features to facilitate efficient query handling. Users can submit queries, assign them to specific categories. The application allows for advanced search and filtering options, making it easier to locate and prioritize queries based on various parameters.",
+      "A collaborative platform which aims to foster community engagement. Users can post queries and share knowledge. The app is equipped with full-text search options, facilitating efficient filtering",
+    // "The Query Management Web Application is a comprehensive tool. It aims to streamline the process of managing and tracking queries. This application provides a range of features to facilitate efficient query handling. Users can submit queries, assign them to specific categories. The application allows for advanced search and filtering options, making it easier to locate and prioritize queries based on various parameters.",
     techStack: ["Angular", "NestJS", "Tailwind CSS", "Neo4j"],
   },
   {
