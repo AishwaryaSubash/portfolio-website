@@ -21,7 +21,7 @@ const Contact = () => {
                   // width: "900px",
                   // height: "400px",
                 }}
-                className={`group w-full h-96 flex flex-col items-start justify-between overflow-hidden text-wrap rounded-2xl font-textFont max-xl:h-80 max-md:h-64 max-md:w-10/12`}
+                className={`group w-full h-96 flex flex-col items-start justify-between bg-no-repeat bg-center bg-cover overflow-hidden text-wrap rounded-2xl font-textFont max-xl:h-80 max-md:h-64 max-md:w-10/12`}
               >
                 {/* <img src={project.websiteImg} height={1500} /> */}
                 <div className="invisible group-hover:visible flex flex-col p-4 bg-lightTextOpacity text-lightBg dark:bg-darkTextOpacity dark:text-darkBg">
@@ -50,37 +50,3 @@ const Contact = () => {
 };
 
 export default pageTransition(Contact);
-
-//  <div className="flex gap-8 animate-marquee whitespace-nowrap">
-//    {projectsList.map((project, index) => {
-//      return (
-//        <div
-//          key={index}
-//          style={{
-//            backgroundImage: `url(/${project.websiteImg})`,
-//            width: "900px",
-//            height: "400px",
-//          }}
-//          className={`group flex flex-col items-start justify-between overflow-hidden text-wrap rounded-2xl font-textFont`}
-//        >
-//          {/* <img src={project.websiteImg} height={1500} /> */}
-//          <div className="invisible group-hover:visible flex flex-col p-4 bg-lightTextOpacity text-lightBg dark:bg-darkTextOpacity dark:text-darkBg">
-//            <p className="text-2xl font-semibold">{project.title}</p>
-//            <p className="">{project.description}</p>
-//          </div>
-//          <div className="invisible group-hover:visible flex flex-wrap gap-3 m-4">
-//            {project.techStack.map((tech, index) => {
-//              return (
-//                <div
-//                  key={index}
-//                  className="bg-lightHighlight text-lightBg dark:bg-darkHighlight dark:text-darkBg w-max px-2 py-1 rounded-lg"
-//                >
-//                  <p>{tech}</p>
-//                </div>
-//              );
-//            })}
-//          </div>
-//        </div>
-//      );
-//    })}
-//  </div>;

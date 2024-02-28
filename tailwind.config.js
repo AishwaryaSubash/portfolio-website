@@ -12,11 +12,11 @@ export default {
       colors: {
         lightBg: "#f7f2f5",
         lightText: "#5d0560",
-        lightTextOpacity: "#5d0560ca",
+        lightTextOpacity: "#5d0560ea",
         lightHighlight: "#c2410c",
         darkBg: "#1d1b26",
         darkText: "#d3c1f0",
-        darkTextOpacity: "#d3c1f0ca",
+        darkTextOpacity: "#d3c1f0ea",
         darkHighlight: "#bef264",
       },
       animation: {
