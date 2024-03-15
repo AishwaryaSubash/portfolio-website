@@ -297,7 +297,7 @@ const projectsList: ProjectsInterface[] = [
   {
     title: "Expense Tracker Application",
     websiteUrl: "https://expense-tracker-pi-eight.vercel.app/",
-    websiteImg: "chat.png",
+    websiteImg: "expense.png",
     githubUrl: "https://github.com/AishwaryaSubash/expense_tracker",
     description:
       "A cross-platform full-stack REST-based app used for tracking and managing the expenses, showing monthly and weekly expenses in graphical representations",

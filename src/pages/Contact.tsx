@@ -31,7 +31,7 @@ const Contact = () => {
                   </p>
                   <p className="max-md:text-sm">{project.description}</p>
                 </div>
-                <div className=" group-hover:visible w-full flex justify-between items-end">
+                <div className="invisible group-hover:visible w-full flex justify-between items-end">
                   <div className="flex flex-wrap gap-3 m-4 max-md:text-xs max-md:m-2">
                     {project.techStack.map((tech, index) => {
                       return (
