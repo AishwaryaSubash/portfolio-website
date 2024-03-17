@@ -1,3 +1,4 @@
+import MediaQuery from "react-responsive";
 import { professionalSkills, skills } from "../utils/constants";
 import pageTransition from "../utils/pageTransition";
 import "../index.css";
@@ -23,18 +24,34 @@ const Skills = () => {
                       key={index}
                       className="flex flex-col items-center justify-start m-4 p-4 gap-4 text-center font-textFont rounded-xl max-md:flex-col"
                     >
-                      <div className="w-full flex justify-between items-center">
-                        <div className="w-full flex items-center gap-3 max-w-[200px]">
+                      <MediaQuery minWidth={800}>
+                        <div className="w-full flex justify-between items-center">
+                          <div className="w-full flex items-center gap-3 max-w-[200px]">
+                            <div
+                              dangerouslySetInnerHTML={{ __html: item.svg }}
+                              className="w-12 h-12"
+                            ></div>
+                            <h3 className="text-left justify-self-center">
+                              {item.name}
+                            </h3>
+                          </div>
+                          <h3>{item.proficiency}%</h3>
+                        </div>
+                      </MediaQuery>
+                      <MediaQuery maxWidth={795}>
+                        <div className="w-full flex justify-between items-center max-tablet:justify-start max-tablet:gap-3">
                           <div
                             dangerouslySetInnerHTML={{ __html: item.svg }}
                             className="w-12 h-12"
                           ></div>
-                          <h3 className="text-left justify-self-center">
-                            {item.name}
-                          </h3>
+                          <div className="flex flex-col items-start">
+                            <h3 className="text-left justify-self-center">
+                              {item.name}
+                            </h3>
+                            <h3>{item.proficiency}%</h3>
+                          </div>
                         </div>
-                        <h3>{item.proficiency}%</h3>
-                      </div>
+                      </MediaQuery>
                       <div className="flex flex-start overflow-hidden w-full font-sans rounded-full text-xs font-medium h-3 bg-gray-400 dark:bg-neutral-600 ">
                         <div
                           className="flex justify-center items-center h-full overflow-hidden break-all rounded-full  bg-red-950 dark:bg-yellow-100"
@@ -60,18 +77,35 @@ const Skills = () => {
                 key={index}
                 className="flex flex-col items-center justify-start m-4 p-4 gap-4 text-center font-textFont rounded-xl max-md:flex-col"
               >
-                <div className="w-full flex justify-between items-center">
-                  <div className="w-full flex items-center gap-3 max-w-[215px]">
+                <MediaQuery minWidth={800}>
+                  <div className="w-full flex justify-between items-center">
+                    <div className="w-full flex items-center gap-3 max-w-[215px]">
+                      <div
+                        dangerouslySetInnerHTML={{ __html: item.svg }}
+                        className="w-12 h-12"
+                      ></div>
+                      <h3 className="text-left justify-self-center">
+                        {item.name}
+                      </h3>
+                    </div>
+                    <h3>{item.proficiency}%</h3>
+                  </div>
+                </MediaQuery>
+                <MediaQuery maxWidth={795}>
+                  <div className="w-full flex justify-between items-center max-tablet:justify-start max-tablet:gap-3">
                     <div
                       dangerouslySetInnerHTML={{ __html: item.svg }}
                       className="w-12 h-12"
                     ></div>
-                    <h3 className="text-left justify-self-center">
-                      {item.name}
-                    </h3>
+                    <div className="flex flex-col items-start">
+                      <h3 className="text-left justify-self-center">
+                        {item.name}
+                      </h3>
+                      <h3>{item.proficiency}%</h3>
+                    </div>
                   </div>
-                  <h3>{item.proficiency}%</h3>
-                </div>
+                </MediaQuery>
+
                 <div className="flex flex-start overflow-hidden w-full font-sans rounded-full text-xs font-medium h-3 bg-gray-400 dark:bg-neutral-600 ">
                   <div
                     className="flex justify-center items-center h-full overflow-hidden break-all rounded-full  bg-red-950 dark:bg-yellow-100"
