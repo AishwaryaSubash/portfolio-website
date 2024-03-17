@@ -1,5 +1,3 @@
-// import { Progress } from "@material-tailwind/react";
-import { professionalSkills, skills } from "../utils/constants";
 import pageTransition from "../utils/pageTransition";
 import "../index.css";
 

@@ -47,6 +47,12 @@ interface ProjectsInterface {
   techStack: string[];
 }
 
+interface ContactDetailsInterface {
+  media: string;
+  link: string;
+  icon: string;
+}
+
 export type {
   NavLinksInterface,
   HexPositionsInterface,
@@ -55,4 +61,5 @@ export type {
   EducationDetailsInterface,
   WorkExperienceInterface,
   ProjectsInterface,
+  ContactDetailsInterface,
 };

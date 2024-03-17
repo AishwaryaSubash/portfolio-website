@@ -28,7 +28,7 @@ const Skills = () => {
                           <div
                             dangerouslySetInnerHTML={{ __html: item.svg }}
                             className="w-12 h-12"
-                          />
+                          ></div>
                           <h3 className="text-left justify-self-center">
                             {item.name}
                           </h3>
@@ -65,7 +65,7 @@ const Skills = () => {
                     <div
                       dangerouslySetInnerHTML={{ __html: item.svg }}
                       className="w-12 h-12"
-                    />
+                    ></div>
                     <h3 className="text-left justify-self-center">
                       {item.name}
                     </h3>
