@@ -24,20 +24,15 @@ const Contact = () => {
             possibilities together!
           </p>
           <div className="w-full flex items-center font-headingFont max-sm:flex-col max-sm:gap-4 max-lg:justify-center">
-            {/* <a
+            <a
               href={`mailto:${emailContact.link}`}
               target="_blank"
               rel="noopener noreferrer"
-            > */}
-            <div
-              onClick={() => {
-                window.location.href = "mailto:recipient@example.com";
-              }}
-              className="cursor-pointer text-2xl m-2 p-4 rounded-2xl text-lightBg bg-lightTextOpacity dark:text-darkBg dark:bg-darkTextOpacity max-sm:text-base"
             >
-              Get In Touch
-            </div>
-            {/* </a> */}
+              <div className="cursor-pointer text-2xl m-2 p-4 rounded-2xl text-lightBg bg-lightTextOpacity dark:text-darkBg dark:bg-darkTextOpacity max-sm:text-base">
+                Get In Touch
+              </div>
+            </a>
             <div className="flex items-center justify-center gap-2 text-lightHighlight dark:text-darkHighlight max-lg:justify-evenly">
               {contactDetails.map((item, index) => {
                 return (
@@ -59,7 +54,7 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <div className="my-6">
+        <div className="">
           <img
             src="contacts-light-image.png"
             alt="Image"
