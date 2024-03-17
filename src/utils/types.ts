@@ -11,6 +11,7 @@ interface HexPositionsInterface {
 interface TechSkillsInterface {
   name: string;
   svg: string;
+  proficiency: number;
 }
 
 interface SkillsInterface {
