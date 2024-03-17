@@ -1,11 +1,33 @@
 import { Link } from "react-router-dom";
 import { navLinks } from "../utils/constants";
 
-const Navbar = ({ currentRoute }: { currentRoute: string }) => {
+const Navbar = ({
+  currentRoute,
+  theme,
+}: {
+  currentRoute: string;
+  theme: string | undefined;
+}) => {
   return (
     <div className="flex items-center justify-between p-8 font-headingFont bg-lightBg text-lightText dark:bg-darkBg dark:text-darkText">
       <div>
-        <Link to="/">Aish</Link>
+        <Link to="/">
+          {theme === "dark" ? (
+            <img
+              src="Dark Logo.png"
+              alt="Logo"
+              width={100}
+              height={100}
+            />
+          ) : (
+            <img
+              src="Light Logo.png"
+              alt="Logo"
+              width={100}
+              height={100}
+            />
+          )}
+        </Link>
       </div>
       <div className="flex items-center justify-evenly gap-6">
         {navLinks.map((item, index) => {

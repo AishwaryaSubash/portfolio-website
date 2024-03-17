@@ -8,7 +8,7 @@ import {
   hamWrapperAnimation,
 } from "../utils/motion";
 
-const Hamburger = () => {
+const Hamburger = ({ theme }: { theme: string | undefined }) => {
   const [open, setOpen] = useState(false);
 
   const toggleHamMenu = () => {
@@ -24,7 +24,13 @@ const Hamburger = () => {
         animate="open"
       >
         <div>
-          <Link to="/">Aish</Link>
+          <Link to="/">
+            {theme === "dark" ? (
+              <img src="Dark Logo.png" alt="Logo" width={100} height={100} />
+            ) : (
+              <img src="Light Logo.png" alt="Logo" width={100} height={100} />
+            )}
+          </Link>
         </div>
         <div onClick={toggleHamMenu}>
           <svg
@@ -53,7 +59,21 @@ const Hamburger = () => {
               <div className="flex justify-between items-center">
                 <div>
                   <Link to="/" onClick={toggleHamMenu}>
-                    Aish
+                    {theme === "dark" ? (
+                      <img
+                        src="Dark Ham Logo.png"
+                        alt="Logo"
+                        width={100}
+                        height={100}
+                      />
+                    ) : (
+                      <img
+                        src="Light Logo.png"
+                        alt="Logo"
+                        width={100}
+                        height={100}
+                      />
+                    )}
                   </Link>
                 </div>
                 <div onClick={toggleHamMenu}>

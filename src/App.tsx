@@ -44,10 +44,10 @@ function App() {
     <>
       <ThemeToggle toggleTheme={toggleTheme} theme={theme} />
       <MediaQuery maxWidth={767}>
-        <Hamburger />
+        <Hamburger theme={theme} />
       </MediaQuery>
       <MediaQuery minWidth={768}>
-        <Navbar currentRoute={currentRoute} />
+        <Navbar currentRoute={currentRoute} theme={theme} />
       </MediaQuery>
       <AnimatePresence mode="wait">
         <Routes location={location} key={location.pathname}>
