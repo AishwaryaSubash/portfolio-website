@@ -9,6 +9,7 @@ import {
   WorkExperienceInterface,
   ProjectsInterface,
   ContactDetailsInterface,
+  GoalsInterface,
 } from "./types";
 
 const navLinks: NavLinksInterface[] = [
@@ -20,21 +21,6 @@ const navLinks: NavLinksInterface[] = [
   { title: "Contact", href: "/contact" },
 ];
 
-const shortTimeGoals: string[] = [
-  "Stay Updated with Industry Standards",
-  "Improve Problem-Solving Skills",
-  "Learn Rust",
-  "Improve Code Efficiency and Maintainability",
-];
-
-const longTermGoals: string[] = [
-  "Improve Database Skills",
-  "Enhance User Experience (UX) Knowledge",
-  "Practice Test-Driven Development (TDD)",
-  "Contribute to Open-Source Projects and Documentation Projects",
-  "Build a Professional Online Presence",
-];
-
 const hexPositions: HexPositionsInterface[] = [
   { top: 0, left: 3 },
   { top: 0, left: 13 },
@@ -42,13 +28,6 @@ const hexPositions: HexPositionsInterface[] = [
   { top: 8, left: 8 },
   { top: 8, left: 18 },
   // { top: 8, left: 28 },
-];
-
-const interests: string[] = [
-  "Professional Singer",
-  "Chess Player",
-  "Badminton Player",
-  "Aspiring Artist",
 ];
 
 const techSkillsLang: TechSkillsInterface[] = [
@@ -407,11 +386,103 @@ const contactDetails: ContactDetailsInterface[] = [
   },
 ];
 
+const aboutMeContent: string[] = [
+  "🔸 Fueled by a profound passion for coding and development, I am excited by the challenge of solving intricate problems and exploring new avenues of innovation.",
+  "🔸 With expertise in languages and frameworks, I demonstrate proficiency as a Full Stack Developer, ensuring dynamic and scalable solutions.",
+  "🔸 Embracing the ethos of collaboration, I actively seek opportunities to engage with like-minded professionals, fostering an environment where shared knowledge and expertise drive collective success and continuous advancement.",
+];
+
+const detailedAboutMeContent: string[] = [
+  "Throughout my career, I have worked on various projects, including e-commerce platforms and customer relationship management systems. I have a strong proficiency in JavaScript, Python, and PHP, and I'm experienced in using popular frameworks like React and Django.",
+  "I'm passionate about problem-solving and enjoy tackling complex challenges. I thrive on analyzing requirements, designing efficient solutions, and writing clean, maintainable code. I have experience in optimizing database performance, implementing RESTful APIs, and integrating third-party services.",
+  "As technology is ever-evolving, I'm dedicated to continuous learning. I stay up-to-date with the latest trends and advancements in software development through online courses, tech blogs, and attending industry conferences. Overall, I'm passionate about software development and leveraging technology to create innovative solutions.",
+  "I recently graduated with a degree in Information Technology and I'm excited to kick-start my career as a software developer. During my studies, I gained a strong foundation in programming languages such as C/C++, JavaScript and Python as well as web technologies like HTML and CSS.",
+  "I'm a quick learner and eager to expand my skill set. I've been actively exploring new technologies and frameworks such as React and NodeJS through online documentations and personal projects. I'm particularly interested in front-end development and creating user-friendly interfaces that deliver a seamless user experience.",
+  "I also completed an internship where I contributed to a team developing a frontend design from scratch. I worked closely with senior developers, involved in feature development and bug fixing. This internship allowed me to gain hands-on experience in a professional software development environment and taught me the importance of teamwork and collaboration.",
+];
+
+const topSkills: string[] = [
+  "Full Stack Development",
+  "Database Management System",
+  "Communication",
+  "Leadership",
+  "Team Management",
+];
+
+const shortTermGoals: GoalsInterface[] = [
+  {
+    content: "Stay Updated with Industry Standards",
+    image: `<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512"><path fill="currentColor" d="M459.26 96L328 225.7V96h-34.525L168 223.267V16H16v480h480V96ZM464 464H48V48h88v216h36.778L296 139.018V264h38.764L464 136.3Z"/><path fill="currentColor" d="M136 328v8h32v-32h-32zm0 48h32v32h-32zm80-48v8h32v-32h-32zm0 48h32v32h-32zm80-48v8h32v-32h-32zm0 48h32v32h-32zm80-72h32v32h-32zm0 72h32v32h-32z"/></svg>`,
+  },
+  {
+    content: "Improve Problem-Solving Skills",
+    image: `<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M12 5a3 3 0 1 0-5.997.125a4 4 0 0 0-2.526 5.77a4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"/><path d="M12 5a3 3 0 1 1 5.997.125a4 4 0 0 1 2.526 5.77a4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z"/><path d="M15 13a4.5 4.5 0 0 1-3-4a4.5 4.5 0 0 1-3 4m8.599-6.5a3 3 0 0 0 .399-1.375m-11.995 0A3 3 0 0 0 6.401 6.5m-2.924 4.396a4 4 0 0 1 .585-.396m15.876 0a4 4 0 0 1 .585.396M6 18a4 4 0 0 1-1.967-.516m15.934 0A4 4 0 0 1 18 18"/></g></svg>`,
+  },
+  {
+    content: "Learn Java and DevOps",
+    image: `<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M5 13.18v2.81c0 .73.4 1.41 1.04 1.76l5 2.73c.6.33 1.32.33 1.92 0l5-2.73c.64-.35 1.04-1.03 1.04-1.76v-2.81l-6.04 3.3c-.6.33-1.32.33-1.92 0zm6.04-9.66l-8.43 4.6c-.69.38-.69 1.38 0 1.76l8.43 4.6c.6.33 1.32.33 1.92 0L21 10.09V16c0 .55.45 1 1 1s1-.45 1-1V9.59c0-.37-.2-.7-.52-.88l-9.52-5.19a2.04 2.04 0 0 0-1.92 0"/></svg>`,
+  },
+  {
+    content: "Improve Code Efficiency and Maintainability",
+    image: `<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M4.825 12.025L8.7 15.9q.275.275.275.7t-.275.7q-.275.275-.7.275t-.7-.275l-4.6-4.6q-.15-.15-.213-.325T2.426 12q0-.2.063-.375T2.7 11.3l4.6-4.6q.3-.3.713-.3t.712.3q.3.3.3.713t-.3.712zm14.35-.05L15.3 8.1q-.275-.275-.275-.7t.275-.7q.275-.275.7-.275t.7.275l4.6 4.6q.15.15.213.325t.062.375q0 .2-.062.375t-.213.325l-4.6 4.6q-.3.3-.7.288t-.7-.313q-.3-.3-.3-.712t.3-.713z"/></svg>`,
+  },
+  {
+    content: "Connect with Like-minded People and Grow My Network",
+    image: `<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 100 100"><path fill="currentColor" d="M50 0C22.427 0 0 22.427 0 50s22.427 50 50 50s50-22.427 50-50S77.573 0 50 0m2.506 7.078c12.818.733 24.105 7.053 31.486 16.568c-1.948-.05-3.887-.062-5.818-.033a138.28 138.28 0 0 0-10.04.532a7.5 7.5 0 0 0-6.747-4.23a7.5 7.5 0 0 0-1.043.073a124.289 124.289 0 0 0-7.838-12.91m-6.078.08c3.637 4.969 6.79 10.013 9.488 15.127a7.5 7.5 0 0 0-1.92 3.858a140.675 140.675 0 0 0-13.83 3.43a7.5 7.5 0 0 0-2.082-1.917c1.887-6.735 4.527-13.559 7.902-20.465c.147-.013.295-.02.442-.033m-6.44 1.022c-2.82 6.165-5.07 12.307-6.744 18.41a7.5 7.5 0 0 0-5.13 2.978a170.51 170.51 0 0 0-13.698-3.748A42.954 42.954 0 0 1 39.988 8.18m41.123 20.418c2.092.013 4.194.08 6.307.19a42.719 42.719 0 0 1 5.037 14.366c-6.05.984-11.94 2.347-17.674 4.065a7.5 7.5 0 0 0-5.043-2.746a107.837 107.837 0 0 0-3.517-11.327a7.5 7.5 0 0 0 2.472-4.048c4.099-.356 8.236-.527 12.418-.5M11.732 30.36c5.102 1.123 10.08 2.436 14.913 3.979a7.5 7.5 0 0 0 .001.03c-6.508 2.673-12.907 5.825-19.199 9.437a42.72 42.72 0 0 1 4.285-13.446m43.094.684a7.5 7.5 0 0 0 6.56 3.87a7.5 7.5 0 0 0 .202-.005a101.851 101.851 0 0 1 3.336 10.694a7.5 7.5 0 0 0-1.057.81A142.695 142.695 0 0 0 41.62 34.57a7.5 7.5 0 0 0 .014-.256a135.084 135.084 0 0 1 13.193-3.27m-26.32 7.941a7.5 7.5 0 0 0 1.93 1.57c-1.232 9.641-.959 19.147.921 28.446a167.383 167.383 0 0 0-12.79 10.355C11.392 71.677 7 61.366 7 50c0-.047.004-.092.004-.139c7.047-4.234 14.21-7.87 21.502-10.875m11.121.159a137.068 137.068 0 0 1 21.902 11.697a7.5 7.5 0 0 0-.082 1.09a7.5 7.5 0 0 0 0 .047c-8.96 3.725-17.514 8.38-25.672 13.914c-1.41-7.998-1.56-16.15-.507-24.444a7.5 7.5 0 0 0 4.359-2.304m53.326 8.994c.026.617.047 1.237.047 1.861a42.929 42.929 0 0 1-3.783 17.666a140.036 140.036 0 0 0-13.469-12.572a7.5 7.5 0 0 0 .7-3.147a134.787 134.787 0 0 1 16.505-3.808m-29.818 8.529a7.5 7.5 0 0 0 4.25 2.598c1.094 9.909.76 20.066-.932 30.48A42.976 42.976 0 0 1 50 93c-1.477 0-2.937-.074-4.375-.219c-4.012-7.064-6.909-14.27-8.729-21.607c8.328-5.823 17.063-10.675 26.239-14.506m9.181 2.06a135.865 135.865 0 0 1 14.438 13.637A43.083 43.083 0 0 1 71.906 87.02c1.285-9.602 1.44-19.043.41-28.291m-39.71 15.555c1.59 5.893 3.834 11.697 6.753 17.393a42.817 42.817 0 0 1-17.162-8.858c3.397-3.02 6.865-5.87 10.408-8.535" color="currentColor"/></svg>`,
+  },
+  {
+    content: "Work on Enhancing Interpersonal Skills",
+    image: `<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 14 14"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="m13.5 8l-4.12 5.5l-2.75-2.06"/><circle cx="5" cy="2.75" r="2.25"/><path d="M3 12.5H.5V11a4.5 4.5 0 0 1 7.68-3.18"/></g></svg>`,
+  },
+];
+const longTermGoals: GoalsInterface[] = [
+  {
+    content: "Improve Database Skills",
+    image: `<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M12 11q-3.75 0-6.375-1.175T3 7q0-1.65 2.625-2.825Q8.25 3 12 3t6.375 1.175Q21 5.35 21 7q0 1.65-2.625 2.825Q15.75 11 12 11Zm0 5q-3.75 0-6.375-1.175T3 12V9.5q0 1.1 1.025 1.863q1.025.762 2.45 1.237q1.425.475 2.963.687q1.537.213 2.562.213t2.562-.213q1.538-.212 2.963-.687q1.425-.475 2.45-1.237Q21 10.6 21 9.5V12q0 1.65-2.625 2.825Q15.75 16 12 16Zm0 5q-3.75 0-6.375-1.175T3 17v-2.5q0 1.1 1.025 1.863q1.025.762 2.45 1.237q1.425.475 2.963.688q1.537.212 2.562.212t2.562-.212q1.538-.213 2.963-.688t2.45-1.237Q21 15.6 21 14.5V17q0 1.65-2.625 2.825Q15.75 21 12 21Z"/></svg>`,
+  },
+  {
+    content: "Enhance User Experience (UX) Knowledge",
+    image: `<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 14 14"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M11.5 2H13a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-.5.5H1a.5.5 0 0 1-.5-.5v-8A.5.5 0 0 1 1 2h1.5M6 11l-1 2.5M8 11l1 2.5m-5 0h6"/><path d="M6.45 2.36a.59.59 0 0 1 1.1 0L8.19 4H9.9a.61.61 0 0 1 .56.39a.59.59 0 0 1-.16.61L8.79 6.34l.64 1.28a.58.58 0 0 1-.12.69a.59.59 0 0 1-.7.1L7 7.53l-1.61.88a.59.59 0 0 1-.7-.1a.58.58 0 0 1-.12-.69l.64-1.28L3.7 5a.59.59 0 0 1-.16-.65A.61.61 0 0 1 4.1 4h1.71Z"/></g></svg>`,
+  },
+  {
+    content: "Practice Test-Driven Development (TDD)",
+    image: `<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.636 19.364a9 9 0 1 1 12.728 0M16 9l-4 4"/></svg>`,
+  },
+  {
+    content: "Contribute to Open-Source Projects and Documentation Projects",
+    image: `<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 16 16"><path fill="currentColor" d="M0 1.75C0 .784.784 0 1.75 0h12.5C15.216 0 16 .784 16 1.75v12.5A1.75 1.75 0 0 1 14.25 16h-8.5a.75.75 0 0 1 0-1.5h8.5a.25.25 0 0 0 .25-.25V6.5h-13v1.75a.75.75 0 0 1-1.5 0ZM6.5 5h8V1.75a.25.25 0 0 0-.25-.25H6.5Zm-5 0H5V1.5H1.75a.25.25 0 0 0-.25.25Z"/><path fill="currentColor" d="M1.5 13.737a2.25 2.25 0 0 1 2.262-2.25L4 11.49v1.938c0 .218.26.331.42.183l2.883-2.677a.25.25 0 0 0 0-.366L4.42 7.89a.25.25 0 0 0-.42.183V9.99l-.23-.001A3.75 3.75 0 0 0 0 13.738v1.012a.75.75 0 0 0 1.5 0z"/></svg>`,
+  },
+  {
+    content: "Build a Professional Online Presence",
+    image: `<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><g fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.636 5.636a1 1 0 0 0-1.414-1.414c-4.296 4.296-4.296 11.26 0 15.556a1 1 0 0 0 1.414-1.414a9 9 0 0 1 0-12.728zm14.142-1.414a1 1 0 1 0-1.414 1.414a9 9 0 0 1 0 12.728a1 1 0 1 0 1.414 1.414c4.296-4.296 4.296-11.26 0-15.556zM8.464 8.464A1 1 0 0 0 7.05 7.05a7 7 0 0 0 0 9.9a1 1 0 1 0 1.414-1.414a5 5 0 0 1 0-7.072zM16.95 7.05a1 1 0 1 0-1.414 1.414a5 5 0 0 1 0 7.072a1 1 0 0 0 1.414 1.414a7 7 0 0 0 0-9.9zM9 12a3 3 0 1 1 6 0a3 3 0 0 1-6 0z" fill="currentColor"/></g></svg>`,
+  },
+  {
+    content: "Learn Rust",
+    image: `<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M10.139 3.463c.473-1.95 3.249-1.95 3.722 0a1.916 1.916 0 0 0 2.859 1.185c1.714-1.045 3.678.918 2.633 2.633a1.916 1.916 0 0 0 1.184 2.858c1.95.473 1.95 3.249 0 3.722a1.916 1.916 0 0 0-1.185 2.859c1.045 1.714-.918 3.678-2.633 2.633a1.916 1.916 0 0 0-2.858 1.184c-.473 1.95-3.249 1.95-3.722 0a1.916 1.916 0 0 0-2.859-1.185c-1.714 1.045-3.678-.918-2.633-2.633a1.916 1.916 0 0 0-1.184-2.858c-1.95-.473-1.95-3.249 0-3.722A1.916 1.916 0 0 0 4.648 7.28c-1.045-1.714.918-3.678 2.633-2.633a1.914 1.914 0 0 0 2.858-1.184"/><path d="M8 12h6a2 2 0 1 0 0-4H8v8z"/><path d="M19 16h-2a2 2 0 0 1-2-2a2 2 0 0 0-2-2h-1M9 8H5m0 8h4"/></g></svg>`,
+  },
+];
+
+const interests: GoalsInterface[] = [
+  {
+    content: "Professional Singer",
+    image: `<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M10 21q-1.65 0-2.825-1.175T6 17q0-1.65 1.175-2.825T10 13q.575 0 1.063.138t.937.412V4q0-.425.288-.712T13 3h4q.425 0 .713.288T18 4v2q0 .425-.288.713T17 7h-3v10q0 1.65-1.175 2.825T10 21"/></svg>`,
+  },
+  {
+    content: "Chess Player",
+    image: `<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 20 20"><path fill="currentColor" d="M10.5 2a.5.5 0 0 0-.5.5v2.6c0 1.377.927 2.536 2.19 2.89c-.22 2.74-1.012 4.785-1.661 6.046c.184.216.357.377.492.49c.519.434.979 1.141.979 2.023A2.44 2.44 0 0 1 11.524 18H17a1.5 1.5 0 0 0 1.5-1.5v-.307c0-.348-.119-.669-.302-.932c-.54-.777-2.069-3.29-2.389-7.272A3.001 3.001 0 0 0 18 5.1V2.5a.5.5 0 0 0-.5-.5h-.75a.75.75 0 0 0-.75.75v.75a.5.5 0 0 1-1 .002V3.5l-.004-.754a.75.75 0 0 0-.75-.746h-.492a.75.75 0 0 0-.75.746L13 3.503a.5.5 0 0 1-1-.003v-.75a.75.75 0 0 0-.75-.75zm-4 3a3 3 0 0 0-2.236 5H4a1 1 0 1 0 0 2h.52c-.372 1.798-1.353 2.836-1.9 3.293c-.346.29-.62.736-.62 1.256C2 17.35 2.65 18 3.451 18H9.55c.8 0 1.45-.65 1.45-1.451c0-.52-.274-.966-.62-1.256c-.547-.457-1.528-1.495-1.9-3.293H9a1 1 0 1 0 0-2h-.264A3 3 0 0 0 6.5 5"/></svg>`,
+  },
+  {
+    content: "Badminton Player",
+    image: `<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M12.3 2c-.97.03-1.72.84-1.69 1.8c.01.24.06.47.16.7l.29.64c.04.13-.03.27-.17.31c-.09.05-.19 0-.26-.08l-.42-.55c-.33-.42-.83-.68-1.36-.69c-.97-.02-1.77.75-1.79 1.71c-.01.42.13.82.39 1.16l.42.5h.01c.08.13.05.29-.06.37c-.09.07-.21.07-.29 0L7 7.45c-.34-.26-.75-.4-1.16-.39c-.96.02-1.73.82-1.71 1.79c.01.53.27 1.03.69 1.36l.57.44c.11.1.11.26-.01.35a.23.23 0 0 1-.26.05h-.01l-.61-.28c-.23-.09-.46-.15-.7-.16c-.96-.03-1.77.73-1.8 1.7c0 .72.4 1.38 1.06 1.66l11.39 5.07l4.59-4.59l-5.07-11.39C13.69 2.39 13 1.97 12.3 2m.83 4.1c.42-.01.8.23.96.61l3.05 6.84l-3.95-3.94l-.93-2.11c-.3-.63.16-1.38.87-1.4M9.85 8.85c.27 0 .52.1.71.3l4.81 4.81c.4.38.41 1.01.03 1.41c-.4.4-1.02.41-1.44 0l-4.81-4.81a.987.987 0 0 1-.02-1.41c.19-.2.45-.3.72-.3m-2.72 3.32c.13 0 .27.04.37.09l2.13.94l3.94 3.94l-6.86-3.05c-1.02-.44-.68-1.95.42-1.92m13.15 3.87l-4.24 4.24l.85.85c.76.75 1.86 1.04 2.89.77a3.024 3.024 0 0 0 2.12-2.12c.27-1.03-.02-2.13-.77-2.89z"/></svg>`,
+  },
+  {
+    content: "Aspiring Artist",
+    image: `<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.53 16.122a3 3 0 0 0-5.78 1.128a2.25 2.25 0 0 1-2.4 2.245a4.5 4.5 0 0 0 8.4-2.245c0-.399-.078-.78-.22-1.128m0 0a15.998 15.998 0 0 0 3.388-1.62m-5.043-.025a15.994 15.994 0 0 1 1.622-3.395m3.42 3.42a15.995 15.995 0 0 0 4.764-4.648l3.876-5.814a1.151 1.151 0 0 0-1.597-1.597L14.146 6.32a15.996 15.996 0 0 0-4.649 4.764m3.42 3.42a6.776 6.776 0 0 0-3.42-3.42"/></svg>`,
+  },
+];
+
 export {
   navLinks,
-  shortTimeGoals,
-  longTermGoals,
-  interests,
   hexPositions,
   techSkillsLang,
   techSkillsFrameworks,
@@ -424,4 +495,10 @@ export {
   projectsList,
   emailContact,
   contactDetails,
+  aboutMeContent,
+  detailedAboutMeContent,
+  topSkills,
+  shortTermGoals,
+  longTermGoals,
+  interests,
 };

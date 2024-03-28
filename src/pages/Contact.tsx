@@ -46,7 +46,7 @@ const Contact = () => {
                         dangerouslySetInnerHTML={{ __html: item.icon }}
                         className="w-16 h-16 cursor-pointer max-sm:w-12 max-sm:h-12"
                         title={item.media}
-                      ></div>
+                      />
                     </a>
                   </div>
                 );

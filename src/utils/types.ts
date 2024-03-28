@@ -53,6 +53,11 @@ interface ContactDetailsInterface {
   icon: string;
 }
 
+interface GoalsInterface {
+  content: string;
+  image: string;
+}
+
 export type {
   NavLinksInterface,
   HexPositionsInterface,
@@ -62,4 +67,5 @@ export type {
   WorkExperienceInterface,
   ProjectsInterface,
   ContactDetailsInterface,
+  GoalsInterface,
 };
