@@ -2,6 +2,7 @@ import MediaQuery from "react-responsive";
 import { professionalSkills, skills } from "../utils/constants";
 import pageTransition from "../utils/pageTransition";
 import "../index.css";
+import { motion } from "framer-motion";
 
 const Skills = () => {
   return (
@@ -106,11 +107,15 @@ const Skills = () => {
                   </div>
                 </MediaQuery>
 
+                {/* style={{ width: `${item.proficiency}%` }} */}
+
                 <div className="flex flex-start overflow-hidden w-full font-sans rounded-full text-xs font-medium h-3 bg-gray-400 dark:bg-neutral-600 ">
-                  <div
+                  <motion.div
                     className="flex justify-center items-center h-full overflow-hidden break-all rounded-full  bg-red-950 dark:bg-yellow-100"
                     style={{ width: `${item.proficiency}%` }}
-                  ></div>
+                    animate={{ width: `${item.proficiency}%` }}
+                    transition={{ duration: 1000 }}
+                  ></motion.div>
                 </div>
               </div>
             ))}
