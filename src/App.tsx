@@ -15,7 +15,7 @@ import ErrorPage from "./pages/ErrorPage";
 
 function App() {
   const location = useLocation();
-  const [theme, setTheme] = useState();
+  const [theme, setTheme] = useState(localStorage.theme);
   const [currentRoute, setCurrentRoute] = useState("/");
 
   useEffect(() => {
