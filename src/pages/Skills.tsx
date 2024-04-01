@@ -1,10 +1,21 @@
 import MediaQuery from "react-responsive";
+import CountUp from "react-countup";
 import { professionalSkills, skills } from "../utils/constants";
 import pageTransition from "../utils/pageTransition";
 import "../index.css";
-import { motion } from "framer-motion";
+import {
+  motion,
+  // , useScroll
+} from "framer-motion";
+// import { useRef } from "react";
 
 const Skills = () => {
+  // const ref = useRef(null);
+  // const { scrollYProgress } = useScroll({
+  //   target: ref,
+  //   offset: ["0 1", "1 2", "2 3"],
+  // });
+
   return (
     <div className="flex flex-col justify-center items-center bg-lightBg text-lightText dark:bg-darkBg dark:text-darkText">
       <p className="text-6xl font-headingFont my-4">Skills</p>
@@ -36,7 +47,13 @@ const Skills = () => {
                               {item.name}
                             </h3>
                           </div>
-                          <h3>{item.proficiency}%</h3>
+                          <CountUp
+                            start={0}
+                            end={item.proficiency}
+                            duration={1}
+                            delay={1}
+                          />
+                          <h3>%</h3>
                         </div>
                       </MediaQuery>
                       <MediaQuery maxWidth={795}>
@@ -58,7 +75,12 @@ const Skills = () => {
                           className="flex justify-center items-center h-full overflow-hidden break-all rounded-full  bg-red-950 dark:bg-yellow-100"
                           initial={{ width: 0 }}
                           animate={{ width: `${item.proficiency}%` }}
-                          transition={{ duration: 0.5, delay: 1 }}
+                          transition={{ duration: 1, delay: 1 }}
+                          // ref={ref}
+                          // style={{
+                          //   scale: scrollYProgress,
+                          //   opacity: scrollYProgress,
+                          // }}
                         ></motion.div>
                       </div>
                     </div>
@@ -91,7 +113,13 @@ const Skills = () => {
                         {item.name}
                       </h3>
                     </div>
-                    <h3>{item.proficiency}%</h3>
+                    <CountUp
+                      start={0}
+                      end={item.proficiency}
+                      duration={1}
+                      delay={1}
+                    />
+                    <h3>%</h3>
                   </div>
                 </MediaQuery>
                 <MediaQuery maxWidth={795}>
