@@ -38,30 +38,42 @@ const About = () => {
             >
               <div
                 dangerouslySetInnerHTML={{ __html: goal.image }}
-                className="w-24 h-24 cursor-pointer max-sm:w-10 max-sm:h-10"
+                className="w-16 h-16 max-sm:w-10 max-sm:h-10"
               />
-              <p className="text-sm">{goal.content}</p>
+              <p className="text-base max-sm:text-sm">{goal.content}</p>
             </div>
           ))}
         </div>
       </div>
-      <div>
-        {longTermGoals.map((goal, index) => (
-          <div key={index} className="flex">
+      <div className="mt-12 flex flex-col w-11/12 max-sm:mt-8">
+        <p className="text-4xl text-center text-lightHighlight dark:text-darkHighlight font-headingFont my-4 max-lg:px-4">
+          Long Term Goals
+        </p>
+        <div className="grid grid-cols-3 items-center justify-items-center gap-8 font-textFont max-md:grid-cols-2">
+          {longTermGoals.map((goal, index) => (
             <div
-              dangerouslySetInnerHTML={{ __html: goal.image }}
-              className="w-16 h-16 cursor-pointer max-sm:w-12 max-sm:h-12"
-            />
-            <p>{goal.content}</p>
-          </div>
-        ))}
+              key={index}
+              className={`flex flex-col justify-between h-48 w-48 p-4 rounded-lg max-sm:h-36 max-sm:w-44 ${
+                index % 2 === 0
+                  ? "bg-lightAltHighlight text-lightBg dark:bg-darkAltHighlight dark:text-darkBg"
+                  : "bg-lightHighlightBg text-lightAltHighlight dark:bg-darkHighlightBg dark:text-lightBg"
+              }`}
+            >
+              <div
+                dangerouslySetInnerHTML={{ __html: goal.image }}
+                className="w-16 h-16 max-sm:w-10 max-sm:h-10"
+              />
+              <p className="text-base max-sm:text-sm">{goal.content}</p>
+            </div>
+          ))}
+        </div>
       </div>
       <div>
         {interests.map((goal, index) => (
           <div key={index} className="flex">
             <div
               dangerouslySetInnerHTML={{ __html: goal.image }}
-              className="w-16 h-16 cursor-pointer max-sm:w-12 max-sm:h-12"
+              className="w-16 h-16 max-sm:w-12 max-sm:h-12"
             />
             <p>{goal.content}</p>
           </div>
