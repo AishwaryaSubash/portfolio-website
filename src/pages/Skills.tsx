@@ -70,9 +70,9 @@ const Skills = () => {
                           </div>
                         </div>
                       </MediaQuery>
-                      <div className="flex flex-start overflow-hidden w-full font-sans rounded-full text-xs font-medium h-3 bg-gray-400 dark:bg-neutral-600 ">
+                      <div className="flex flex-start overflow-hidden w-full font-sans rounded-full text-xs font-medium h-3 bg-lightHighlightBg dark:bg-darkHighlightBg">
                         <motion.div
-                          className="flex justify-center items-center h-full overflow-hidden break-all rounded-full  bg-red-950 dark:bg-yellow-100"
+                          className="flex justify-center items-center h-full overflow-hidden break-all rounded-full bg-lightAltHighlight dark:bg-darkAltHighlight"
                           initial={{ width: 0 }}
                           animate={{ width: `${item.proficiency}%` }}
                           transition={{ duration: 1, delay: 1 }}

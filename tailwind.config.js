@@ -3,12 +3,12 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     screens: {
-      'sm': '640px',
-      'md': '768px',
-      'tablet': "795px",
-      'lg': '1024px',
-      'xl': '1280px',
-      '2xl': '1536px',
+      sm: "640px",
+      md: "768px",
+      tablet: "795px",
+      lg: "1024px",
+      xl: "1280px",
+      "2xl": "1536px",
     },
     extend: {
       fontFamily: {
@@ -22,10 +22,14 @@ export default {
         lightText: "#5d0560",
         lightTextOpacity: "#5d0560ea",
         lightHighlight: "#c2410c",
+        lightAltHighlight: "#450A0A",
+        lightHighlightBg: "#9CA3AF",
         darkBg: "#1d1b26",
         darkText: "#d3c1f0",
         darkTextOpacity: "#d3c1f0ea",
         darkHighlight: "#bef264",
+        darkAltHighlight: "#FEF9C3",
+        darkHighlightBg: "#525252",
       },
       animation: {
         marquee: "marquee 25s linear infinite",
