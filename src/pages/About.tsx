@@ -26,7 +26,7 @@ const About = () => {
         <p className="text-4xl text-center text-lightHighlight dark:text-darkHighlight font-headingFont my-4 max-lg:px-4">
           Short Term Goals
         </p>
-        <div className="grid grid-cols-3 items-center justify-items-center gap-8 font-textFont max-md:grid-cols-2">
+        <div className="grid grid-cols-3 items-center justify-items-center gap-8 font-textFont max-md:grid-cols-2 max-xs:grid-cols-1">
           {shortTermGoals.map((goal, index) => (
             <div
               key={index}
@@ -49,7 +49,7 @@ const About = () => {
         <p className="text-4xl text-center text-lightHighlight dark:text-darkHighlight font-headingFont my-4 max-lg:px-4">
           Long Term Goals
         </p>
-        <div className="grid grid-cols-3 items-center justify-items-center gap-8 font-textFont max-md:grid-cols-2">
+        <div className="grid grid-cols-3 items-center justify-items-center gap-8 font-textFont max-md:grid-cols-2 max-xs:grid-cols-1">
           {longTermGoals.map((goal, index) => (
             <div
               key={index}
@@ -68,16 +68,33 @@ const About = () => {
           ))}
         </div>
       </div>
-      <div>
-        {interests.map((goal, index) => (
-          <div key={index} className="flex">
-            <div
-              dangerouslySetInnerHTML={{ __html: goal.image }}
-              className="w-16 h-16 max-sm:w-12 max-sm:h-12"
-            />
-            <p>{goal.content}</p>
-          </div>
-        ))}
+      <div className="mt-12 flex flex-col w-11/12 max-sm:mt-8">
+        <p className="text-4xl text-center text-lightHighlight dark:text-darkHighlight font-headingFont my-4 max-lg:px-4">
+          Interests
+        </p>
+        <div className="grid grid-cols-2 gap-4 max-md:grid-cols-1">
+          {interests.map((goal, index) => (
+            <div key={index} className="flex items-center justify-center gap-4">
+              <div
+                className={`relative w-60 p-6 font-textFont text-right rounded-xl ${
+                  index % 2 === 1
+                    ? "bg-lightHighlightBg text-lightAltHighlight dark:bg-darkHighlightBg dark:text-lightBg"
+                    : "bg-lightAltHighlight text-lightBg dark:bg-darkAltHighlight dark:text-darkBg"
+                }`}
+              >
+                <p>{goal.content}</p>
+                <div
+                  dangerouslySetInnerHTML={{ __html: goal.image }}
+                  className={`absolute top-[4px] -left-[30px] w-16 h-16 p-2 rounded-full max-sm:w-12 max-sm:h-12 max-md:top-[5px] max-md:-left-[24px] max-sm:top-[10px] ${
+                    index % 2 === 0
+                      ? "bg-lightHighlightBg text-lightAltHighlight dark:bg-darkHighlightBg dark:text-lightBg"
+                      : "bg-lightAltHighlight text-lightBg dark:bg-darkAltHighlight dark:text-darkBg"
+                  }`}
+                />
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
