@@ -386,19 +386,10 @@ const contactDetails: ContactDetailsInterface[] = [
   },
 ];
 
-const aboutMeContent: string[] = [
+const bulletPointsAboutMe: string[] = [
   "🔸 Fueled by a profound passion for coding and development, I am excited by the challenge of solving intricate problems and exploring new avenues of innovation.",
   "🔸 With expertise in languages and frameworks, I demonstrate proficiency as a Full Stack Developer, ensuring dynamic and scalable solutions.",
   "🔸 Embracing the ethos of collaboration, I actively seek opportunities to engage with like-minded professionals, fostering an environment where shared knowledge and expertise drive collective success and continuous advancement.",
-];
-
-const detailedAboutMeContent: string[] = [
-  "Throughout my career, I have worked on various projects, including e-commerce platforms and customer relationship management systems. I have a strong proficiency in JavaScript, Python, and PHP, and I'm experienced in using popular frameworks like React and Django.",
-  "I'm passionate about problem-solving and enjoy tackling complex challenges. I thrive on analyzing requirements, designing efficient solutions, and writing clean, maintainable code. I have experience in optimizing database performance, implementing RESTful APIs, and integrating third-party services.",
-  "As technology is ever-evolving, I'm dedicated to continuous learning. I stay up-to-date with the latest trends and advancements in software development through online courses, tech blogs, and attending industry conferences. Overall, I'm passionate about software development and leveraging technology to create innovative solutions.",
-  "I recently graduated with a degree in Information Technology and I'm excited to kick-start my career as a software developer. During my studies, I gained a strong foundation in programming languages such as C/C++, JavaScript and Python as well as web technologies like HTML and CSS.",
-  "I'm a quick learner and eager to expand my skill set. I've been actively exploring new technologies and frameworks such as React and NodeJS through online documentations and personal projects. I'm particularly interested in front-end development and creating user-friendly interfaces that deliver a seamless user experience.",
-  "I also completed an internship where I contributed to a team developing a frontend design from scratch. I worked closely with senior developers, involved in feature development and bug fixing. This internship allowed me to gain hands-on experience in a professional software development environment and taught me the importance of teamwork and collaboration.",
 ];
 
 const topSkills: string[] = [
@@ -481,6 +472,12 @@ const interests: GoalsInterface[] = [
   },
 ];
 
+const aboutMeContent: string[] = [
+  "My fascination with technology started early during my school days and I discovered the joy of coding to solve problems and build innovative solutions. My education in Information Technology provided a strong foundation in programming languages like Python, C++ and JavaScript. However, I craved practical experience, wanting to go beyond theory.",
+  "This led me to explore technologies like React, Angular and Flutter through personal projects. Learning was an ongoing process, but with each challenge overcome and solution built, my passion for software development grew. My internship experience not only honed my technical skills but also highlighted the importance of teamwork in the software development world.",
+  "Now, as a recent graduate, I am eager to leverage my knowledge and skillset in a professional setting. My commitment to continuous learning ensures I stay up-to-date with the latest advancements in technology. In essence, I'm a passionate developer who thrives on bridging the gap between technical expertise and user expectations.",
+];
+
 export {
   navLinks,
   hexPositions,
@@ -495,8 +492,8 @@ export {
   projectsList,
   emailContact,
   contactDetails,
+  bulletPointsAboutMe,
   aboutMeContent,
-  detailedAboutMeContent,
   topSkills,
   shortTermGoals,
   longTermGoals,

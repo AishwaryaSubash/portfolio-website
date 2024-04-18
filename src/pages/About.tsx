@@ -1,4 +1,7 @@
+// import Globe from "../components/Globe";
+import { Link } from "react-router-dom";
 import {
+  aboutMeContent,
   interests,
   longTermGoals,
   shortTermGoals,
@@ -21,8 +24,38 @@ const About = () => {
         ))}
       </div> */}
       {/* mt-44 */}
+      <div className="w-11/12 flex items-center justify-center">
+        <div className="flex flex-col gap-4 w-11/12 font-textFont text-lg">
+          {aboutMeContent.map((item, index) => (
+            <div className="w-11/12" key={index}>
+              <p className="w-11/12 text-justify">{item}</p>
+            </div>
+          ))}
+        </div>
 
-      <div className="flex flex-col w-11/12">
+        <div className="relative">
+          <img
+            src="/resume-pic.png"
+            alt="Resume"
+            className="w-[30rem] bg-darkBg dark:bg-lightHighlightBg p-4 rounded-3xl"
+          />
+          <Link
+            to="https://drive.google.com/file/d/1vjBa5H13EjHev1FF7k6qrBN3013G6ORR/view?usp=sharing"
+            target="_blank"
+          >
+            <svg
+              className="absolute bottom-4 right-4 p-1 text-white w-10 h-10 bg-black rounded-lg"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+            >
+              <g fill="currentColor">
+                <path d="M5 6a1 1 0 0 1 1-1h4a1 1 0 1 0 0-2H6a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3v-4a1 1 0 1 0-2 0v4a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6zm10-3a1 1 0 1 0 0 2h2.586l-6.293 6.293a1 1 0 0 0 1.414 1.414L19 6.414V9a1 1 0 1 0 2 0V4a1 1 0 0 0-1-1h-5z" />
+              </g>
+            </svg>
+          </Link>
+        </div>
+      </div>
+      <div className="mt-12 flex flex-col w-11/12">
         <p className="text-4xl text-center text-lightHighlight dark:text-darkHighlight font-headingFont my-4 max-lg:px-4">
           Short Term Goals
         </p>
@@ -96,6 +129,7 @@ const About = () => {
           ))}
         </div>
       </div>
+      {/* <Globe width={1050} /> */}
     </div>
   );
 };
