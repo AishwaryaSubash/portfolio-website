@@ -1,27 +1,126 @@
-import { Link } from "react-router-dom";
+import {
+  Link,
+  // useNavigate
+} from "react-router-dom";
 import pageTransition from "../utils/pageTransition";
-// import "../index.css";
+import Projects from "./Projects";
+// import { useEffect } from "react";
 
 const Home = () => {
+  // const navigate = useNavigate();
+
+  // Disable tab switching
+  // useEffect(() => {
+  //   const handleBlur = () => {
+  //     alert("Screenshot attempt detected. Redirecting to a different page.");
+  //     navigate("/about");
+  //   };
+  //   window.addEventListener("blur", handleBlur);
+  //   return () => {
+  //     window.removeEventListener("blur", handleBlur);
+  //   };
+  // }, [navigate]);
+
+  // Image rendering using Canvas
+  // useEffect(() => {
+  //   const canvas = document.getElementById(
+  //     "photoCanvas"
+  //   ) as HTMLCanvasElement | null;
+  //   if (!canvas) return;
+
+  //   const ctx = canvas.getContext("2d");
+  //   if (!ctx) return;
+
+  //   const img = new Image();
+  //   img.src = "Picture.jpg";
+  //   img.onload = () => {
+  //     const targetWidth = 350;
+  //     const targetHeight = 485;
+
+  //     // Calculate aspect ratio
+  //     const aspectRatio = img.width / img.height;
+
+  //     // Calculate scaled dimensions respecting aspect ratio
+  //     let renderWidth = targetWidth;
+  //     let renderHeight = renderWidth / aspectRatio;
+
+  //     if (renderHeight > targetHeight) {
+  //       renderHeight = targetHeight;
+  //       renderWidth = renderHeight * aspectRatio;
+  //     }
+
+  //     // Calculate position to center image
+  //     const x = (targetWidth - renderWidth) / 2;
+  //     const y = (targetHeight - renderHeight) / 2;
+
+  //     // Clear canvas
+  //     ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+  //     // Draw rounded rectangle with shadow
+  //     ctx.shadowOffsetX = 0;
+  //     ctx.shadowOffsetY = 25;
+  //     ctx.shadowBlur = 50;
+  //     ctx.shadowColor = "#f0b6fe4e";
+
+  //     ctx.fillStyle = "#ffffff";
+  //     ctx.beginPath();
+  //     ctx.moveTo(24, 0);
+  //     ctx.lineTo(targetWidth - 24, 0);
+  //     ctx.quadraticCurveTo(targetWidth, 0, targetWidth, 24);
+  //     ctx.lineTo(targetWidth, targetHeight - 24);
+  //     ctx.quadraticCurveTo(
+  //       targetWidth,
+  //       targetHeight,
+  //       targetWidth - 24,
+  //       targetHeight
+  //     );
+  //     ctx.lineTo(24, targetHeight);
+  //     ctx.quadraticCurveTo(0, targetHeight, 0, targetHeight - 24);
+  //     ctx.lineTo(0, 24);
+  //     ctx.quadraticCurveTo(0, 0, 24, 0);
+  //     ctx.closePath();
+  //     ctx.fill();
+
+  //     // Draw image with rounded corners
+  //     ctx.save();
+  //     ctx.beginPath();
+  //     ctx.arc(x + 24, y + 24, 24, Math.PI, 1.5 * Math.PI);
+  //     ctx.lineTo(x + renderWidth - 24, y);
+  //     ctx.arc(x + renderWidth - 24, y + 24, 24, 1.5 * Math.PI, 0);
+  //     ctx.lineTo(x + renderWidth, y + renderHeight - 24);
+  //     ctx.arc(
+  //       x + renderWidth - 24,
+  //       y + renderHeight - 24,
+  //       24,
+  //       0,
+  //       0.5 * Math.PI
+  //     );
+  //     ctx.lineTo(x + 24, y + renderHeight);
+  //     ctx.arc(x + 24, y + renderHeight - 24, 24, 0.5 * Math.PI, Math.PI);
+  //     ctx.closePath();
+  //     ctx.clip();
+  //     ctx.drawImage(img, x, y, renderWidth, renderHeight);
+  //     ctx.restore();
+  //   };
+  // }, []);
+
   return (
-    <div className="flex flex-col justify-center items-start bg-lightBg text-lightText dark:bg-darkBg dark:text-darkText">
+    <div className="pt-10 pb-20 flex flex-col justify-center items-center bg-lightBg text-lightText dark:bg-darkBg dark:text-darkText">
       {/* <p className="text-6xl font-headingFont my-4">Home</p> */}
-      <div className="z-10 relative flex ml-64 mb-44">
-        <p className="absolute -left-40 top-72 text-4xl font-headingFont my-4 text-center text-[#867571] dark:text-[#AB8F6C] max-lg:px-4">
-          About Me
-        </p>
+      <div className="w-9/12 flex items-center justify-between">
+        {/* <canvas id="photoCanvas" width="350" height="485"></canvas> */}
         <img
           src="Picture.jpg"
           alt="Picture"
-          className="w-[313px] h-[422px] rounded-3xl bg-black dark:shadow-2xl-dark shadow-light"
+          className="w-[350px] h-[485px] rounded-3xl bg-black dark:shadow-2xl-dark shadow-light"
         />
-        <div className="w-[530px] flex flex-col gap-2 absolute left-[17rem] bottom-20 p-8 rounded-3xl dark:drop-shadow-md-dark drop-shadow-light font-textFont bg-lightBg text-darkBg dark:bg-darkBg dark:text-lightBg">
-          <div className="flex gap-2 font-headingFont text-3xl">
+        <div className="w-[650px] h-[485px] flex flex-col justify-between p-8 rounded-3xl font-textFont bg-lightBg text-darkBg dark:bg-darkBg dark:text-lightBg">
+          <div className="flex gap-3 font-headingFont text-5xl font-bold">
             <p> Hi there!! This is</p>
-            <p className="text-[#867571] dark:text-[#AB8F6C]">Aishwarya</p>
+            <p className="text-[#867571] dark:text-darkHighlight">Aishwarya</p>
           </div>
-          <hr className="h-1 border-2 bg-black border-black rounded-full dark:bg-white dark:border-white" />
-          <p>
+          <hr className="h-1 border-2 mt-2 mb-4 bg-black border-black rounded-full dark:bg-white dark:border-white" />
+          <p className="text-xl leading-relaxed mb-4">
             Fueled by a passion for coding and innovation, I'm a skilled
             Full-Stack Developer crafting dynamic and scalable solutions. I love
             tackling complex problems and exploring new technologies. But code
@@ -29,7 +128,7 @@ const Home = () => {
             knowledge environment for collective success.
           </p>
           <Link to="/about">
-            <div className="flex items-center justify-center gap-2 w-fit py-2 px-3 mt-2 rounded-2xl text-white dark:text-black bg-[#867571] dark:bg-[#AB8F6C] text-lg">
+            <div className="flex font-semibold items-center justify-center w-[200px] py-2 px-3 mt-2 rounded-2xl text-white bg-[#867571] dark:text-darkBg dark:bg-darkHighlight dark:hover:bg-darkHighlightOpacity text-lg">
               <p>My Profile</p>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -39,13 +138,14 @@ const Home = () => {
               >
                 <path
                   fill="currentColor"
-                  d="m12.2 13l-.9.9q-.275.275-.275.7t.275.7q.275.275.7.275t.7-.275l2.6-2.6q.3-.3.3-.7t-.3-.7l-2.6-2.6q-.275-.275-.7-.275t-.7.275q-.275.275-.275.7t.275.7l.9.9H9q-.425 0-.712.288T8 12q0 .425.288.713T9 13zm-.2 9q-2.075 0-3.9-.788t-3.175-2.137q-1.35-1.35-2.137-3.175T2 12q0-2.075.788-3.9t2.137-3.175q1.35-1.35 3.175-2.137T12 2q2.075 0 3.9.788t3.175 2.137q1.35 1.35 2.138 3.175T22 12q0 2.075-.788 3.9t-2.137 3.175q-1.35 1.35-3.175 2.138T12 22m0-2q3.35 0 5.675-2.325T20 12q0-3.35-2.325-5.675T12 4Q8.65 4 6.325 6.325T4 12q0 3.35 2.325 5.675T12 20m0-8"
+                  d="M9.29 15.88L13.17 12L9.29 8.12a.996.996 0 1 1 1.41-1.41l4.59 4.59c.39.39.39 1.02 0 1.41L10.7 17.3a.996.996 0 0 1-1.41 0c-.38-.39-.39-1.03 0-1.42"
                 />
               </svg>
             </div>
           </Link>
         </div>
       </div>
+      <Projects />
       {/* <div className="z-0 relative w-full h-full">
         <img
           src="Dark Mainpage Design.png"

@@ -1,4 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&family=DM+Serif+Display&family=Manrope&family=Philosopher:wght@400;700&family=Russo+One&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kameron:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 
 @tailwind base;
 @tailwind components;
@@ -23,7 +30,7 @@
 
 /* Dark mode drop shadow styles */
 .dark\:shadow-2xl-dark {
-  --tw-shadow: 0 25px 50px -12px rgba(256, 256, 256, 0.25);
+  --tw-shadow: 25px 25px 50px -12px #f0b6fe4e;
   --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
     var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
@@ -83,57 +90,67 @@
   /* background-color: #1d1b26;
   color: #d3c1f0; 
 } */
-/* 
+
 ::-webkit-scrollbar {
   width: 10px;
 }
 
-::-webkit-scrollbar-track {
-  background-color: #5d0560;
+/* ::-webkit-scrollbar-track {
+  background-color: #f7f2f5;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #f7f2f5;
+  background-color: #5d0560;
   border-radius: 2rem;
 }
 
 ::-webkit-scrollbar-track:hover {
-  background-color: #5d0560;
+  background-color: #f7f2f5;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: #f7f2f5;
-} */
+  background-color: #5d0560;
+}  */
 
 /* Light mode scrollbar */
-/* @media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: light) {
   ::-webkit-scrollbar-track {
+    background-color: #f7f2f5;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #5d0560;
+    border-radius: 2rem;
+  }
+
+  ::-webkit-scrollbar-track:hover {
+    background-color: #f7f2f5;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
     background-color: #5d0560;
   }
-  
-  ::-webkit-scrollbar-thumb {
-    background-color: #f7f2f5;
-  }
-  
-  ::-webkit-scrollbar-thumb:hover {
-    background-color: #f7f2f5;
-  }
-} */
+}
 
 /* Dark mode scrollbar */
-/* @media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
   ::-webkit-scrollbar-track {
-    background-color: #1a1a1a;
+    background-color: #1d1b26;
   }
-  
+
   ::-webkit-scrollbar-thumb {
-    background-color: #3a3a3a;
+    background-color: #d3c1f0;
+    border-radius: 2rem;
   }
-  
+
+  ::-webkit-scrollbar-track:hover {
+    background-color: #1d1b26;
+  }
+
   ::-webkit-scrollbar-thumb:hover {
-    background-color: #3a3a3a;
+    background-color: #d3c1f0;
   }
-} */
+}
 
 .hexagon-container {
   display: grid;

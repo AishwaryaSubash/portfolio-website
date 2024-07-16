@@ -9,7 +9,7 @@ const Navbar = ({
   theme: string | undefined;
 }) => {
   return (
-    <div className="flex items-center justify-between p-8 font-headingFont bg-lightBg text-lightText dark:bg-darkBg dark:text-darkText">
+    <div className="flex items-center justify-between px-8 py-4 font-textFont font-semibold bg-lightBg text-lightText dark:bg-darkBg dark:text-darkText">
       <div>
         <Link to="/">
           {theme === "dark" ? (
@@ -36,7 +36,7 @@ const Navbar = ({
               key={index}
               className={`flex flex-col justify-between items-center ${
                 item.href === currentRoute &&
-                "text-lightHighlight dark:text-darkHighlight "
+                "text-lightHighlight dark:text-darkHighlight"
               }`}
             >
               <Link

@@ -12,11 +12,17 @@ import Contact from "./pages/Contact";
 import Hamburger from "./components/Hamburger";
 import ThemeToggle from "./components/ThemeToggle";
 import ErrorPage from "./pages/ErrorPage";
+import ProjectPage from "./pages/ProjectPage";
 
 function App() {
   const location = useLocation();
   const [theme, setTheme] = useState(localStorage.theme);
   const [currentRoute, setCurrentRoute] = useState("/");
+
+  const toggleTheme = () => {
+    localStorage.theme = localStorage.theme === "dark" ? "light" : "dark";
+    setTheme(localStorage.theme);
+  };
 
   useEffect(() => {
     if (
@@ -25,7 +31,9 @@ function App() {
         window.matchMedia("(prefers-color-scheme: dark)").matches)
     ) {
       document.documentElement.classList.add("dark");
+      document.documentElement.classList.remove("light");
     } else {
+      document.documentElement.classList.add("light");
       document.documentElement.classList.remove("dark");
     }
   }, [theme]);
@@ -35,10 +43,16 @@ function App() {
     setCurrentRoute(location.pathname);
   }, [location]);
 
-  const toggleTheme = () => {
-    localStorage.theme = localStorage.theme === "dark" ? "light" : "dark";
-    setTheme(localStorage.theme);
-  };
+  // Disable right click
+  // useEffect(() => {
+  //   const handleContextMenu = (e: { preventDefault: () => void; }) => {
+  //     e.preventDefault();
+  //   };
+  //   document.addEventListener("contextmenu", handleContextMenu);
+  //   return () => {
+  //     document.removeEventListener("contextmenu", handleContextMenu);
+  //   };
+  // }, []);
 
   return (
     <>
@@ -56,6 +70,7 @@ function App() {
           <Route path="/skills" element={<Skills />} />
           <Route path="/experience" element={<Experience />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="projects/:id" element={<ProjectPage />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<ErrorPage />} />
         </Routes>

@@ -39,12 +39,19 @@ interface WorkExperienceInterface {
 }
 
 interface ProjectsInterface {
+  route: string;
   title: string;
+  oneLineDescription: string;
+  category: string;
   websiteUrl: string;
-  websiteImg: string;
   githubUrl: string;
-  description: string;
+  websiteImg: string;
+  websiteVideo?: string;
+  detailedDescription: string;
   techStack: string[];
+  team: string;
+  duration: number;
+  time: string;
 }
 
 interface ContactDetailsInterface {

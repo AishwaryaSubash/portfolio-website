@@ -1,5 +1,5 @@
 // import Globe from "../components/Globe";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import {
   aboutMeContent,
   interests,
@@ -8,6 +8,8 @@ import {
   // topSkills,
 } from "../utils/constants";
 import pageTransition from "../utils/pageTransition";
+import Experience from "./Experience";
+import Skills from "./Skills";
 // import { circleStyles } from "../utils/style";
 
 const About = () => {
@@ -25,15 +27,14 @@ const About = () => {
       </div> */}
       {/* mt-44 */}
       <div className="w-11/12 flex items-center justify-center">
-        <div className="flex flex-col gap-4 w-11/12 font-textFont text-lg">
+        <div className="flex flex-col items-center gap-4 w-11/12 font-textFont text-lg">
           {aboutMeContent.map((item, index) => (
             <div className="w-11/12" key={index}>
-              <p className="w-11/12 text-justify">{item}</p>
+              <p className="text-justify">{item}</p>
             </div>
           ))}
         </div>
-
-        <div className="relative">
+        {/* <div className="relative">
           <img
             src="/resume-pic.png"
             alt="Resume"
@@ -53,7 +54,7 @@ const About = () => {
               </g>
             </svg>
           </Link>
-        </div>
+        </div> */}
       </div>
       <div className="mt-12 flex flex-col w-11/12">
         <p className="text-4xl text-center text-lightHighlight dark:text-darkHighlight font-headingFont my-4 max-lg:px-4">
@@ -129,6 +130,8 @@ const About = () => {
           ))}
         </div>
       </div>
+      <Skills />
+      <Experience />
       {/* <Globe width={1050} /> */}
     </div>
   );

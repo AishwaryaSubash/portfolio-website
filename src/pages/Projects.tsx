@@ -1,48 +1,51 @@
-import { useState } from "react";
-import pageTransition from "../utils/pageTransition";
+// import { useState } from "react";
+// import pageTransition from "../utils/pageTransition";
+// import { motion } from "framer-motion";
 import { projectsList } from "../utils/constants";
+// import { Link } from "react-router-dom";
+import ProjectCards from "../components/ProjectCards";
 
 const Projects = () => {
-  const [isHovered, setIsHovered] = useState<boolean[]>(
-    Array(projectsList.length).fill(false)
-  );
+  // const [isHovered, setIsHovered] = useState<boolean[]>(
+  //   Array(projectsList.length).fill(false)
+  // );
 
-  const handleHover = (index: number) => {
-    const updatedArray = [...isHovered];
-    updatedArray[index] = true;
-    // setIsHovered(updatedArray);
-    setIsHovered((prevState) => {
-      return prevState.map((value, idx) => {
-        if (idx === index) {
-          return true;
-        } else {
-          return value;
-        }
-      });
-    });
-    console.log(updatedArray);
-    console.log("hover", index);
-    console.log(isHovered);
-  };
+  // const handleHover = (index: number) => {
+  //   const updatedArray = [...isHovered];
+  //   updatedArray[index] = true;
+  //   // setIsHovered(updatedArray);
+  //   setIsHovered((prevState) => {
+  //     return prevState.map((value, idx) => {
+  //       if (idx === index) {
+  //         return true;
+  //       } else {
+  //         return value;
+  //       }
+  //     });
+  //   });
+  //   console.log(updatedArray);
+  //   console.log("hover", index);
+  //   console.log(isHovered);
+  // };
 
-  const handleLeave = (index: number) => {
-    const updatedArray = [...isHovered];
-    updatedArray[index] = false;
-    setIsHovered(updatedArray);
-    console.log("leave", index);
-    console.log(isHovered);
-  };
+  // const handleLeave = (index: number) => {
+  //   const updatedArray = [...isHovered];
+  //   updatedArray[index] = false;
+  //   setIsHovered(updatedArray);
+  //   console.log("leave", index);
+  //   console.log(isHovered);
+  // };
 
   return (
-    <div className="flex flex-col overflow-x-hidden justify-center items-center bg-lightBg text-lightText dark:bg-darkBg dark:text-darkText">
-      <div className="flex flex-col items-center mb-8">
-        <p className="text-6xl font-headingFont my-4">Projects</p>
-        <div className="flex gap-2 text-2xl font-headingFont my-4 text-lightHighlight dark:text-darkHighlight max-sm:flex-col max-sm:text-center">
+    <div className="mt-40 flex flex-col overflow-hidden justify-center items-center bg-lightBg text-lightText dark:bg-darkBg dark:text-darkText">
+      <div className="flex flex-col gap-4 items-center mb-16">
+        <p className="text-5xl font-headingFont font-bold">My Projects</p>
+        <div className="flex gap-2 text-2xl font-textFont text-lightHighlight dark:text-darkText max-sm:flex-col max-sm:text-center">
           <p>Take a peek at</p>
           <p>what I've been building</p>
         </div>
       </div>
-      <div className="z-0 font-textFont w-full h-full grid grid-cols-2 justify-items-center gap-8 max-md:grid-cols-1">
+      {/* <div className="z-0 font-textFont w-full h-full grid grid-cols-2 justify-items-center gap-8 max-md:grid-cols-1">
         {projectsList.map((project, index) => {
           return (
             <div
@@ -54,7 +57,6 @@ const Projects = () => {
               {isHovered[index] && (
                 <div className="absolute top-1/3 left-1/2">
                   <div className="flex items-center">
-                    {/* className=" w-full h-full flex items-center justify-center m-2 text-black">*/}
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="64"
@@ -94,14 +96,21 @@ const Projects = () => {
                 <p className="text-2xl font-semibold max-md:text-base">
                   {project.title}
                 </p>
-                <p className="max-md:text-sm">{project.description}</p>
+                <p className="max-md:text-sm">{project.detailedDescription}</p>
               </div>
             </div>
           );
         })}
+      </div> */}
+      <div className="w-10/12 grid grid-cols-2 gap-y-12 gap-x-20">
+        <ProjectCards
+          projectsList={projectsList}
+          scale={1.046}
+          initialOpacity={0.75}
+        />
       </div>
     </div>
   );
 };
 
-export default pageTransition(Projects);
+export default Projects;
