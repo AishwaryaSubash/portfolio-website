@@ -1,5 +1,5 @@
 import { educationDetails, workExperience } from "../utils/constants";
-import pageTransition from "../utils/pageTransition";
+// import pageTransition from "../utils/pageTransition";
 
 const Experience = () => {
   return (
@@ -59,4 +59,4 @@ const Experience = () => {
   );
 };
 
-export default pageTransition(Experience);
+export default Experience;

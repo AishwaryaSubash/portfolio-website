@@ -4,6 +4,8 @@ import {
 } from "react-router-dom";
 import pageTransition from "../utils/pageTransition";
 import Projects from "./Projects";
+import { motion } from "framer-motion";
+import { buttonHover } from "../utils/motion";
 // import { useEffect } from "react";
 
 const Home = () => {
@@ -128,7 +130,12 @@ const Home = () => {
             knowledge environment for collective success.
           </p>
           <Link to="/about">
-            <div className="flex font-semibold items-center justify-center w-[200px] py-2 px-3 mt-2 rounded-2xl text-white bg-[#867571] dark:text-darkBg dark:bg-darkHighlight dark:hover:bg-darkHighlightOpacity text-lg">
+            <motion.div
+              variants={buttonHover}
+              initial="initial"
+              animate="animate"
+              className="flex font-semibold items-center justify-center w-[200px] py-2 px-3 mt-2 rounded-2xl text-white bg-[#867571] dark:text-darkBg dark:bg-darkHighlight dark:border-2 dark:border-darkHighlight dark:hover:bg-transparent dark:hover:border-2 dark:hover:border-darkHighlightOpacity dark:hover:text-darkHighlightOpacity text-lg"
+            >
               <p>My Profile</p>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -141,7 +148,7 @@ const Home = () => {
                   d="M9.29 15.88L13.17 12L9.29 8.12a.996.996 0 1 1 1.41-1.41l4.59 4.59c.39.39.39 1.02 0 1.41L10.7 17.3a.996.996 0 0 1-1.41 0c-.38-.39-.39-1.03 0-1.42"
                 />
               </svg>
-            </div>
+            </motion.div>
           </Link>
         </div>
       </div>

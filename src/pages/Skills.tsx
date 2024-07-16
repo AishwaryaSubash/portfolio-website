@@ -1,7 +1,7 @@
 import MediaQuery from "react-responsive";
 import CountUp from "react-countup";
 import { professionalSkills, skills } from "../utils/constants";
-import pageTransition from "../utils/pageTransition";
+// import pageTransition from "../utils/pageTransition";
 import "../index.css";
 import {
   motion,
@@ -153,4 +153,4 @@ const Skills = () => {
   );
 };
 
-export default pageTransition(Skills);
+export default Skills;

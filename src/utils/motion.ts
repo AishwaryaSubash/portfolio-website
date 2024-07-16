@@ -54,4 +54,21 @@ const linkContainer = {
   },
 };
 
-export { hamMenuAnimation, hamWrapperAnimation, linkContainer };
+const buttonHover = {
+  initial: {
+    opacity: 0,
+    transition: {
+      duration: 1,
+      ease: [0.37, 0, 0.63, 1],
+    },
+  },
+  animate: {
+    opacity: 1,
+    transition: {
+      duration: 1,
+      ease: [0, 0.55, 0.45, 1],
+    },
+  },
+};
+
+export { hamMenuAnimation, hamWrapperAnimation, linkContainer, buttonHover };

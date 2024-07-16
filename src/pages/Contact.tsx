@@ -1,5 +1,7 @@
 import pageTransition from "../utils/pageTransition";
 import { emailContact, contactDetails } from "../utils/constants";
+import { motion } from "framer-motion";
+// import { buttonHover } from "../utils/motion";
 
 const Contact = () => {
   return (
@@ -24,15 +26,25 @@ const Contact = () => {
             happy to connect. Feel free to reach out - let's explore the
             possibilities together!
           </p>
-          <div className="flex items-center gap-6 font-textFont font-semibold text-lg w-[200px]max-sm:flex-col max-sm:gap-4 max-lg:justify-center">
+          <div
+            // variants={buttonHover}
+            // initial="initial"
+            // animate="animate"
+            className="flex items-center gap-6 font-textFont font-semibold text-lg w-[200px]max-sm:flex-col max-sm:gap-4 max-lg:justify-center"
+          >
             <a
               href={`mailto:${emailContact.link}`}
               target="_blank"
               rel="noopener noreferrer"
             >
-              <div className="cursor-pointer py-2 px-4 rounded-xl text-lightBg bg-lightTextOpacity dark:text-darkBg dark:bg-darkHighlight dark:hover:bg-darkHighlightOpacity max-sm:text-base">
+              <motion.div
+                // initial={{ backgroundColor: "" }}
+                // transition={{ duration: 0.25, delay: 0.25 }}
+                whileHover={{ transition: { duration: 0.25, delay: 0.25 } }}
+                className="cursor-pointer py-2 px-4 rounded-xl text-lightBg bg-lightTextOpacity dark:text-darkBg dark:bg-darkHighlight dark:border-2 dark:border-darkHighlight dark:hover:bg-transparent dark:hover:border-2 dark:hover:border-darkHighlightOpacity dark:hover:text-darkHighlightOpacity max-sm:text-base"
+              >
                 Get In Touch
-              </div>
+              </motion.div>
             </a>
             <div className="flex items-center justify-center gap-6 text-lightHighlight dark:text-darkHighlight max-lg:justify-evenly">
               {contactDetails.map((item, index) => {

@@ -43,26 +43,34 @@ const ProjectPage = () => {
         alt={project.title}
         className="w-9/12 rounded-2xl"
       />
-      <div className="w-9/12 px-6 pt-40 flex items-start gap-20">
-        <div className="text-3xl font-headingFont">{project.title}</div>
-        <div className="flex flex-col gap-12">
-          <div className="text-xl">{project.detailedDescription}</div>
-          <div className="grid grid-cols-3 text-lg">
-            <p>Team</p>
-            <p>Duration</p>
-            <p>Time</p>
-            <p>{project.team}</p>
-            <p>{project.duration} Months</p>
-            <p>{project.time}</p>
+      <div className="w-9/12 px-6 pt-40 flex items-start">
+        <div className="text-3xl font-headingFont font-bold">
+          {project.title}
+        </div>
+        <div className="w-[78%] flex flex-col gap-16">
+          <div className="flex flex-col gap-12">
+            <div className="text-xl">{project.detailedDescription}</div>
+            <div className="grid grid-cols-3 gap-4 text-lg">
+              <p>Team</p>
+              <p>Duration</p>
+              <p>Time</p>
+              <p>{project.team}</p>
+              <p>{project.duration} Months</p>
+              <p>{project.time}</p>
+            </div>
           </div>
-          <div className="flex items-start gap-12">
+          <div className="flex flex-col items-start gap-4">
             <div className="w-[185px] text-3xl font-headingFont">
-              <p>Tech Stack</p>
+              <p className="font-semibold">Tech Stack</p>
             </div>
             <div className="flex flex-wrap gap-3">
               {project.techStack.map((item, index) => (
-                <div key={index} className="text-lg">
-                  {item}
+                <div
+                  key={index}
+                  className="flex items-center justify-center gap-3 text-lg"
+                >
+                  <p>{item}</p>
+                  {index !== project.techStack.length - 1 && <p>|</p>}
                 </div>
               ))}
             </div>
@@ -72,7 +80,11 @@ const ProjectPage = () => {
       <div className="pt-40 flex flex-col items-center gap-10">
         <p className="text-5xl font-headingFont font-bold">Other Projects</p>
         <div className="w-11/12 flex items-center justify-between gap-6">
-          <ProjectCards projectsList={subProjectList} scale={1} initialOpacity={0.5}/>
+          <ProjectCards
+            projectsList={subProjectList}
+            scale={1}
+            initialOpacity={0.5}
+          />
         </div>
       </div>
     </div>
