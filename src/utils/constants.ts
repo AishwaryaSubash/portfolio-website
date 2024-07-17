@@ -26,7 +26,10 @@ const navLinks: NavLinksInterface[] = [
   // { title: "Skills", href: "/skills" },
   // { title: "Experience", href: "/experience" },
   { title: "Contact", href: "/contact" },
-  { title: "Resume", href: "/projects" },
+  {
+    title: "Resume",
+    href: "https://drive.google.com/file/d/1ln2wG-KjNx0MATWe5e6AkaTXHXIIyOD-/view?usp=drive_link",
+  },
 ];
 
 const hexPositions: HexPositionsInterface[] = [
