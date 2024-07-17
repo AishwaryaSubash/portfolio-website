@@ -38,7 +38,8 @@ const About = () => {
         <div className="grid grid-cols-3 grid-rows-6 gap-16 font-textFont items-center justify-items-center">
           <div></div>
           {/* bg-gradient-to-b from-0% from-black to-95% to-[#26272c] */}
-          <div className="w-64 h-40 row-span-2 p-4 flex flex-col gap-2 items-center justify-center border-2 border-gray-900 rounded-2xl">
+          {/* w-64 h-40 */}
+          <div className="w-56 h-36 row-span-2 p-4 flex flex-col gap-2 items-center justify-center border-2 border-gray-900 rounded-2xl">
             <svg
               className="w-8 h-8 max-sm:w-10 max-sm:h-10"
               xmlns="http://www.w3.org/2000/svg"
@@ -53,10 +54,12 @@ const About = () => {
                 d="M136 328v8h32v-32h-32zm0 48h32v32h-32zm80-48v8h32v-32h-32zm0 48h32v32h-32zm80-48v8h32v-32h-32zm0 48h32v32h-32zm80-72h32v32h-32zm0 72h32v32h-32z"
               />
             </svg>
-            <p className="text-center">Stay Updated with Industry Standards</p>
+            <p className="w-11/12 text-center">
+              Stay Updated with Industry Standards
+            </p>
           </div>
           <div></div>
-          <div className="w-64 h-40 row-span-2 p-4 flex flex-col gap-2 items-center justify-center border-2 border-gray-900 rounded-2xl">
+          <div className="w-56 h-36 row-span-2 p-4 flex flex-col gap-2 items-center justify-center border-2 border-gray-900 rounded-2xl">
             <svg
               className="w-8 h-8 max-sm:w-10 max-sm:h-10"
               xmlns="http://www.w3.org/2000/svg"
@@ -74,9 +77,11 @@ const About = () => {
                 <path d="M15 13a4.5 4.5 0 0 1-3-4a4.5 4.5 0 0 1-3 4m8.599-6.5a3 3 0 0 0 .399-1.375m-11.995 0A3 3 0 0 0 6.401 6.5m-2.924 4.396a4 4 0 0 1 .585-.396m15.876 0a4 4 0 0 1 .585.396M6 18a4 4 0 0 1-1.967-.516m15.934 0A4 4 0 0 1 18 18" />
               </g>
             </svg>
-            <p className="text-center">Improve Problem-Solving Skills</p>
+            <p className="w-11/12 text-center">
+              Improve Problem-Solving Skills
+            </p>
           </div>
-          <div className="w-64 h-40 row-span-2 p-4 flex flex-col gap-2 items-center justify-center border-2 border-gray-900 rounded-2xl">
+          <div className="w-56 h-36 row-span-2 p-4 flex flex-col gap-2 items-center justify-center border-2 border-gray-900 rounded-2xl">
             <svg
               className="w-8 h-8 max-sm:w-10 max-sm:h-10"
               xmlns="http://www.w3.org/2000/svg"
@@ -87,13 +92,15 @@ const About = () => {
                 d="M5 13.18v2.81c0 .73.4 1.41 1.04 1.76l5 2.73c.6.33 1.32.33 1.92 0l5-2.73c.64-.35 1.04-1.03 1.04-1.76v-2.81l-6.04 3.3c-.6.33-1.32.33-1.92 0zm6.04-9.66l-8.43 4.6c-.69.38-.69 1.38 0 1.76l8.43 4.6c.6.33 1.32.33 1.92 0L21 10.09V16c0 .55.45 1 1 1s1-.45 1-1V9.59c0-.37-.2-.7-.52-.88l-9.52-5.19a2.04 2.04 0 0 0-1.92 0"
               />
             </svg>
-            <p className="text-center">Learn Java and DevOps</p>
+            <p className="w-11/12 text-center">Learn Java and DevOps</p>
           </div>
           <div className="w-11/12 row-span-2 flex flex-col gap-6 items-center justify-center">
             <img src="/dart2.png" alt="" className="w-20 h-20" />
-            <p className="text-3xl font-headingFont">Short Term Goals</p>
+            <p className="text-3xl text-center font-headingFont text-lightHighlight dark:text-darkHighlight">
+              Short Term Goals
+            </p>
           </div>
-          <div className="w-64 h-40 row-span-2 p-4 flex flex-col gap-2 items-center justify-center border-2 border-gray-900 rounded-2xl">
+          <div className="w-56 h-36 row-span-2 p-4 flex flex-col gap-2 items-center justify-center border-2 border-gray-900 rounded-2xl">
             <svg
               className="w-8 h-8 max-sm:w-10 max-sm:h-10"
               xmlns="http://www.w3.org/2000/svg"
@@ -104,11 +111,11 @@ const About = () => {
                 d="M4.825 12.025L8.7 15.9q.275.275.275.7t-.275.7q-.275.275-.7.275t-.7-.275l-4.6-4.6q-.15-.15-.213-.325T2.426 12q0-.2.063-.375T2.7 11.3l4.6-4.6q.3-.3.713-.3t.712.3q.3.3.3.713t-.3.712zm14.35-.05L15.3 8.1q-.275-.275-.275-.7t.275-.7q.275-.275.7-.275t.7.275l4.6 4.6q.15.15.213.325t.062.375q0 .2-.062.375t-.213.325l-4.6 4.6q-.3.3-.7.288t-.7-.313q-.3-.3-.3-.712t.3-.713z"
               />
             </svg>
-            <p className="text-center">
+            <p className="w-11/12 text-center">
               Improve Code Efficiency and Maintainability
             </p>
           </div>
-          <div className="w-64 h-40 row-span-2 p-4 flex flex-col gap-2 items-center justify-center border-2 border-gray-900 rounded-2xl">
+          <div className="w-56 h-36 row-span-2 p-4 flex flex-col gap-2 items-center justify-center border-2 border-gray-900 rounded-2xl">
             <svg
               className="w-8 h-8 max-sm:w-10 max-sm:h-10"
               xmlns="http://www.w3.org/2000/svg"
@@ -120,11 +127,11 @@ const About = () => {
                 color="currentColor"
               />
             </svg>
-            <p className="text-center">
+            <p className="w-11/12 text-center">
               Connect with Like-minded People and Grow My Network
             </p>
           </div>
-          <div className="w-64 h-40 row-span-2 p-4 flex flex-col gap-2 items-center justify-center border-2 border-gray-900 rounded-2xl">
+          <div className="w-56 h-36 row-span-2 p-4 flex flex-col gap-2 items-center justify-center border-2 border-gray-900 rounded-2xl">
             <svg
               className="w-8 h-8 max-sm:w-10 max-sm:h-10"
               xmlns="http://www.w3.org/2000/svg"
@@ -141,7 +148,7 @@ const About = () => {
                 <path d="M3 12.5H.5V11a4.5 4.5 0 0 1 7.68-3.18" />
               </g>
             </svg>
-            <p className="text-center">
+            <p className="w-11/12 text-center">
               Work on Enhancing Interpersonal Skills
             </p>
           </div>
@@ -151,7 +158,7 @@ const About = () => {
 
         <div className="mt-24 grid grid-cols-3 grid-rows-6 gap-16 font-textFont items-center justify-items-center">
           <div></div>
-          <div className="w-64 h-40 row-span-2 p-4 flex flex-col gap-2 items-center justify-center border-2 border-gray-900 rounded-2xl">
+          <div className="w-56 h-36 row-span-2 p-4 flex flex-col gap-2 items-center justify-center border-2 border-gray-900 rounded-2xl">
             <svg
               className="w-8 h-8 max-sm:w-10 max-sm:h-10"
               xmlns="http://www.w3.org/2000/svg"
@@ -162,10 +169,10 @@ const About = () => {
                 d="M12 11q-3.75 0-6.375-1.175T3 7q0-1.65 2.625-2.825Q8.25 3 12 3t6.375 1.175Q21 5.35 21 7q0 1.65-2.625 2.825Q15.75 11 12 11Zm0 5q-3.75 0-6.375-1.175T3 12V9.5q0 1.1 1.025 1.863q1.025.762 2.45 1.237q1.425.475 2.963.687q1.537.213 2.562.213t2.562-.213q1.538-.212 2.963-.687q1.425-.475 2.45-1.237Q21 10.6 21 9.5V12q0 1.65-2.625 2.825Q15.75 16 12 16Zm0 5q-3.75 0-6.375-1.175T3 17v-2.5q0 1.1 1.025 1.863q1.025.762 2.45 1.237q1.425.475 2.963.688q1.537.212 2.562.212t2.562-.212q1.538-.213 2.963-.688t2.45-1.237Q21 15.6 21 14.5V17q0 1.65-2.625 2.825Q15.75 21 12 21Z"
               />
             </svg>
-            <p className="text-center">Improve Database Skills</p>
+            <p className="w-11/12 text-center">Improve Database Skills</p>
           </div>
           <div></div>
-          <div className="w-64 h-40 row-span-2 p-4 flex flex-col gap-2 items-center justify-center border-2 border-gray-900 rounded-2xl">
+          <div className="w-56 h-36 row-span-2 p-4 flex flex-col gap-2 items-center justify-center border-2 border-gray-900 rounded-2xl">
             <svg
               className="w-8 h-8 max-sm:w-10 max-sm:h-10"
               xmlns="http://www.w3.org/2000/svg"
@@ -181,11 +188,11 @@ const About = () => {
                 <path d="M6.45 2.36a.59.59 0 0 1 1.1 0L8.19 4H9.9a.61.61 0 0 1 .56.39a.59.59 0 0 1-.16.61L8.79 6.34l.64 1.28a.58.58 0 0 1-.12.69a.59.59 0 0 1-.7.1L7 7.53l-1.61.88a.59.59 0 0 1-.7-.1a.58.58 0 0 1-.12-.69l.64-1.28L3.7 5a.59.59 0 0 1-.16-.65A.61.61 0 0 1 4.1 4h1.71Z" />
               </g>
             </svg>
-            <p className="text-center">
+            <p className="w-11/12 text-center">
               Enhance User Experience (UX) Knowledge
             </p>
           </div>
-          <div className="w-64 h-40 row-span-2 p-4 flex flex-col gap-2 items-center justify-center border-2 border-gray-900 rounded-2xl">
+          <div className="w-56 h-36 row-span-2 p-4 flex flex-col gap-2 items-center justify-center border-2 border-gray-900 rounded-2xl">
             <svg
               className="w-8 h-8 max-sm:w-10 max-sm:h-10"
               xmlns="http://www.w3.org/2000/svg"
@@ -200,15 +207,17 @@ const About = () => {
                 d="M5.636 19.364a9 9 0 1 1 12.728 0M16 9l-4 4"
               />
             </svg>
-            <p className="text-center">
+            <p className="w-11/12 text-center">
               Practice Test-Driven Development (TDD)
             </p>
           </div>
           <div className="w-11/12 row-span-2 flex flex-col gap-6 items-center justify-center">
             <img src="/dart2.png" alt="" className="w-20 h-20" />
-            <p className="text-3xl font-headingFont">Long Term Goals</p>
+            <p className="text-3xl text-center font-headingFont text-lightHighlight dark:text-darkHighlight">
+              Long Term Goals
+            </p>
           </div>
-          <div className="w-64 h-40 row-span-2 p-4 flex flex-col gap-2 items-center justify-center border-2 border-gray-900 rounded-2xl">
+          <div className="w-56 h-36 row-span-2 p-4 flex flex-col gap-2 items-center justify-center border-2 border-gray-900 rounded-2xl">
             <svg
               className="w-8 h-8 max-sm:w-10 max-sm:h-10"
               xmlns="http://www.w3.org/2000/svg"
@@ -223,9 +232,11 @@ const About = () => {
                 d="M1.5 13.737a2.25 2.25 0 0 1 2.262-2.25L4 11.49v1.938c0 .218.26.331.42.183l2.883-2.677a.25.25 0 0 0 0-.366L4.42 7.89a.25.25 0 0 0-.42.183V9.99l-.23-.001A3.75 3.75 0 0 0 0 13.738v1.012a.75.75 0 0 0 1.5 0z"
               />
             </svg>
-            <p className="text-center">Contribute to Open-Source Projects</p>
+            <p className="w-11/12 text-center">
+              Contribute to Open-Source Projects
+            </p>
           </div>
-          <div className="w-64 h-40 row-span-2 p-4 flex flex-col gap-2 items-center justify-center border-2 border-gray-900 rounded-2xl">
+          <div className="w-56 h-36 row-span-2 p-4 flex flex-col gap-2 items-center justify-center border-2 border-gray-900 rounded-2xl">
             <svg
               className="w-8 h-8 max-sm:w-10 max-sm:h-10"
               xmlns="http://www.w3.org/2000/svg"
@@ -240,9 +251,11 @@ const About = () => {
                 />
               </g>
             </svg>
-            <p className="text-center">Build a Professional Online Presence</p>
+            <p className="w-11/12 text-center">
+              Build a Professional Online Presence
+            </p>
           </div>
-          <div className="w-64 h-40 row-span-2 p-4 flex flex-col gap-2 items-center justify-center border-2 border-gray-900 rounded-2xl">
+          <div className="w-56 h-36 row-span-2 p-4 flex flex-col gap-2 items-center justify-center border-2 border-gray-900 rounded-2xl">
             <svg
               className="w-8 h-8 max-sm:w-10 max-sm:h-10"
               xmlns="http://www.w3.org/2000/svg"
@@ -260,17 +273,35 @@ const About = () => {
                 <path d="M19 16h-2a2 2 0 0 1-2-2a2 2 0 0 0-2-2h-1M9 8H5m0 8h4" />
               </g>
             </svg>
-            <p className="text-center">Learn Rust</p>
+            <p className="w-11/12 text-center">Learn Rust</p>
           </div>
           <div></div>
           <div></div>
         </div>
       </div>
-      <div className="mt-12 flex flex-col w-11/12 max-sm:mt-8">
-        <p className="text-4xl text-center text-lightHighlight dark:text-darkHighlight font-headingFont my-4 max-lg:px-4">
+      <div className="my-12 flex flex-col w-11/12 max-sm:mt-8">
+        <p className="text-3xl text-center text-lightHighlight dark:text-darkHighlight font-headingFont my-4 max-lg:px-4">
           My Interests
         </p>
-        <div className="grid grid-cols-2 gap-4 max-md:grid-cols-1">
+        <div className="grid grid-cols-4 grid-rows-2">
+          {interests.map((goal, index) => (
+            <>
+              {index >= 2 && <div></div>}
+              <div
+                key={index}
+                className="flex flex-col items-center justify-center gap-2"
+              >
+                <div
+                  dangerouslySetInnerHTML={{ __html: goal.image }}
+                  className="w-12 h-12 p-2 rounded-full text-lightAltHighlight dark:text-darkHighlight max-sm:w-12 max-sm:h-12 max-md:top-[5px] max-md:-left-[24px] max-sm:top-[10px]"
+                />
+                <p className="font-textFont">{goal.content}</p>
+              </div>
+              {index < 2 && <div></div>}
+            </>
+          ))}
+        </div>
+        {/* <div className="grid grid-cols-2 gap-4 max-md:grid-cols-1">
           {interests.map((goal, index) => (
             <div key={index} className="flex items-center justify-center gap-4">
               <div
@@ -292,7 +323,7 @@ const About = () => {
               </div>
             </div>
           ))}
-        </div>
+        </div> */}
       </div>
     </div>
   );
