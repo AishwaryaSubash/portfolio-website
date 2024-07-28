@@ -5,13 +5,13 @@ import { motion } from "framer-motion";
 
 const Contact = () => {
   return (
-    <div className="flex flex-col pb-10 overflow-x-hidden justify-center items-center bg-lightBg text-lightText dark:bg-darkBg dark:text-darkText">
+    <div className="flex flex-col pb-10 overflow-x-hidden justify-center items-center bg-lightBg text-lightText dark:bg-darkBg dark:text-darkText min-[1168px]:py-20">
       {/* <div className="flex flex-col items-center mb-8">
         <p className="text-6xl font-headingFont my-4">Contact</p>
       </div> */}
       <div className="h-full w-9/12 mt-6 mb-12 flex items-center justify-center max-lg:flex-col max-lg:items-center max-lg:gap-8">
         <div className="h-full flex flex-col justify-between items-start w-9/12 max-lg:w-11/12 max-lg:items-center max-lg:gap-6 max-lg:mb-6">
-          <div className="flex flex-col gap-4 font-headingFont text-5xl font-bold items-start my-4 text-lightHighlight dark:text-darkText max-xl:flex-col max-lg:text-center max-lg:flex-row max-lg:justify-center max-lg:w-full max-tablet:flex-col max-tablet:items-center">
+          <div className="flex flex-col gap-4 font-headingFont text-5xl font-bold items-start my-4 text-lightHighlight dark:text-darkText max-lg:flex-col max-lg:items-center max-lg:justify-center max-lg:w-full max-tablet:flex-col max-tablet:items-center max-md:text-4xl">
             <p>Happy to connect.</p>
             <p>Feel free to reach out!</p>
           </div>

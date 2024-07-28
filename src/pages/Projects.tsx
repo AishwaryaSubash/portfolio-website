@@ -102,7 +102,7 @@ const Projects = () => {
           );
         })}
       </div> */}
-      <div className="w-10/12 grid grid-cols-2 gap-y-12 gap-x-20">
+      <div className="w-10/12 grid grid-cols-2 gap-y-12 gap-x-20 max-lg:grid-cols-1">
         <ProjectCards
           projectsList={projectsList}
           scale={1.046}

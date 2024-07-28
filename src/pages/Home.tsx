@@ -6,6 +6,7 @@ import pageTransition from "../utils/pageTransition";
 import Projects from "./Projects";
 import { motion } from "framer-motion";
 import { buttonHover } from "../utils/motion";
+import MediaQuery from "react-responsive";
 // import { useEffect } from "react";
 
 const Home = () => {
@@ -109,19 +110,28 @@ const Home = () => {
   return (
     <div className="pt-10 pb-20 flex flex-col justify-center items-center bg-lightBg text-lightText dark:bg-darkBg dark:text-darkText">
       {/* <p className="text-6xl font-headingFont my-4">Home</p> */}
-      <div className="w-9/12 flex items-center justify-between">
+      <div className="w-9/12 flex items-center justify-between max-[1440px]:flex-col max-[1440px]:gap-12">
         {/* <canvas id="photoCanvas" width="350" height="485"></canvas> */}
-        <img
-          src="Picture.jpg"
-          alt="Picture"
-          className="w-[350px] h-[485px] rounded-3xl bg-black dark:shadow-2xl-dark shadow-light"
-        />
-        <div className="w-[650px] h-[485px] flex flex-col justify-between p-8 rounded-3xl font-textFont bg-lightBg text-darkBg dark:bg-darkBg dark:text-lightBg">
+        <MediaQuery maxWidth={1439}>
+          <img
+            src="PictureSquare.jpg"
+            alt="Picture"
+            className="w-[350px] h-[350px] rounded-full bg-black dark:shadow-2xl-dark shadow-light bg-cover bg-center max-md:w-[250px] max-md:h-[250px] max-sm:w-[200px] max-sm:h-[200px]"
+          />
+        </MediaQuery>
+        <MediaQuery minWidth={1440}>
+          <img
+            src="Picture.jpg"
+            alt="Picture"
+            className="w-[350px] h-[485px] rounded-3xl bg-black dark:shadow-2xl-dark shadow-light"
+          />
+        </MediaQuery>
+        <div className="w-[650px] h-[485px] flex flex-col justify-between p-8 rounded-3xl font-textFont bg-lightBg text-darkBg dark:bg-darkBg dark:text-lightBg max-[1440px]:items-center">
           <div className="flex gap-3 font-headingFont text-5xl font-bold">
             <p> Hi there!! This is</p>
             <p className="text-[#867571] dark:text-darkHighlight">Aishwarya</p>
           </div>
-          <hr className="h-1 border-2 mt-2 mb-4 bg-black border-black rounded-full dark:bg-white dark:border-white" />
+          <hr className="h-1 w-full border-2 mt-2 mb-4 bg-black border-black rounded-full dark:bg-white dark:border-white" />
           <p className="text-xl leading-relaxed mb-4">
             Fueled by a passion for coding and innovation, I'm a skilled
             Full-Stack Developer crafting dynamic and scalable solutions. I love
@@ -153,13 +163,6 @@ const Home = () => {
         </div>
       </div>
       <Projects />
-      {/* <div className="z-0 relative w-full h-full">
-        <img
-          src="Dark Mainpage Design.png"
-          alt="Design"
-          className="absolute bottom-0 left-0"
-        />
-      </div> */}
     </div>
   );
 };
