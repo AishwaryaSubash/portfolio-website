@@ -3,7 +3,7 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     screens: {
-      xs: "400px",
+      xs: "500px",
       sm: "640px",
       md: "768px",
       tablet: "795px",
@@ -17,7 +17,7 @@ export default {
         headingFont: ['"Philosopher"', "sans-serif"],
         // headingFont: ['"Black Ops One"', "system-ui"],
         // textFont: ['"Russo One"', "sans-serif"],
-        
+
         // headingFont: ['"DM Serif Display"', "serif"],
         // headingFont: ['"Poppins"', "sans-serif"],
         // textFont: ['"Noto Sans"', "sans-serif"],

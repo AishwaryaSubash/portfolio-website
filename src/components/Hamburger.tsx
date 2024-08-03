@@ -18,7 +18,7 @@ const Hamburger = ({ theme }: { theme: string | undefined }) => {
   return (
     <>
       <motion.div
-        className="z-30 flex justify-between items-center p-8 font-headingFont font-bold bg-lightBg text-lightText dark:bg-darkBg dark:text-darkHighlight"
+        className="z-30 flex justify-between items-center p-8 font-headingFont font-bold bg-lightBg text-lightText dark:bg-darkBg dark:text-darkHighlight max-sm:py-4 max-sm:pr-6 max-sm:pl-2"
         variants={hamWrapperAnimation}
         // initial="initial"
         animate="open"

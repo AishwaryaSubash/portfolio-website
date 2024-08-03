@@ -110,7 +110,7 @@ const Home = () => {
   return (
     <div className="pt-10 pb-20 flex flex-col justify-center items-center bg-lightBg text-lightText dark:bg-darkBg dark:text-darkText">
       {/* <p className="text-6xl font-headingFont my-4">Home</p> */}
-      <div className="w-9/12 flex items-center justify-between max-[1440px]:flex-col max-[1440px]:gap-12 max-[680px]:w-11/12">
+      <div className="w-9/12 flex items-center justify-between max-[1440px]:flex-col max-[1440px]:gap-12 max-[680px]:w-11/12 max-sm:gap-8">
         {/* <canvas id="photoCanvas" width="350" height="485"></canvas> */}
         <MediaQuery maxWidth={1439}>
           <img
@@ -127,9 +127,22 @@ const Home = () => {
           />
         </MediaQuery>
         <div className="w-[650px] h-[485px] flex flex-col justify-between p-8 rounded-3xl font-textFont bg-lightBg text-darkBg dark:bg-darkBg dark:text-lightBg max-[1440px]:items-center max-md:w-full max-md:h-auto max-md:gap-4">
-          <div className="flex gap-3 font-headingFont text-5xl font-bold max-md:text-4xl max-md:gap-2 max-sm:text-3xl">
-            <p> Hi there!! This is</p>
-            <p className="text-[#867571] dark:text-darkHighlight">Aishwarya</p>
+          <div className="flex gap-3 font-headingFont text-5xl font-bold max-md:text-4xl max-md:gap-2 max-sm:text-3xl max-xs:flex-col max-xs:items-center">
+            <MediaQuery maxWidth={500}>
+              <p>Hi there!!</p>
+              <div className="flex items-center gap-2">
+                <p>This is</p>
+                <p className="text-[#867571] dark:text-darkHighlight">
+                  Aishwarya
+                </p>
+              </div>
+            </MediaQuery>
+            <MediaQuery minWidth={501}>
+              <p>Hi there!! This is</p>
+              <p className="text-[#867571] dark:text-darkHighlight">
+                Aishwarya
+              </p>
+            </MediaQuery>
           </div>
           <hr className="h-1 w-full border-2 mt-2 mb-4 bg-black border-black rounded-full dark:bg-white dark:border-white max-md:h-0.5 max-md:my-0 max-md:w-10/12" />
           <p className="text-xl leading-relaxed mb-4 max-md:text-lg max-md:text-center max-sm:text-sm">
