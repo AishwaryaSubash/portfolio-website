@@ -18,7 +18,7 @@ const Hamburger = ({ theme }: { theme: string | undefined }) => {
   return (
     <>
       <motion.div
-        className="z-30 flex justify-between items-center p-8 font-headingFont bg-lightBg text-lightText dark:bg-darkBg dark:text-darkHighlight"
+        className="z-30 flex justify-between items-center p-8 font-headingFont font-bold bg-lightBg text-lightText dark:bg-darkBg dark:text-darkHighlight"
         variants={hamWrapperAnimation}
         // initial="initial"
         animate="open"
@@ -53,7 +53,7 @@ const Hamburger = ({ theme }: { theme: string | undefined }) => {
             initial="initial"
             animate="animate"
             // exit="exit"
-            className="z-30 fixed left-0 top-0 opacity-95 w-full h-screen origin-top font-headingFont bg-lightBg text-lightText dark:bg-darkHighlight dark:text-darkBg p-8"
+            className="z-30 fixed left-0 top-0 opacity-95 w-full h-screen origin-top bg-lightBg dark:bg-darkHighlight p-8"
           >
             <div className="flex h-full flex-col">
               <div className="flex justify-between items-center">
@@ -95,7 +95,7 @@ const Hamburger = ({ theme }: { theme: string | undefined }) => {
                 initial="initial"
                 animate="open"
                 exit="initial"
-                className="flex flex-col h-full justify-center items-center gap-4"
+                className="flex flex-col h-full justify-center items-center gap-8"
               >
                 {navLinks.map((item, index) => {
                   return (
@@ -103,7 +103,7 @@ const Hamburger = ({ theme }: { theme: string | undefined }) => {
                       <div className="overflow-hidden">
                         <motion.div
                           variants={hamWrapperAnimation}
-                          className="text-5xl uppercase"
+                          className="text-4xl font-headingFont font-bold text-lightText dark:text-darkBg uppercase"
                         >
                           <Link to={item.href}>{item.title}</Link>
                         </motion.div>

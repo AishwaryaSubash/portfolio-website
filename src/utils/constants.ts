@@ -21,8 +21,8 @@ const navLinks: NavLinksInterface[] = [
   // { title: "Contact", href: "/contact" },
 
   { title: "Home", href: "/" },
-  // { title: "Projects", href: "/projects" },
   { title: "About", href: "/about" },
+  { title: "Projects", href: "/projects" },
   // { title: "Skills", href: "/skills" },
   // { title: "Experience", href: "/experience" },
   { title: "Contact", href: "/contact" },

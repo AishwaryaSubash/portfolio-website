@@ -37,7 +37,7 @@ const Projects = () => {
   // };
 
   return (
-    <div className="mt-40 flex flex-col overflow-hidden justify-center items-center bg-lightBg text-lightText dark:bg-darkBg dark:text-darkText">
+    <div className="pt-10 flex flex-col overflow-hidden justify-center items-center bg-lightBg text-lightText dark:bg-darkBg dark:text-darkText">
       <div className="flex flex-col gap-4 items-center mb-16">
         <p className="text-5xl font-headingFont font-bold">My Projects</p>
         <div className="flex gap-2 text-2xl font-textFont text-lightHighlight dark:text-darkText max-sm:flex-col max-sm:text-center">

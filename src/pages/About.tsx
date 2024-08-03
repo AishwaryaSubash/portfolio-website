@@ -15,8 +15,8 @@ import Skills from "./Skills";
 const About = () => {
   return (
     <div className="flex flex-col justify-center items-center bg-lightBg text-lightText dark:bg-darkBg dark:text-darkText">
-      <div className="flex flex-col items-center justify-center gap-6">
-        <p className="text-6xl font-headingFont my-4">About Me</p>
+      <div className="pt-10 flex flex-col items-center justify-center gap-8">
+        <p className="font-headingFont text-5xl font-bold">About Me</p>
         <div className="w-11/12 flex items-center justify-center">
           <div className="flex flex-col items-center gap-4 w-11/12 font-textFont text-xl text-lightHighlightBg">
             {aboutMeContent.map((item, index) => (
@@ -31,14 +31,14 @@ const About = () => {
       <Skills />
       <Experience />
 
-      <div className="mt-24 flex flex-col gap-16 items-center justify-center w-11/12">
+      {/* <div className="mt-24 flex flex-col gap-16 items-center justify-center w-11/12">
         <p className="text-6xl text-center font-semibold font-headingFont my-4 text-lightHighlight dark:text-darkText max-lg:px-4">
           My Goals
         </p>
         <div className="grid grid-cols-3 grid-rows-6 gap-16 font-textFont items-center justify-items-center">
           <div></div>
-          {/* bg-gradient-to-b from-0% from-black to-95% to-[#26272c] */}
-          {/* w-64 h-40 */}
+          // bg-gradient-to-b from-0% from-black to-95% to-[#26272c] w-64 h-40
+          //
           <div className="w-56 h-36 row-span-2 p-4 flex flex-col gap-2 items-center justify-center border-2 border-gray-900 rounded-2xl">
             <svg
               className="w-8 h-8 max-sm:w-10 max-sm:h-10"
@@ -301,7 +301,8 @@ const About = () => {
             </>
           ))}
         </div>
-        {/* <div className="grid grid-cols-2 gap-4 max-md:grid-cols-1">
+        //{" "}
+        <div className="grid grid-cols-2 gap-4 max-md:grid-cols-1">
           {interests.map((goal, index) => (
             <div key={index} className="flex items-center justify-center gap-4">
               <div
@@ -323,8 +324,9 @@ const About = () => {
               </div>
             </div>
           ))}
-        </div> */}
-      </div>
+        </div>{" "}
+        //
+      </div> */}
     </div>
   );
 };

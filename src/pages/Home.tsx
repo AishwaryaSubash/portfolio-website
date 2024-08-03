@@ -162,7 +162,7 @@ const Home = () => {
           </Link>
         </div>
       </div>
-      <Projects />
+      {/* <Projects /> */}
     </div>
   );
 };
