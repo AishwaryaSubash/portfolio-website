@@ -110,7 +110,7 @@ const Home = () => {
   return (
     <div className="pt-10 pb-20 flex flex-col justify-center items-center bg-lightBg text-lightText dark:bg-darkBg dark:text-darkText">
       {/* <p className="text-6xl font-headingFont my-4">Home</p> */}
-      <div className="w-9/12 flex items-center justify-between max-[1440px]:flex-col max-[1440px]:gap-12">
+      <div className="w-9/12 flex items-center justify-between max-[1440px]:flex-col max-[1440px]:gap-12 max-[680px]:w-11/12">
         {/* <canvas id="photoCanvas" width="350" height="485"></canvas> */}
         <MediaQuery maxWidth={1439}>
           <img
@@ -126,13 +126,13 @@ const Home = () => {
             className="w-[350px] h-[485px] rounded-3xl bg-black dark:shadow-2xl-dark shadow-light"
           />
         </MediaQuery>
-        <div className="w-[650px] h-[485px] flex flex-col justify-between p-8 rounded-3xl font-textFont bg-lightBg text-darkBg dark:bg-darkBg dark:text-lightBg max-[1440px]:items-center">
-          <div className="flex gap-3 font-headingFont text-5xl font-bold">
+        <div className="w-[650px] h-[485px] flex flex-col justify-between p-8 rounded-3xl font-textFont bg-lightBg text-darkBg dark:bg-darkBg dark:text-lightBg max-[1440px]:items-center max-md:w-full max-md:h-auto max-md:gap-4">
+          <div className="flex gap-3 font-headingFont text-5xl font-bold max-md:text-4xl max-md:gap-2 max-sm:text-3xl">
             <p> Hi there!! This is</p>
             <p className="text-[#867571] dark:text-darkHighlight">Aishwarya</p>
           </div>
-          <hr className="h-1 w-full border-2 mt-2 mb-4 bg-black border-black rounded-full dark:bg-white dark:border-white" />
-          <p className="text-xl leading-relaxed mb-4">
+          <hr className="h-1 w-full border-2 mt-2 mb-4 bg-black border-black rounded-full dark:bg-white dark:border-white max-md:h-0.5 max-md:my-0 max-md:w-10/12" />
+          <p className="text-xl leading-relaxed mb-4 max-md:text-lg max-md:text-center max-sm:text-sm">
             Fueled by a passion for coding and innovation, I'm a skilled
             Full-Stack Developer crafting dynamic and scalable solutions. I love
             tackling complex problems and exploring new technologies. But code
@@ -144,7 +144,7 @@ const Home = () => {
               variants={buttonHover}
               initial="initial"
               animate="animate"
-              className="flex font-semibold items-center justify-center w-[200px] py-2 px-3 mt-2 rounded-2xl text-white bg-[#867571] dark:text-darkBg dark:bg-darkHighlight dark:border-2 dark:border-darkHighlight dark:hover:bg-transparent dark:hover:border-2 dark:hover:border-darkHighlightOpacity dark:hover:text-darkHighlightOpacity text-lg"
+              className="flex font-semibold items-center justify-center w-[200px] py-2 px-3 mt-2 rounded-2xl text-white bg-[#867571] dark:text-darkBg dark:bg-darkHighlight dark:border-2 dark:border-darkHighlight dark:hover:bg-transparent dark:hover:border-2 dark:hover:border-darkHighlightOpacity dark:hover:text-darkHighlightOpacity text-lg max-sm:text-base max-sm:justify-around max-sm:w-[160px]"
             >
               <p>My Profile</p>
               <svg
