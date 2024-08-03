@@ -53,10 +53,10 @@ const Hamburger = ({ theme }: { theme: string | undefined }) => {
             initial="initial"
             animate="animate"
             // exit="exit"
-            className="z-30 fixed left-0 top-0 opacity-95 w-full h-screen origin-top bg-lightBg dark:bg-darkHighlight p-8"
+            className="z-30 fixed left-0 top-0 opacity-95 w-full h-screen origin-top bg-lightBg dark:bg-darkHighlightf"
           >
             <div className="flex h-full flex-col">
-              <div className="flex justify-between items-center">
+              <div className="flex justify-between items-center max-sm:pt-4 max-sm:pr-6 max-sm:pl-2">
                 <div>
                   <Link to="/" onClick={toggleHamMenu}>
                     {theme === "dark" ? (
@@ -95,7 +95,7 @@ const Hamburger = ({ theme }: { theme: string | undefined }) => {
                 initial="initial"
                 animate="open"
                 exit="initial"
-                className="flex flex-col h-full justify-center items-center gap-8"
+                className="flex flex-col h-full justify-center items-center gap-8 max-sm:justify-start max-sm:pt-20 max-sm:px-8"
               >
                 {navLinks.map((item, index) => {
                   return (
