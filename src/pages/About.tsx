@@ -16,9 +16,11 @@ const About = () => {
   return (
     <div className="flex flex-col justify-center items-center bg-lightBg text-lightText dark:bg-darkBg dark:text-darkText">
       <div className="pt-10 flex flex-col items-center justify-center gap-8">
-        <p className="font-headingFont text-5xl font-bold">About Me</p>
+        <p className="font-headingFont text-5xl font-bold max-md:text-4xl max-sm:text-3xl">
+          About Me
+        </p>
         <div className="w-11/12 flex items-center justify-center">
-          <div className="flex flex-col items-center gap-4 w-11/12 font-textFont text-xl text-lightHighlightBg">
+          <div className="flex flex-col items-center gap-4 w-11/12 font-textFont text-xl text-lightHighlightBg max-md:text-lg max-md:text-center max-sm:text-sm">
             {aboutMeContent.map((item, index) => (
               <div className="w-11/12" key={index}>
                 <p>{item}</p>

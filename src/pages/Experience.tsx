@@ -4,7 +4,9 @@ import { educationDetails, workExperience } from "../utils/constants";
 const Experience = () => {
   return (
     <div className="mt-32 flex flex-col justify-center items-center bg-lightBg text-lightText dark:bg-darkBg dark:text-darkText">
-      <p className="text-6xl font-headingFont my-4">Experience</p>
+      <p className="font-headingFont text-5xl font-bold my-8 max-md:text-4xl max-sm:text-3xl">
+        Experience
+      </p>
       <div className="w-10/12">
         <p className="text-4xl font-headingFont my-4 text-lightHighlight dark:text-darkHighlight">
           Work Experience
