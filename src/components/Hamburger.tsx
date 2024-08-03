@@ -53,7 +53,7 @@ const Hamburger = ({ theme }: { theme: string | undefined }) => {
             initial="initial"
             animate="animate"
             // exit="exit"
-            className="z-30 fixed left-0 top-0 opacity-95 w-full h-screen origin-top bg-lightBg dark:bg-darkHighlightf"
+            className="z-30 fixed left-0 top-0 opacity-95 w-full h-screen origin-top bg-lightBg dark:bg-darkHighlight"
           >
             <div className="flex h-full flex-col">
               <div className="flex justify-between items-center max-sm:pt-4 max-sm:pr-6 max-sm:pl-2">
@@ -95,7 +95,7 @@ const Hamburger = ({ theme }: { theme: string | undefined }) => {
                 initial="initial"
                 animate="open"
                 exit="initial"
-                className="flex flex-col h-full justify-center items-center gap-8 max-sm:justify-start max-sm:pt-20 max-sm:px-8"
+                className="flex flex-col h-full justify-center items-center gap-8 max-sm:px-8"
               >
                 {navLinks.map((item, index) => {
                   return (
