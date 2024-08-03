@@ -2,7 +2,7 @@
 // import { Link } from "react-router-dom";
 import {
   aboutMeContent,
-  interests,
+  // interests,
   // longTermGoals,
   // shortTermGoals,
   // topSkills,

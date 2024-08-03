@@ -3,7 +3,7 @@ import {
   // useNavigate
 } from "react-router-dom";
 import pageTransition from "../utils/pageTransition";
-import Projects from "./Projects";
+// import Projects from "./Projects";
 import { motion } from "framer-motion";
 import { buttonHover } from "../utils/motion";
 import MediaQuery from "react-responsive";
