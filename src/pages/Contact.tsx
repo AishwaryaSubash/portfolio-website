@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 const Contact = () => {
   return (
     // min-[1168px]:py-20
-    <div className="flex flex-col pt-10 pb-20 overflow-x-hidden justify-center items-center bg-lightBg text-lightText dark:bg-darkBg dark:text-darkText">
+    <div className="flex flex-col pt-36 pb-20 overflow-x-hidden justify-center items-center bg-lightBg text-lightText dark:bg-darkBg dark:text-darkText">
       {/* mt-6 mb-12 */}
       <div className="h-full w-9/12 flex items-center justify-center max-lg:flex-col max-lg:items-center max-lg:gap-8">
         <div className="h-full flex flex-col justify-between items-start w-9/12 max-lg:w-11/12 max-lg:items-center max-lg:gap-6 max-lg:mb-6">

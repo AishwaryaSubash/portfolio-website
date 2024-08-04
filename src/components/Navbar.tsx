@@ -9,19 +9,20 @@ const Navbar = ({
   theme: string | undefined;
 }) => {
   return (
-    <div className="flex items-center justify-between px-8 py-4 font-textFont font-semibold bg-lightBg text-lightText dark:bg-darkBg dark:text-darkText">
+    // bg-lightBg text-lightText dark:bg-darkBg dark:text-darkText
+    <div className="z-20 fixed top-0 w-full drop-shadow-sm flex items-center justify-between px-8 font-textFont font-semibold backdrop-filter backdrop-blur-[7px] shadow-[10px_10px_10px_rgba(30,30,30,0.1)]">
       <div>
         <Link to="/">
           {theme === "dark" ? (
             <img
-              src="Dark Logo.png"
+              src="/main-logos/no-bg-dark-logo.png"
               alt="Logo"
               width={100}
               height={100}
             />
           ) : (
             <img
-              src="Light Logo.png"
+              src="/main-logos/no-bg-light-logo.png"
               alt="Logo"
               width={100}
               height={100}
@@ -35,8 +36,9 @@ const Navbar = ({
             <div
               key={index}
               className={`flex flex-col justify-between items-center ${
-                item.href === currentRoute &&
-                "text-lightHighlight dark:text-darkHighlight"
+                item.href === currentRoute
+                  ? "text-lightHighlight dark:text-darkHighlight"
+                  : "text-lightText dark:text-darkText"
               }`}
             >
               <Link

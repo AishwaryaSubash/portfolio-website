@@ -17,8 +17,9 @@ const Hamburger = ({ theme }: { theme: string | undefined }) => {
 
   return (
     <>
+      {/* max-md:py-4 max-md:pr-6 max-md:pl-2 */}
       <motion.div
-        className="z-30 flex justify-between items-center p-8 font-headingFont font-bold bg-lightBg text-lightText dark:bg-darkBg dark:text-darkHighlight max-md:py-4 max-md:pr-6 max-md:pl-2"
+        className="z-30 fixed top-0 w-full drop-shadow-sm flex justify-between items-center px-8 font-headingFont font-bold backdrop-filter backdrop-blur-[7px] shadow-[10px_10px_10px_rgba(30,30,30,0.1)] max-sm:py-4 max-sm:pr-4 max-sm:pl-0"
         variants={hamWrapperAnimation}
         // initial="initial"
         animate="open"
@@ -26,13 +27,26 @@ const Hamburger = ({ theme }: { theme: string | undefined }) => {
         <div>
           <Link to="/">
             {theme === "dark" ? (
-              <img src="Dark Logo.png" alt="Logo" width={100} height={100} />
+              <img
+                src="/main-logos/no-bg-dark-logo.png"
+                alt="Logo"
+                width={100}
+                height={100}
+              />
             ) : (
-              <img src="Light Logo.png" alt="Logo" width={100} height={100} />
+              <img
+                src="/main-logos/no-bg-light-logo.png"
+                alt="Logo"
+                width={100}
+                height={100}
+              />
             )}
           </Link>
         </div>
-        <div onClick={toggleHamMenu}>
+        <div
+          onClick={toggleHamMenu}
+          className="text-lightText dark:text-darkHighlight"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="32"
@@ -56,19 +70,19 @@ const Hamburger = ({ theme }: { theme: string | undefined }) => {
             className="z-30 fixed left-0 top-0 opacity-95 w-full h-screen origin-top bg-lightBg dark:bg-darkHighlight"
           >
             <div className="flex h-full flex-col">
-              <div className="flex justify-between items-center max-md:pt-4 max-md:pr-6 max-md:pl-2">
+              <div className="flex justify-between items-center px-8 max-sm:py-4 max-sm:pr-4 max-sm:pl-0">
                 <div>
                   <Link to="/" onClick={toggleHamMenu}>
                     {theme === "dark" ? (
                       <img
-                        src="Dark Ham Logo.png"
+                        src="/main-logos/no-bg-dark-ham-logo.png"
                         alt="Logo"
                         width={100}
                         height={100}
                       />
                     ) : (
                       <img
-                        src="Light Logo.png"
+                        src="/main-logos/no-bg-light-logo.png"
                         alt="Logo"
                         width={100}
                         height={100}
@@ -76,7 +90,10 @@ const Hamburger = ({ theme }: { theme: string | undefined }) => {
                     )}
                   </Link>
                 </div>
-                <div onClick={toggleHamMenu}>
+                <div
+                  onClick={toggleHamMenu}
+                  className="text-lightText dark:text-darkBg"
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="32"

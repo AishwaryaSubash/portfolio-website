@@ -41,7 +41,7 @@ const ProjectPage = () => {
       <img
         src={project.websiteImg}
         alt={project.title}
-        className="w-9/12 rounded-2xl"
+        className="w-9/12 rounded-2xl max-sm:w-11/12"
       />
       <div className="w-9/12 px-6 pt-40 flex items-start">
         <div className="flex flex-col gap-8">
