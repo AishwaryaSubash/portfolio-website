@@ -15,7 +15,7 @@ import Skills from "./Skills";
 const About = () => {
   return (
     <div className="flex flex-col justify-center items-center bg-lightBg text-lightText dark:bg-darkBg dark:text-darkText">
-      <div className="pt-10 flex flex-col items-center justify-center gap-8">
+      <div className="pt-10 flex flex-col items-center justify-center gap-8 max-sm:gap-6">
         <p className="font-headingFont text-5xl font-bold max-md:text-4xl max-sm:text-3xl">
           About Me
         </p>

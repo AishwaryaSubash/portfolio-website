@@ -11,19 +11,19 @@ const Experience = () => {
         <p className="text-4xl font-headingFont my-4 text-lightHighlight dark:text-darkHighlight">
           Work Experience
         </p>
-        <div className="w-full font-textFont">
+        <div className="w-full font-textFont flex">
           {workExperience.map((work, index) => {
             return (
               <div
                 key={index}
-                className="w-full flex flex-col p-4 m-4 rounded-3xl max-sm:items-start max-sm:gap-4"
+                className="w-full flex flex-col border border-white p-4 m-4 rounded-3xl max-sm:items-start max-sm:gap-4"
               >
+                <p className="font-textFont text-sm rounded-md py-1 px-3 mt-1 bg-[#3333339A] w-fit">
+                  {work.time}
+                </p>
                 <div className="flex items-center justify-between max-sm:flex-col max-sm:items-start max-sm:gap-2">
                   <p className="text-2xl text-lightHighlight dark:text-darkHighlight">
                     {work.position}
-                  </p>
-                  <p className="flex rounded-lg p-2 bg-lightText text-lightBg dark:bg-darkText dark:text-darkBg">
-                    {work.time}
                   </p>
                 </div>
                 <p className="">{work.institution}</p>

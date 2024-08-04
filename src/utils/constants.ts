@@ -501,7 +501,7 @@ const projectsList: ProjectsInterface[] = [
       "MongoDB",
     ],
     oneLineDescription: "Pick-N-Pay",
-    category: "Frontend App",
+    category: "Full Stack App",
     team: "Individual",
     duration: 0,
     time: "",

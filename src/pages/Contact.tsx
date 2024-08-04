@@ -71,9 +71,9 @@ const Contact = () => {
             // src="contacts-light-image.png"
             src="new-dark-logo.png"
             alt="Image"
-            width={341}
-            height={512}
-            // className="transform scale-x-[-1]"
+            width={391}
+            height={562}
+            className="transform scale-x-[-1]"
           />
           {/* <img
             src="contacts-dark-image.png"

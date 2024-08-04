@@ -18,7 +18,7 @@ const Hamburger = ({ theme }: { theme: string | undefined }) => {
   return (
     <>
       <motion.div
-        className="z-30 flex justify-between items-center p-8 font-headingFont font-bold bg-lightBg text-lightText dark:bg-darkBg dark:text-darkHighlight max-sm:py-4 max-sm:pr-6 max-sm:pl-2"
+        className="z-30 flex justify-between items-center p-8 font-headingFont font-bold bg-lightBg text-lightText dark:bg-darkBg dark:text-darkHighlight max-md:py-4 max-md:pr-6 max-md:pl-2"
         variants={hamWrapperAnimation}
         // initial="initial"
         animate="open"
@@ -56,7 +56,7 @@ const Hamburger = ({ theme }: { theme: string | undefined }) => {
             className="z-30 fixed left-0 top-0 opacity-95 w-full h-screen origin-top bg-lightBg dark:bg-darkHighlight"
           >
             <div className="flex h-full flex-col">
-              <div className="flex justify-between items-center max-sm:pt-4 max-sm:pr-6 max-sm:pl-2">
+              <div className="flex justify-between items-center max-md:pt-4 max-md:pr-6 max-md:pl-2">
                 <div>
                   <Link to="/" onClick={toggleHamMenu}>
                     {theme === "dark" ? (

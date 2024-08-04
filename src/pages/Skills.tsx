@@ -18,7 +18,7 @@ const Skills = () => {
 
   return (
     <div className="mt-20 flex flex-col justify-center items-center bg-lightBg text-lightText dark:bg-darkBg dark:text-darkText">
-      <p className="font-headingFont text-5xl font-bold my-8 max-md:text-4xl max-sm:text-3xl">
+      <p className="font-headingFont text-5xl font-bold my-8 max-md:text-4xl max-sm:text-3xl max-sm:my-0">
         My Skills
       </p>
       <div className="flex flex-col justify-center">
@@ -28,11 +28,11 @@ const Skills = () => {
         <div className="flex flex-col gap-24">
           {skills.map((skill, index) => {
             return (
-              <div className="flex flex-col gap-4" key={index}>
+              <div className="flex flex-col gap-4 max-sm:gap-0" key={index}>
                 <p className="text-3xl pl-8 font-semibold font-headingFont mt-6 max-lg:px-4 max-md:text-2xl max-sm:text-xl">
                   {skill.skillType}
                 </p>
-                <div className="grid grid-cols-3 gap-x-8 gap-y-4 items-end max-lg:grid-cols-2 max-lg:gap-x-8 max-md:grid-cols-2">
+                <div className="grid grid-cols-3 gap-x-8 gap-y-4 items-end max-lg:grid-cols-2 max-md:grid-cols-2 max-sm:gap-y-0">
                   {skill.skillArray.map((item, index) => (
                     <div
                       key={index}
@@ -74,7 +74,6 @@ const Skills = () => {
                           <p>%</p>
                         </div>
                       </MediaQuery>
-
                       <div className="flex flex-start overflow-hidden w-full font-sans rounded-full text-xs font-medium h-2 bg-lightHighlightBg dark:bg-gray-800">
                         <motion.div
                           className="flex justify-center items-center h-full overflow-hidden break-all rounded-full bg-lightAltHighlight dark:bg-darkHighlight"
@@ -96,11 +95,11 @@ const Skills = () => {
           })}
         </div>
       </div>
-      <div className="mt-24 flex flex-col gap-4 items-center justify-center">
+      <div className="mt-24 flex flex-col gap-4 items-center justify-center max-sm:gap-0">
         <p className="text-4xl font-semibold font-headingFont my-4 text-center text-lightHighlight dark:text-darkHighlight max-lg:px-4 max-md:text-3xl max-sm:text-2xl">
           Professional Skills
         </p>
-        <div className="w-[95%] grid grid-cols-3 gap-x-8 gap-y-4 items-end justify-center max-lg:grid-cols-2 max-lg:gap-x-8 max-md:grid-cols-2">
+        <div className="w-[95%] grid grid-cols-3 gap-x-8 gap-y-4 items-end justify-center max-lg:grid-cols-2 max-md:grid-cols-2 max-sm:gap-y-0">
           {professionalSkills.map((item, index) => (
             <div
               key={index}
