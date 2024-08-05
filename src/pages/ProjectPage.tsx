@@ -17,14 +17,16 @@ const ProjectPage = () => {
     count: number = 3
   ): ProjectsInterface[] => {
     const projects: ProjectsInterface[] = [];
-    const projectsSet = new Set<ProjectsInterface>(); // Use a set to ensure uniqueness
+    const projectsSet = new Set<ProjectsInterface>();
 
     while (projectsSet.size < count) {
       const index = Math.floor(Math.random() * length);
-      projectsSet.add(projectsList[index]);
+      if (projectsList[index].route !== id) {
+        projectsSet.add(projectsList[index]);
+      }
     }
 
-    projectsSet.forEach((project) => projects.push(project)); // Convert set to array
+    projectsSet.forEach((project) => projects.push(project));
     return projects;
   };
 
@@ -37,7 +39,7 @@ const ProjectPage = () => {
   }
 
   return (
-    <div className="pt-3 pb-10 w-full flex flex-col items-center gap-8 overflow-hidden bg-lightBg text-lightText dark:bg-darkBg dark:text-darkText">
+    <div className="pt-40 pb-10 w-full flex flex-col items-center gap-8 overflow-hidden bg-lightBg text-lightText dark:bg-darkBg dark:text-darkText">
       <img
         src={project.websiteImg}
         alt={project.title}
@@ -134,7 +136,7 @@ const ProjectPage = () => {
       </div>
       <div className="pt-40 flex flex-col items-center gap-10">
         <p className="text-5xl font-headingFont font-bold">Other Projects</p>
-        <div className="w-11/12 flex items-center justify-between gap-6">
+        <div className="w-11/12 flex items-start justify-between gap-6">
           <ProjectCards
             projectsList={subProjectList}
             scale={1}

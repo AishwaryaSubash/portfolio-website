@@ -10,7 +10,7 @@ const Navbar = ({
 }) => {
   return (
     // bg-lightBg text-lightText dark:bg-darkBg dark:text-darkText
-    <div className="z-20 fixed top-0 w-full drop-shadow-sm flex items-center justify-between px-8 font-textFont font-semibold backdrop-filter backdrop-blur-[7px] shadow-[10px_10px_10px_rgba(30,30,30,0.1)]">
+    <div className="z-20 fixed top-0 w-full drop-shadow-sm flex items-center justify-between px-8 font-textFont font-semibold backdrop-filter backdrop-blur-[7px] shadow-[10px_1px_15px_rgba(30,30,30,0.1)]">
       <div>
         <Link to="/">
           {theme === "dark" ? (
