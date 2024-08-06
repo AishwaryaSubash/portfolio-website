@@ -8,14 +8,15 @@ const Contact = () => {
     // min-[1168px]:py-20
     <div className="flex flex-col pt-40 pb-20 overflow-x-hidden justify-center items-center bg-lightBg text-lightText dark:bg-darkBg dark:text-darkText">
       {/* mt-6 mb-12 */}
-      <div className="h-full w-9/12 flex items-center justify-center max-lg:flex-col max-lg:items-center max-lg:gap-8">
-        <div className="h-full flex flex-col justify-between items-start w-9/12 max-lg:w-11/12 max-lg:items-center max-lg:gap-6 max-lg:mb-6">
-          <div className="flex flex-col gap-4 font-headingFont text-5xl font-bold items-start mb-4 text-lightHighlight dark:text-darkText max-lg:flex-col max-lg:items-center max-lg:justify-center max-lg:w-full max-tablet:flex-col max-tablet:items-center max-md:text-4xl">
+      <div className="h-full w-9/12 flex items-center justify-center max-lg:flex-col max-lg:items-center max-lg:gap-8 max-lg:w-11/12">
+        <div className="h-full flex flex-col justify-between items-start w-9/12 max-lg:items-center max-lg:gap-6 max-lg:mb-6 max-lg:w-full">
+          {/* max-md:text-xl max-sm:text-lg max-sm:flex-col max-sm:text-center max-sm:gap-0 max-sm:leading-tight */}
+          <div className="flex flex-col gap-4 font-headingFont text-5xl font-bold items-start mb-4 text-lightHighlight dark:text-darkText max-lg:flex-col max-lg:items-center max-lg:justify-center max-lg:w-full max-tablet:flex-col max-tablet:items-center max-md:text-4xl max-lg:mb-0 max-md:gap-2">
             <p>Happy to connect.</p>
             <p>Feel free to reach out!</p>
           </div>
-          <hr className="h-1 w-10/12 border-2 mt-2 mb-4 bg-black border-black rounded-full dark:bg-white dark:border-white" />
-          <p className="w-10/12 font-textFont text-xl leading-relaxed py-6 max-lg:w-11/12 max-lg:text-justify">
+          <hr className="h-1 w-10/12 border-2 mt-2 mb-4 bg-black border-black rounded-full dark:bg-white dark:border-white max-lg:my-0 max-lg:w-9/12" />
+          <p className="w-10/12 font-textFont text-xl leading-relaxed py-6 max-lg:w-11/12 max-lg:text-justify max-lg:py-0">
             As a full-stack developer, I'm passionate about crafting
             user-centric web applications. But my enthusiasm for collaboration
             goes beyond just projects. I believe in the power of exchanging

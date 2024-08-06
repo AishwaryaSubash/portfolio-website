@@ -9,13 +9,6 @@ const ErrorPage = () => {
         <p>Please navigate using the navigation menu.</p>
       </div>
     </div>
-    //   <div className="flex flex-col gap-4 items-center mb-16">
-    //   <p className="text-5xl font-headingFont font-bold">My Projects</p>
-    //   <div className="flex gap-2 text-2xl font-textFont text-lightHighlight dark:text-darkText max-sm:flex-col max-sm:text-center">
-    //     <p>Take a peek at</p>
-    //     <p>what I've been building</p>
-    //   </div>
-    // </div>
   );
 };
 
