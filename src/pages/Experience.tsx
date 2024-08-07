@@ -3,38 +3,41 @@ import { educationDetails, workExperience } from "../utils/constants";
 
 const Experience = () => {
   return (
-    <div className="mt-32 flex flex-col justify-center items-center bg-lightBg text-lightText dark:bg-darkBg dark:text-darkText">
-      <p className="font-headingFont text-5xl font-bold my-8 max-md:text-4xl max-sm:text-3xl">
-        Experience
-      </p>
-      <div className="w-10/12">
-        <p className="text-4xl font-headingFont my-4 text-lightHighlight dark:text-darkHighlight">
+    <div className="mt-32 flex flex-col gap-32 justify-center items-center bg-lightBg text-lightText dark:bg-darkBg dark:text-darkText">
+      <div className="flex flex-col gap-16 justify-center items-center">
+        <p className="font-headingFont text-5xl font-bold max-md:text-4xl max-sm:text-3xl">
           Work Experience
         </p>
-        <div className="w-full font-textFont flex">
+        <div className="w-10/12 flex font-textFont gap-12">
           {workExperience.map((work, index) => {
             return (
               <div
                 key={index}
-                className="w-full flex flex-col border border-white p-4 m-4 rounded-3xl max-sm:items-start max-sm:gap-4"
+                className="w-full flex flex-col gap-2 bg-gradient-to-br from-50% to-100%
+              rounded-3xl max-md:rounded-3xl border border-darkHighlight p-4 max-sm:items-start max-sm:gap-4"
               >
-                <p className="font-textFont text-sm rounded-md py-1 px-3 mt-1 bg-[#3333339A] w-fit">
-                  {work.time}
-                </p>
-                <div className="flex items-center justify-between max-sm:flex-col max-sm:items-start max-sm:gap-2">
-                  <p className="text-2xl text-lightHighlight dark:text-darkHighlight">
+                <div className="flex items-start justify-between">
+                  <p className="text-[28px] leading-tight font-bold text-lightHighlight dark:text-darkHighlight">
                     {work.position}
                   </p>
+                  <p className="font-textFont h-fit font-medium text-sm rounded-md py-1 px-3 mt-1 bg-[#333] w-fit">
+                    {work.time}
+                  </p>
                 </div>
-                <p className="">{work.institution}</p>
-                <p className="text-lg">{work.description}</p>
+                <div className="flex flex-col gap-4">
+                  <div className="flex flex-col">
+                    <div className="flex items-center justify-between max-sm:flex-col max-sm:items-start max-sm:gap-2"></div>
+                    <p className="text-lg font-medium">{work.institution}</p>
+                  </div>
+                  <p className="text-lg text-lightBg">{work.description}</p>
+                </div>
               </div>
             );
           })}
         </div>
       </div>
-      <div className="mt-12 w-10/12">
-        <p className="text-4xl font-headingFont my-4 text-lightHighlight dark:text-darkHighlight">
+      <div className="w-10/12">
+        <p className="font-headingFont text-center text-5xl font-bold my-8 max-md:text-4xl max-sm:text-3xl">
           Educational Details
         </p>
         <div className="w-full font-textFont">

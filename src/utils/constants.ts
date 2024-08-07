@@ -305,11 +305,11 @@ const educationDetails: EducationDetailsInterface[] = [
 
 const workExperience: WorkExperienceInterface[] = [
   {
-    position: "Software Developer Intern",
+    position: "SDE Intern",
     institution: "Imprzd Technologies Inc.",
     description:
       "Developed engaging and responsive user interfaces using Angular, SASS and EJS, adapting to the dynamic scrum development process",
-    time: "Aug 2022 - Sept 2022",
+    time: "August 2022",
   },
   {
     position: "Participant",
@@ -319,7 +319,7 @@ const workExperience: WorkExperienceInterface[] = [
     time: "March 2022",
   },
   {
-    position: "Python Instructor",
+    position: "Python Tutor",
     institution: "Self-employed",
     description:
       "Designed and delivered an engaging 1-month Python programming course to young programmers in the US and assessed their understanding through weekly tests, culminating in a final project",
