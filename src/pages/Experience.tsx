@@ -36,29 +36,31 @@ const Experience = () => {
           })}
         </div>
       </div>
-      <div className="w-10/12 pb-12 flex flex-col items-center gap-20">
+      <div className="w-10/12 pb-12 flex flex-col items-center gap-20 max-xl:w-full">
         <p className="font-headingFont text-center text-5xl font-bold max-md:text-4xl max-sm:text-3xl">
           Educational Details
         </p>
-        <div className="w-9/12 font-textFont flex flex-col gap-8">
+        <div className="w-9/12 font-textFont flex flex-col gap-8 max-md:w-10/12">
           {educationDetails.map((edu, index) => {
             return (
               <div
                 key={index}
-                className="w-full flex flex-col p-4 rounded-3xl max-sm:gap-4"
+                className="w-full flex flex-col p-4 rounded-3xl max-sm:gap-1"
               >
-                <div className="flex items-center justify-between max-sm:flex-col max-sm:items-start max-sm:gap-2">
-                  <p className="text-[28px] font-bold text-lightHighlight dark:text-darkHighlight">
+                <div className="flex items-center justify-between max-sm:items-start max-sm:gap-2">
+                  <p className="text-[28px] font-bold text-lightHighlight dark:text-darkHighlight max-md:text-2xl max-sm:text-xl">
                     {edu.education}
                   </p>
-                  <div className="flex rounded-lg p-2 font-medium bg-lightText text-lightBg dark:bg-darkHighlight dark:text-darkBg">
+                  <div className="flex rounded-lg p-2 font-medium text-sm bg-lightText text-lightBg dark:bg-darkHighlight dark:text-darkBg max-sm:text-xs">
                     <p>{edu.time.from}</p>
                     <p>-</p>
                     <p>{edu.time.to}</p>
                   </div>
                 </div>
-                <p className="text-lg font-semibold">{edu.institution}</p>
-                <p className="text-lg text-lightHighlight dark:text-darkHighlight">
+                <p className="text-lg font-semibold max-md:text-base max-sm:text-sm">
+                  {edu.institution}
+                </p>
+                <p className="text-lg text-lightHighlight dark:text-darkHighlight max-md:text-base max-sm:text-sm">
                   {edu.grade}
                 </p>
               </div>
