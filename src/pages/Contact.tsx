@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 const Contact = () => {
   return (
     // min-[1168px]:py-20
-    <div className="flex flex-col pt-40 pb-20 overflow-x-hidden justify-center items-center bg-lightBg text-lightText dark:bg-darkBg dark:text-darkText">
+    <div className="flex flex-col gap-16 pt-40 pb-20 overflow-x-hidden justify-center items-center bg-lightBg text-lightText dark:bg-darkBg dark:text-darkText">
       {/* mt-6 mb-12 */}
       <div className="h-full w-9/12 flex items-center justify-center max-lg:flex-col max-lg:items-center max-lg:gap-8 max-lg:w-11/12">
         <div className="h-full flex flex-col justify-between items-start w-9/12 max-lg:items-center max-lg:gap-6 max-lg:mb-6 max-lg:w-full">
@@ -82,6 +82,29 @@ const Contact = () => {
             width={341}
             height={512}
           /> */}
+        </div>
+      </div>
+      <div className="w-9/12 flex flex-col gap-8">
+        <p className="font-headingFont text-5xl font-bold">Contact Me</p>
+        <div className="grid grid-cols-2 gap-x-8 gap-y-4 justify-items-end items-center font-textFont">
+          <p className="text-lg">Name</p>
+          <input
+            type="text"
+            placeholder="Enter your name"
+            className="p-2 rounded-lg text-lightText dark:text-darkBg"
+          />
+          <p className="text-lg">Email</p>
+          <input
+            type="email"
+            placeholder="Enter your email"
+            className="p-2 rounded-lg text-lightText dark:text-darkBg"
+          />
+          <p className="text-lg">Message</p>
+          <input
+            type="text"
+            placeholder="Enter your message"
+            className="p-2 rounded-lg text-lightText dark:text-darkBg"
+          />
         </div>
       </div>
     </div>
