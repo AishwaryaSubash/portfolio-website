@@ -8,28 +8,28 @@ const Experience = () => {
         <p className="font-headingFont text-5xl font-bold max-md:text-4xl max-sm:text-3xl">
           Work Experience
         </p>
-        <div className="w-10/12 grid grid-cols-3 font-textFont gap-12">
+        <div className="w-10/12 grid grid-cols-3 font-textFont gap-12 max-xl:grid-cols-2 max-lg:grid-cols-1">
           {workExperience.map((work, index) => {
             return (
               <div
                 key={index}
-                className="w-full flex flex-col gap-2 bg-gradient-to-br from-50% to-100%
-              rounded-3xl max-md:rounded-3xl border-2 border-darkHighlight p-4 max-sm:items-start max-sm:gap-4"
+                className="w-full flex flex-col gap-2 bg-gradient-to-br from-50% to-100% rounded-3xl border-2 border-darkHighlight p-4 max-md:rounded-2xl"
               >
                 <div className="flex items-start justify-between">
-                  <p className="text-[28px] leading-tight font-bold">
+                  <p className="text-[28px] leading-tight font-bold max-md:text-2xl max-sm:text-xl">
                     {work.position}
                   </p>
-                  <p className="font-textFont h-fit font-medium text-sm rounded-md py-1 px-3 mt-1 text-lightText bg-lightHighlight dark:text-darkBg dark:bg-darkHighlight w-fit">
+                  <p className="font-textFont h-fit font-medium text-sm rounded-md py-1 px-3 mt-1 text-lightText bg-lightHighlight dark:text-darkBg dark:bg-darkHighlight w-fit max-sm:text-xs">
                     {work.time}
                   </p>
                 </div>
-                <div className="flex flex-col gap-4">
-                  <div className="flex flex-col">
-                    <div className="flex items-center justify-between max-sm:flex-col max-sm:items-start max-sm:gap-2"></div>
-                    <p className="text-lg font-semibold">{work.institution}</p>
-                  </div>
-                  <p className="text-lg text-lightBg">{work.description}</p>
+                <div className="flex flex-col gap-4 max-sm:gap-3">
+                  <p className="text-lg font-semibold max-md:text-base max-sm:text-sm">
+                    {work.institution}
+                  </p>
+                  <p className="text-lg text-lightBg max-md:text-base max-sm:text-sm">
+                    {work.description}
+                  </p>
                 </div>
               </div>
             );
