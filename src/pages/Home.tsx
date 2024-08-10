@@ -175,7 +175,58 @@ const Home = () => {
           </Link>
         </div>
       </div>
-      {/* <Projects /> */}
+      <div className="pt-40 w-9/12 flex flex-row-reverse items-center justify-between max-[1440px]:flex-col max-[1440px]:gap-12 max-[680px]:w-11/12 max-sm:gap-8">
+        {/* <canvas id="photoCanvas" width="350" height="485"></canvas> */}
+        <MediaQuery maxWidth={1439}>
+          <img
+            src="PictureSquare.jpg"
+            alt="Picture"
+            className="w-[350px] h-[350px] rounded-full bg-black dark:shadow-2xl-dark shadow-light bg-cover bg-center max-md:w-[250px] max-md:h-[250px] max-sm:w-[200px] max-sm:h-[200px]"
+          />
+        </MediaQuery>
+        <MediaQuery minWidth={1440}>
+          <img
+            src="Picture.jpg"
+            alt="Picture"
+            className="w-[350px] h-[485px] rounded-3xl bg-black dark:shadow-2xl-dark shadow-light"
+          />
+        </MediaQuery>
+        <div className="w-[650px] h-[485px] flex flex-col justify-between p-8 rounded-3xl font-textFont bg-lightBg text-darkBg dark:bg-darkBg dark:text-lightBg max-[1440px]:items-center max-md:w-full max-md:h-auto max-md:gap-4">
+          <div className="flex gap-3 font-headingFont text-5xl font-bold max-md:text-4xl max-md:gap-2 max-sm:text-3xl max-xs:flex-col max-xs:items-center">
+            <p>My Digital Alchemy</p>
+          </div>
+          <hr className="h-1 w-full border-2 mt-2 mb-4 bg-black border-black rounded-full dark:bg-white dark:border-white max-md:h-0.5 max-md:my-0 max-md:w-10/12" />
+          <p className="text-xl leading-relaxed mb-4 max-md:text-lg max-md:text-center max-sm:text-sm">
+            With a passion for every aspect of web development, I create
+            holistic digital solutions that shine from the user interface to the
+            database. My projects showcase how I leverage the full stack to
+            build robust, scalable, and user-friendly applications. Each project
+            demonstrates my ability to create seamless, efficient, and
+            innovative web applications. Dive into my work!!
+          </p>
+          <Link to="/projects">
+            <motion.div
+              variants={buttonHover}
+              initial="initial"
+              animate="animate"
+              className="flex font-semibold items-center justify-center w-[250px] py-2 px-3 mt-2 rounded-2xl text-white bg-[#867571] dark:text-darkBg dark:bg-darkHighlight dark:border-2 dark:border-darkHighlight dark:hover:bg-transparent dark:hover:border-2 dark:hover:border-darkHighlightOpacity dark:hover:text-darkHighlightOpacity text-lg max-sm:text-base max-sm:justify-around max-sm:w-[200px]"
+            >
+              <p>Explore my work</p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="M9.29 15.88L13.17 12L9.29 8.12a.996.996 0 1 1 1.41-1.41l4.59 4.59c.39.39.39 1.02 0 1.41L10.7 17.3a.996.996 0 0 1-1.41 0c-.38-.39-.39-1.03 0-1.42"
+                />
+              </svg>
+            </motion.div>
+          </Link>
+        </div>
+      </div>
     </div>
   );
 };
