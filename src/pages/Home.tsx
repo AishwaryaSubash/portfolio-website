@@ -175,7 +175,7 @@ const Home = () => {
           </Link>
         </div>
       </div>
-      <div className="pt-52 w-10/12 flex flex-row-reverse gap-24 items-center justify-between max-[1440px]:flex-col max-[1440px]:gap-12 max-[680px]:w-11/12 max-sm:gap-8">
+      <div className="pt-52 w-10/12 flex flex-row-reverse gap-24 items-center justify-between max-[1440px]:flex-col max-[1440px]:gap-12 max-[680px]:w-11/12 max-sm:w-10/12 max-sm:gap-8">
         {/* <canvas id="photoCanvas" width="350" height="485"></canvas> */}
         <MediaQuery maxWidth={1439}>
           <img
