@@ -75,7 +75,7 @@ const Contact = () => {
             alt="Image"
             width={391}
             height={562}
-            // className="transform scale-x-[-1] max-md:w-[200px]"
+            className="max-md:w-[300px] max-sm:w-[200px]"
           />
           {/* <img
             src="contacts-dark-image.png"
@@ -86,7 +86,9 @@ const Contact = () => {
         </div>
       </div>
       <div id="contact-form" className="w-9/12 flex flex-col gap-8">
-        <p className="font-headingFont text-5xl font-bold">Contact Me</p>
+        <p className="font-headingFont text-5xl font-bold text-lightHighlight dark:text-darkText max-md:text-4xl max-sm:text-3xl">
+          Contact Me
+        </p>
         <div className="grid grid-cols-2 gap-x-8 gap-y-4 items-center font-textFont">
           <p className="text-lg">Name</p>
           <input
@@ -110,7 +112,7 @@ const Contact = () => {
           // initial={{ backgroundColor: "" }}
           // transition={{ duration: 0.25, delay: 0.25 }}
           whileHover={{ transition: { duration: 0.25, delay: 0.25 } }}
-          className="cursor-pointer flex gap-4 py-2 px-4 w-fit rounded-xl font-textFont font-semibold text-lg text-lightBg bg-lightTextOpacity dark:text-darkBg dark:bg-darkHighlight dark:border-2 dark:border-darkHighlight dark:hover:bg-transparent dark:hover:border-2 dark:hover:border-darkHighlightOpacity dark:hover:text-darkHighlightOpacity max-sm:text-base"
+          className="cursor-pointer flex items-center gap-4 py-2 px-4 w-fit rounded-xl font-textFont font-semibold text-lg text-lightBg bg-lightTextOpacity dark:text-darkBg dark:bg-darkHighlight dark:border-2 dark:border-darkHighlight dark:hover:bg-transparent dark:hover:border-2 dark:hover:border-darkHighlightOpacity dark:hover:text-darkHighlightOpacity max-sm:text-base"
         >
           <p>Send Message</p>
           <svg

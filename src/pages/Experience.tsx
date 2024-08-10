@@ -19,7 +19,7 @@ const Experience = () => {
                   <p className="text-[28px] leading-tight font-bold max-md:text-2xl max-sm:text-xl">
                     {work.position}
                   </p>
-                  <p className="font-textFont h-fit font-medium text-sm rounded-md py-1 px-3 mt-1 text-lightText bg-lightHighlight dark:text-darkBg dark:bg-darkHighlight w-fit max-sm:text-xs">
+                  <p className="font-textFont h-fit font-medium text-sm text-right rounded-md py-1 px-3 mt-1 text-lightText bg-lightHighlight dark:text-darkBg dark:bg-darkHighlight w-fit max-sm:text-xs">
                     {work.time}
                   </p>
                 </div>
@@ -51,7 +51,7 @@ const Experience = () => {
                   <p className="text-[28px] font-bold text-lightHighlight dark:text-darkHighlight max-md:text-2xl max-sm:text-xl">
                     {edu.education}
                   </p>
-                  <div className="flex rounded-lg p-2 font-medium text-sm bg-lightText text-lightBg dark:bg-darkHighlight dark:text-darkBg max-sm:text-xs">
+                  <div className="flex rounded-lg p-2 font-medium text-sm text-right bg-lightText text-lightBg dark:bg-darkHighlight dark:text-darkBg max-sm:text-xs">
                     <p>{edu.time.from}</p>
                     <p>-</p>
                     <p>{edu.time.to}</p>
