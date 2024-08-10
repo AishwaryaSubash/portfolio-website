@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 const Contact = () => {
   return (
     // min-[1168px]:py-20
-    <div className="flex flex-col gap-32 pt-40 pb-20 overflow-x-hidden justify-center items-center bg-lightBg text-lightText dark:bg-darkBg dark:text-darkText">
+    <div className="pt-40 pb-20 flex flex-col gap-32 overflow-x-hidden justify-center items-center bg-lightBg text-lightText dark:bg-darkBg dark:text-darkText">
       {/* mt-6 mb-12 */}
       <div className="h-full w-9/12 flex items-center justify-center max-lg:flex-col max-lg:items-center max-lg:gap-8 max-lg:w-11/12">
         <div className="h-full flex flex-col justify-between items-start w-9/12 max-lg:items-center max-lg:gap-6 max-lg:mb-6 max-lg:w-full">
@@ -71,11 +71,11 @@ const Contact = () => {
         <div className="">
           <img
             // src="contacts-light-image.png"
-            src="new-dark-logo.png"
+            src="contact-pg-dark.png"
             alt="Image"
             width={391}
             height={562}
-            className="transform scale-x-[-1] max-md:w-[200px]"
+            // className="transform scale-x-[-1] max-md:w-[200px]"
           />
           {/* <img
             src="contacts-dark-image.png"

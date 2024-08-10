@@ -40,7 +40,7 @@ const ProjectPage = () => {
   }
 
   return (
-    <div className="pt-40 pb-10 w-full flex flex-col items-center gap-8 overflow-hidden bg-lightBg text-lightText dark:bg-darkBg dark:text-darkText">
+    <div className="pt-40 pb-20 w-full flex flex-col items-center gap-8 overflow-hidden bg-lightBg text-lightText dark:bg-darkBg dark:text-darkText">
       <img
         src={project.websiteImg}
         alt={project.title}
