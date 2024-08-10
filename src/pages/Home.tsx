@@ -144,7 +144,7 @@ const Home = () => {
               </p>
             </MediaQuery>
           </div>
-          <hr className="h-1 w-full border-2 mt-2 mb-4 bg-black border-black rounded-full dark:bg-white dark:border-white max-md:h-0.5 max-md:my-0 max-md:w-10/12" />
+          <hr className="h-1 w-9/12 border-2 mt-2 mb-4 bg-black border-black rounded-full dark:bg-white dark:border-white max-md:h-0.5 max-md:my-0" />
           <p className="text-xl leading-relaxed mb-4 max-md:text-lg max-md:text-center max-sm:text-sm">
             Fueled by a passion for coding and innovation, I'm a skilled
             Full-Stack Developer crafting dynamic and scalable solutions. I love
@@ -191,12 +191,12 @@ const Home = () => {
             className="w-[350px] h-[485px] rounded-3xl bg-black dark:shadow-2xl-dark shadow-light"
           />
         </MediaQuery>
-        <div className="w-[650px] h-[485px] flex flex-col justify-between p-8 rounded-3xl font-textFont bg-lightBg text-darkBg dark:bg-darkBg dark:text-lightBg max-[1440px]:items-center max-md:w-full max-md:h-auto max-md:gap-4">
+        <div className="w-[650px] h-[485px] flex flex-col items-end justify-between p-8 rounded-3xl font-textFont bg-lightBg text-darkBg dark:bg-darkBg dark:text-lightBg max-[1440px]:items-center max-md:w-full max-md:h-auto max-md:gap-4">
           <div className="flex gap-3 font-headingFont text-5xl font-bold max-md:text-4xl max-md:gap-2 max-sm:text-3xl max-xs:flex-col max-xs:items-center">
             <p>My Digital Alchemy</p>
           </div>
-          <hr className="h-1 w-full border-2 mt-2 mb-4 bg-black border-black rounded-full dark:bg-white dark:border-white max-md:h-0.5 max-md:my-0 max-md:w-10/12" />
-          <p className="text-xl leading-relaxed mb-4 max-md:text-lg max-md:text-center max-sm:text-sm">
+          <hr className="h-1 w-9/12 border-2 mt-2 mb-4 bg-black border-black rounded-full dark:bg-white dark:border-white max-md:h-0.5 max-md:my-0" />
+          <p className="text-xl text-right leading-relaxed mb-4 max-md:text-lg max-md:text-center max-sm:text-sm">
             With a passion for every aspect of web development, I create
             holistic digital solutions that shine from the user interface to the
             database. My projects showcase how I leverage the full stack to
