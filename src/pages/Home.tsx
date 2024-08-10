@@ -182,7 +182,7 @@ const Home = () => {
             src="/projects/projects-display.png"
             alt="Projects"
             // w-[350px] h-[350px]
-            className="w-[450px] shadow-light bg-cover bg-center max-md:w-[250px] max-md:h-[250px] max-sm:w-[200px] max-sm:h-[200px]"
+            className="w-[450px] shadow-light bg-cover bg-center max-md:w-[350px] max-sm:w-[300px]"
           />
         </MediaQuery>
         <MediaQuery minWidth={1440}>
