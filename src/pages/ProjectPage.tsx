@@ -5,7 +5,6 @@ import { useEffect, useState } from "react";
 import pageTransition from "../utils/pageTransition";
 import ProjectCards from "../components/ProjectCards";
 import ErrorPage from "./ErrorPage";
-import MediaQuery from "react-responsive";
 
 const ProjectPage = () => {
   const [subProjectList, setSubProjectList] = useState<ProjectsInterface[]>([]);
