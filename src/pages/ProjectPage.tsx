@@ -44,10 +44,10 @@ const ProjectPage = () => {
       <img
         src={project.websiteImg}
         alt={project.title}
-        className="w-9/12 rounded-2xl max-sm:w-11/12"
+        className="w-9/12 rounded-2xl max-[895px]:w-11/12"
       />
-      <div className="w-9/12 pt-40 flex items-start">
-        <div className="flex flex-col gap-8">
+      <div className="w-9/12 pt-40 flex gap-4 items-start max-[895px]:w-11/12 max-[895px]:pt-32 max-[895px]:flex-col max-[895px]:items-center">
+        <div className="flex flex-col gap-8 max-[895px]:w-11/12 max-[895px]:flex-row max-[895px]:justify-between">
           <div className="text-4xl font-headingFont font-bold">
             {project.title}
           </div>
@@ -105,7 +105,7 @@ const ProjectPage = () => {
             </a>
           </div>
         </div>
-        <div className="w-[78%] flex flex-col gap-16">
+        <div className="w-[78%] flex flex-col gap-16 max-[895px]:w-11/12">
           <div className="flex flex-col gap-12 font-textFont">
             <div className="text-lg">{project.detailedDescription}</div>
             <div className="grid grid-cols-3 gap-4 text-lg">
@@ -137,7 +137,7 @@ const ProjectPage = () => {
       </div>
       <div className="pt-40 flex flex-col items-center gap-10">
         <p className="text-5xl font-headingFont font-bold">Other Projects</p>
-        <div className="w-11/12 flex items-start justify-between gap-6">
+        <div className="w-11/12 flex items-start justify-between gap-6 max-[895px]:flex-col">
           <ProjectCards
             isProjectsPage={false}
             projectsList={subProjectList}

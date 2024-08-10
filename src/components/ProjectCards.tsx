@@ -27,16 +27,28 @@ const ProjectCards = ({
             <img
               src={item.websiteImg}
               alt={item.title}
-              className="rounded-2xl max-sm:rounded-xl"
+              className={`rounded-2xl ${
+                isProjectsPage ? "max-sm:rounded-xl" : "max-tablet:rounded-xl"
+              }`}
             />
             <div className="flex flex-col gap-1">
-              <p className="font-textFont font-semibold text-2xl max-sm:text-lg">
+              <p
+                className={`font-textFont font-semibold text-2xl ${
+                  isProjectsPage ? "max-sm:text-lg" : "max-lg:text-xl"
+                }`}
+              >
                 {item.title}
               </p>
-              <p className="font-textFont text-lg max-sm:text-base">
+              <p
+                className={`font-textFont text-lg ${
+                  isProjectsPage ? "max-sm:text-base" : "max-lg:text-base"
+                }`}
+              >
                 {item.oneLineDescription}
               </p>
-              <p className="font-textFont text-sm rounded-md py-1 px-3 mt-1 bg-[#3333339A] w-fit max-sm:text-xs max-sm:px-2">
+              <p
+                className={`font-textFont text-sm rounded-md py-1 px-3 mt-1 bg-[#3333339A] w-fit max-sm:text-xs max-sm:px-2`}
+              >
                 {item.category}
               </p>
             </div>

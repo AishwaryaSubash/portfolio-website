@@ -1,5 +1,5 @@
 import pageTransition from "../utils/pageTransition";
-import { emailContact, contactDetails } from "../utils/constants";
+import { contactDetails } from "../utils/constants";
 import { motion } from "framer-motion";
 // import { buttonHover } from "../utils/motion";
 
@@ -15,7 +15,7 @@ const Contact = () => {
             <p>Happy to connect.</p>
             <p>Feel free to reach out!</p>
           </div>
-          <hr className="h-1 w-10/12 border-2 mt-2 mb-4 bg-black border-black rounded-full dark:bg-white dark:border-white max-lg:my-0 max-lg:w-9/12" />
+          <hr className="h-1 w-6/12 border-2 mt-2 mb-4 bg-black border-black rounded-full dark:bg-white dark:border-white max-lg:my-0" />
           <p className="w-10/12 font-textFont text-xl leading-relaxed py-6 max-lg:w-11/12 max-lg:text-justify max-lg:py-0 max-md:text-lg max-md:text-center max-sm:text-sm">
             As a full-stack developer, I'm passionate about crafting
             user-centric web applications. But my enthusiasm for collaboration
