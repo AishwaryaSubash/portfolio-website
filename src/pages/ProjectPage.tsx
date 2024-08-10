@@ -4,6 +4,7 @@ import { ProjectsInterface } from "../utils/types";
 import { useEffect, useState } from "react";
 import pageTransition from "../utils/pageTransition";
 import ProjectCards from "../components/ProjectCards";
+import ErrorPage from "./ErrorPage";
 
 const ProjectPage = () => {
   const [subProjectList, setSubProjectList] = useState<ProjectsInterface[]>([]);
@@ -35,7 +36,7 @@ const ProjectPage = () => {
   }, [projectsList.length]);
 
   if (!project) {
-    return <div>Project not found</div>;
+    return <ErrorPage />;
   }
 
   return (
@@ -45,7 +46,7 @@ const ProjectPage = () => {
         alt={project.title}
         className="w-9/12 rounded-2xl max-sm:w-11/12"
       />
-      <div className="w-9/12 px-6 pt-40 flex items-start">
+      <div className="w-9/12 pt-40 flex items-start">
         <div className="flex flex-col gap-8">
           <div className="text-4xl font-headingFont font-bold">
             {project.title}
@@ -138,6 +139,7 @@ const ProjectPage = () => {
         <p className="text-5xl font-headingFont font-bold">Other Projects</p>
         <div className="w-11/12 flex items-start justify-between gap-6">
           <ProjectCards
+            isProjectsPage={false}
             projectsList={subProjectList}
             scale={1}
             initialOpacity={0.5}

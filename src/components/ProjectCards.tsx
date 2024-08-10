@@ -6,10 +6,12 @@ const ProjectCards = ({
   projectsList,
   scale,
   initialOpacity,
+  isProjectsPage,
 }: {
   projectsList: ProjectsInterface[];
   scale: number;
   initialOpacity: number;
+  isProjectsPage: boolean;
 }) => {
   return (
     <>
