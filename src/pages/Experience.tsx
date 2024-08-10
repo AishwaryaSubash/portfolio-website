@@ -4,11 +4,11 @@ import { educationDetails, workExperience } from "../utils/constants";
 const Experience = () => {
   return (
     <div className="mt-32 flex flex-col gap-40 justify-center items-center bg-lightBg text-lightText dark:bg-darkBg dark:text-darkText">
-      <div className="flex flex-col gap-20 justify-center items-center">
+      <div className="flex flex-col gap-20 justify-center items-center max-md:gap-16 max-sm:gap-8">
         <p className="font-headingFont text-5xl font-bold max-md:text-4xl max-sm:text-3xl">
           Work Experience
         </p>
-        <div className="w-10/12 grid grid-cols-3 font-textFont gap-12 max-xl:grid-cols-2 max-lg:grid-cols-1">
+        <div className="w-10/12 grid grid-cols-3 font-textFont gap-12 max-xl:grid-cols-2 max-lg:grid-cols-1 max-md:gap-8 max-sm:gap-6">
           {workExperience.map((work, index) => {
             return (
               <div
@@ -36,11 +36,11 @@ const Experience = () => {
           })}
         </div>
       </div>
-      <div className="w-10/12 pb-12 flex flex-col items-center gap-20 max-xl:w-full">
+      <div className="w-10/12 pb-12 flex flex-col items-center gap-20 max-xl:w-full max-md:gap-16 max-sm:gap-8">
         <p className="font-headingFont text-center text-5xl font-bold max-md:text-4xl max-sm:text-3xl">
           Educational Details
         </p>
-        <div className="w-9/12 font-textFont flex flex-col gap-8 max-md:w-10/12">
+        <div className="w-9/12 font-textFont flex flex-col gap-8 max-md:w-10/12 max-sm:gap-6">
           {educationDetails.map((edu, index) => {
             return (
               <div
