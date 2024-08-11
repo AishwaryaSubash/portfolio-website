@@ -85,28 +85,46 @@ const Contact = () => {
           /> */}
         </div>
       </div>
-      <div id="contact-form" className="w-9/12 flex flex-col gap-8">
-        <p className="font-headingFont text-5xl font-bold text-lightHighlight dark:text-darkText max-md:text-4xl max-sm:text-3xl">
-          Contact Me
-        </p>
-        <div className="grid grid-cols-2 gap-x-8 gap-y-4 items-center font-textFont">
-          <p className="text-lg">Name</p>
-          <input
-            type="text"
-            placeholder="Enter your name"
-            className="p-2 rounded-lg text-lightText dark:text-darkBg"
-          />
-          <p className="text-lg">Email</p>
-          <input
-            type="email"
-            placeholder="Enter your email"
-            className="p-2 rounded-lg text-lightText dark:text-darkBg"
-          />
-          <p className="text-lg">Message</p>
-          <textarea
-            placeholder="Enter your message"
-            className="p-2 rounded-lg text-lightText dark:text-darkBg"
-          />
+      <div
+        id="contact-form"
+        // bg-gradient-to-br from-[rgba(240,182,254,0.8)] from-0% via-darkBg via-70% to-[rgba(240,182,254,0.8)] to-100%
+        className="w-6/12 bg-lightBg p-8 rounded-3xl flex flex-col items-center gap-12"
+        // className="w-6/12 bg-gradient-to-br from-darkHighlightOpacity from-0% via-darkBg via-50% to-darkHighlightOpacity to-100% p-8 rounded-3xl flex flex-col items-center gap-12"
+      >
+        <div className="flex flex-col gap-2 items-center text-lightHighlight dark:text-darkBg">
+          <p className="font-headingFont text-center text-5xl font-bold max-md:text-4xl max-sm:text-3xl">
+            Contact Me
+          </p>
+          <p className="font-textFont text-lg text-center">
+            Feel free to drop a message!
+          </p>
+        </div>
+        <div className="w-full flex flex-col gap-8 items-center font-textFont text-lightHighlight dark:text-darkBg">
+          <div className="w-full flex items-center justify-between gap-8">
+            <div className="w-full flex flex-col gap-1">
+              <p className="text-lg">Name</p>
+              <input
+                type="text"
+                placeholder="Enter your name"
+                className="p-2 rounded-lg text-lightText dark:text-darkBg border-2 dark:border-darkBg bg-transparent focus:ring-2 focus:ring-darkHighlightBg"
+              />
+            </div>
+            <div className="w-full flex flex-col gap-1">
+              <p className="text-lg">Email</p>
+              <input
+                type="email"
+                placeholder="Enter your email"
+                className="p-2 rounded-lg text-lightText dark:text-darkBg border-2 dark:border-darkBg bg-transparent focus:ring-2 focus:ring-darkHighlightBg"
+              />
+            </div>
+          </div>
+          <div className="w-full flex flex-col gap-1">
+            <p className="text-lg">Message</p>
+            <textarea
+              placeholder="Enter your message"
+              className="p-2 rounded-lg text-lightText dark:text-darkBg border-2 dark:border-darkBg bg-transparent focus:ring-2 focus:ring-darkHighlightBg"
+            />
+          </div>
         </div>
         <motion.div
           // initial={{ backgroundColor: "" }}
