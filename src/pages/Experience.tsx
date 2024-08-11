@@ -48,7 +48,7 @@ const Experience = () => {
                 className="w-full flex flex-col p-4 rounded-3xl max-sm:gap-1"
               >
                 <div className="flex items-center justify-between max-sm:items-start max-sm:gap-2">
-                  <p className="text-[28px] font-bold text-lightHighlight dark:text-darkHighlight max-md:text-2xl max-sm:text-xl">
+                  <p className="text-[28px] font-semibold leading-snug max-md:text-2xl max-sm:text-xl">
                     {edu.education}
                   </p>
                   <div className="flex rounded-lg p-2 font-medium text-sm text-right bg-lightText text-lightBg dark:bg-darkHighlight dark:text-darkBg max-sm:text-xs">
@@ -57,10 +57,10 @@ const Experience = () => {
                     <p>{edu.time.to}</p>
                   </div>
                 </div>
-                <p className="text-lg font-semibold max-md:text-base max-sm:text-sm">
+                <p className="text-lg dark:text-lightHighlightBg font-medium max-md:text-base max-sm:text-sm">
                   {edu.institution}
                 </p>
-                <p className="text-lg text-lightHighlight dark:text-darkHighlight max-md:text-base max-sm:text-sm">
+                <p className="text-lg mt-2 font-bold text-lightHighlight dark:text-darkHighlight max-md:text-base max-sm:text-sm">
                   {edu.grade}
                 </p>
               </div>

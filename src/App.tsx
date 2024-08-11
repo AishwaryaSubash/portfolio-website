@@ -13,6 +13,7 @@ import Hamburger from "./components/Hamburger";
 import ThemeToggle from "./components/ThemeToggle";
 import ErrorPage from "./pages/ErrorPage";
 import ProjectPage from "./pages/ProjectPage";
+import Footer from "./components/Footer";
 
 function App() {
   const location = useLocation();
@@ -75,6 +76,7 @@ function App() {
           <Route path="*" element={<ErrorPage />} />
         </Routes>
       </AnimatePresence>
+      <Footer />
     </>
   );
 }
