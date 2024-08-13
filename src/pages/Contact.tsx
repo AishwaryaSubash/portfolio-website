@@ -42,7 +42,8 @@ const Contact = () => {
                 // initial={{ backgroundColor: "" }}
                 // transition={{ duration: 0.25, delay: 0.25 }}
                 whileHover={{ transition: { duration: 0.25, delay: 0.25 } }}
-                className="cursor-pointer py-2 px-4 rounded-xl text-lightBg bg-lightHighlightOpacity dark:text-darkBg dark:bg-darkHighlight dark:border-2 dark:border-darkHighlight dark:hover:bg-transparent dark:hover:border-2 dark:hover:border-darkHighlightOpacity dark:hover:text-darkHighlightOpacity max-sm:text-base"
+                // className="flex font-semibold items-center justify-center w-[250px] py-2 px-3 mt-2 rounded-2xl bg-lightHighlight text-white border-2 border-lightHighlight hover:bg-transparent hover:border-2 hover:border-lightHighlightOpacity hover:text-lightHighlightOpacity dark:text-darkBg dark:bg-darkHighlight dark:border-2 dark:border-darkHighlight dark:hover:bg-transparent dark:hover:border-2 dark:hover:border-darkHighlightOpacity dark:hover:text-darkHighlightOpacity text-lg max-sm:text-base max-sm:justify-around max-sm:w-[200px]"
+                className="py-2 px-4 bg-lightHighlight text-white border-2 border-lightHighlight hover:bg-transparent hover:border-2 hover:border-lightHighlight hover:text-lightHighlight dark:text-darkBg dark:bg-darkHighlight dark:border-2 dark:border-darkHighlight dark:hover:bg-transparent dark:hover:border-2 dark:hover:border-darkHighlightOpacity dark:hover:text-darkHighlightOpacity rounded-xl max-sm:text-base"
               >
                 Get In Touch
               </motion.div>
@@ -88,10 +89,10 @@ const Contact = () => {
       <div
         id="contact-form"
         // bg-gradient-to-br from-[rgba(240,182,254,0.8)] from-0% via-darkBg via-70% to-[rgba(240,182,254,0.8)] to-100%
-        className="w-6/12 bg-lightBg p-8 rounded-3xl flex flex-col items-center gap-12"
+        className="w-6/12 bg-[#c0c0c0aa] dark:bg-[#202020] p-8 rounded-3xl flex flex-col items-center gap-12"
         // className="w-6/12 bg-gradient-to-br from-darkHighlightOpacity from-0% via-darkBg via-50% to-darkHighlightOpacity to-100% p-8 rounded-3xl flex flex-col items-center gap-12"
       >
-        <div className="flex flex-col gap-2 items-center text-lightHighlight dark:text-darkBg">
+        <div className="flex flex-col gap-2 items-center text-lightHighlight dark:text-darkText">
           <p className="font-headingFont text-center text-5xl font-bold max-md:text-4xl max-sm:text-3xl">
             Contact Me
           </p>
@@ -99,14 +100,14 @@ const Contact = () => {
             Feel free to drop a message!
           </p>
         </div>
-        <div className="w-full flex flex-col gap-8 items-center font-textFont text-lightHighlight dark:text-darkBg">
+        <div className="w-full flex flex-col gap-8 items-center font-textFont text-lightHighlight dark:text-darkText">
           <div className="w-full flex items-center justify-between gap-8">
             <div className="w-full flex flex-col gap-1">
               <p className="text-lg">Name</p>
               <input
                 type="text"
                 placeholder="Enter your name"
-                className="p-2 rounded-lg text-lightHighlight dark:text-darkBg border-2 dark:border-darkBg bg-transparent focus:ring-2 focus:ring-darkHighlightBg"
+                className="p-2 rounded-lg text-lightHighlight dark:text-darkText border dark:border-darkHighlightBg bg-transparent focus:ring-2 focus:ring-darkHighlightBg"
               />
             </div>
             <div className="w-full flex flex-col gap-1">
@@ -114,7 +115,7 @@ const Contact = () => {
               <input
                 type="email"
                 placeholder="Enter your email"
-                className="p-2 rounded-lg text-lightHighlight dark:text-darkBg border-2 dark:border-darkBg bg-transparent focus:ring-2 focus:ring-darkHighlightBg"
+                className="p-2 rounded-lg text-lightHighlight dark:text-darkText border dark:border-darkHighlightBg bg-transparent focus:ring-2 focus:ring-darkHighlightBg"
               />
             </div>
           </div>
@@ -122,7 +123,7 @@ const Contact = () => {
             <p className="text-lg">Message</p>
             <textarea
               placeholder="Enter your message"
-              className="p-2 rounded-lg text-lightHighlight dark:text-darkBg border-2 dark:border-darkBg bg-transparent focus:ring-2 focus:ring-darkHighlightBg"
+              className="p-2 rounded-lg text-lightHighlight dark:text-darkText border dark:border-darkHighlightBg bg-transparent focus:ring-2 focus:ring-darkHighlightBg"
             />
           </div>
         </div>
@@ -130,7 +131,7 @@ const Contact = () => {
           // initial={{ backgroundColor: "" }}
           // transition={{ duration: 0.25, delay: 0.25 }}
           whileHover={{ transition: { duration: 0.25, delay: 0.25 } }}
-          className="cursor-pointer flex items-center gap-4 py-2 px-4 w-fit rounded-xl font-textFont font-semibold text-lg text-lightBg bg-lightHighlightOpacity dark:text-darkBg dark:bg-darkHighlight dark:border-2 dark:border-darkHighlight dark:hover:bg-transparent dark:hover:border-2 dark:hover:border-darkHighlightOpacity dark:hover:text-darkHighlightOpacity max-sm:text-base"
+          className="cursor-pointer flex items-center gap-4 py-2 px-4 w-fit rounded-xl font-textFont font-semibold text-lg text-lightBg bg-lightHighlightOpacity dark:text-darkBg dark:bg-darkHighlight dark:border-2 dark:border-darkHighlight dark:hover:bg-transparent dark:hover:border-2 dark:hover:border-darkHighlightOpacity dark:hover:text-darkText max-sm:text-base"
         >
           <p>Send Message</p>
           <svg

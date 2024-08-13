@@ -33,8 +33,8 @@ export default {
       colors: {
         lightBg: "#f7f2f5",
         // lightText: "#808080",
-        lightText: "#606060",
-        lightHighlightOpacity: "#5d0560ea",
+        lightText: "#707070",
+        lightHighlightOpacity: "#936993",
         lightHighlight: "#5d0560",
         lightAltHighlight: "#450A0A",
         lightHighlightBg: "#9CA3AF",
