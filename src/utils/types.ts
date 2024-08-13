@@ -47,7 +47,7 @@ interface ProjectsInterface {
   githubUrl: string;
   websiteImg: string;
   websiteVideo?: string;
-  detailedDescription: string;
+  detailedDescription: string | string[];
   techStack: string[];
   team: string;
   duration: number;

@@ -334,9 +334,10 @@ const projectsList: ProjectsInterface[] = [
     websiteUrl: "https://expense-tracker-flutter.vercel.app/",
     websiteImg: "/projects/expense-tracker.png",
     githubUrl: "https://github.com/AishwaryaSubash/expense_tracker",
-    detailedDescription:
-      // send to friend, credit and debit, graphs, delete expense
-      "A cross-platform full-stack REST-based app used for tracking and managing the expenses, showing monthly and weekly expenses in graphical representations",
+    detailedDescription: [
+      "Track your expenses on the go with this user-friendly, cross-platform expense tracker.",
+      "Manage credit, debit, and cash transactions effortlessly, and visualise spending habits through graphs using this REST-based all-in-one application.",
+    ],
     techStack: [
       "Flutter",
       "Dart",
@@ -351,7 +352,7 @@ const projectsList: ProjectsInterface[] = [
     category: "Mobile/Web App",
     team: "Collaborated",
     duration: 2,
-    time: "Dec 2021",
+    time: "Dec 2022",
   },
   {
     route: "chat-app",
@@ -359,8 +360,12 @@ const projectsList: ProjectsInterface[] = [
     websiteUrl: "https://flutter-chat-app.vercel.app/",
     websiteImg: "/projects/chat-app.png",
     githubUrl: "https://github.com/Akash-Manikandan/flutter_chat_app",
-    detailedDescription:
-      "A real-time cross-platform chat application featuring real-time messaging, group chat, user authentication and end-to-end encryption",
+    detailedDescription: [
+      "Experience seamless communication with our real-time chat app! Enjoy instant messaging, group chats, secure login, and end-to-end encrypted conversations, all accessible from any device.",
+      "This app leverages a RESTful API architecture for efficient data management and utilises WebSockets for real-time communication features like instant messaging and live typing indicators.",
+      "The backend implements secure user authentication with hashed passwords, pagination for managing extensive chat histories, and enforces end-to-end encryption for messages.",
+    ],
+    // "A real-time cross-platform chat application featuring real-time messaging, group chat, user authentication and end-to-end encryption",
     techStack: [
       "Flutter",
       "Dart",
@@ -378,7 +383,7 @@ const projectsList: ProjectsInterface[] = [
     category: "Mobile/Web App",
     team: "Collaborated",
     duration: 0,
-    time: "Dec 2021",
+    time: "Dec 2022",
   },
   {
     route: "svce-redesigned",
@@ -401,8 +406,12 @@ const projectsList: ProjectsInterface[] = [
     websiteUrl: "https://forum-frontend-steel.vercel.app",
     websiteImg: "/projects/forum.png",
     githubUrl: "https://github.com/KE2002/forumFrontend",
-    detailedDescription:
-      "A collaborative platform which aims to foster community engagement. Users can post queries and share knowledge. The app is equipped with full-text search options, facilitating efficient filtering",
+    detailedDescription: [
+      "Empower your community with knowledge! This real-time platform facilitates seamless communication, allowing you to post questions, share expertise, and collaborate with fellow community members. It's the perfect platform to get the answers you need and contribute your knowledge to help others.",
+      "Our platform facilitates seamless community interaction by enabling users to categorize, search, and discover relevant information through a robust full-text search functionality.",
+      "This app utilises a RESTful API architecture for efficient communication and leverages Neo4j graph database to facilitate powerful connections between users, queries and responses.",
+    ],
+    // "A collaborative platform which aims to foster community engagement. Users can post queries and share knowledge. The app is equipped with full-text search options, facilitating efficient filtering",
     // "The Query Management Web Application is a comprehensive tool. It aims to streamline the process of managing and tracking queries. This application provides a range of features to facilitate efficient query handling. Users can submit queries, assign them to specific categories. The application allows for advanced search and filtering options, making it easier to locate and prioritize queries based on various parameters.",
     techStack: [
       "Angular",
@@ -417,8 +426,8 @@ const projectsList: ProjectsInterface[] = [
     oneLineDescription: "A collaborative platform for community engagement",
     category: "Full Stack App",
     team: "Collaborated",
-    duration: 0,
-    time: "",
+    duration: 2,
+    time: "Apr 2023",
   },
   {
     route: "memory-game",
@@ -468,7 +477,10 @@ const projectsList: ProjectsInterface[] = [
     websiteUrl: "https://only-svce.vercel.app/",
     websiteImg: "/projects/only-svce.png",
     githubUrl: "https://github.com/Akash-Manikandan/svce-lab-codes",
-    detailedDescription: "Lab codes repository",
+    detailedDescription: [
+      "Welcome Coders! Dive into a vibrant community platform designed to elevate your programming journey.",
+      "Explore a vast collection of code projects relevant to your labs, learn from innovative solutions, and contribute your own creations to help others. Sharpen your skills, explore new techniques, and collaborate with fellow students - all within this one platform!",
+    ],
     techStack: [
       "Next.js",
       "JavaScript",

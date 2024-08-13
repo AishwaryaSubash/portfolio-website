@@ -46,7 +46,7 @@ const ProjectPage = () => {
         alt={project.title}
         className="w-9/12 rounded-2xl max-[895px]:w-11/12"
       />
-      <div className="w-9/12 pt-40 flex gap-4 items-start max-[895px]:w-11/12 max-[895px]:pt-32 max-[895px]:flex-col max-[895px]:items-center">
+      <div className="w-9/12 pt-40 flex gap-4 items-start max-[895px]:w-11/12 max-[895px]:pt-32 max-[895px]:flex-col max-[895px]:items-center max-sm:pt-20 max-xs:pt-12">
         <div className="flex flex-col gap-8 max-[895px]:w-11/12 max-[895px]:flex-row max-[895px]:justify-between">
           <div className="text-4xl font-headingFont font-bold max-sm:text-3xl">
             {project.title}
@@ -107,7 +107,18 @@ const ProjectPage = () => {
         </div>
         <div className="w-[78%] flex flex-col gap-16 max-[895px]:w-11/12">
           <div className="flex flex-col gap-12 font-textFont">
-            <div className="text-lg">{project.detailedDescription}</div>
+            <div className="text-lg">
+              {Array.isArray(project.detailedDescription) ? (
+                project.detailedDescription.map((item, index) => (
+                  <div key={index}>
+                    <p>{item}</p>
+                  </div>
+                ))
+              ) : (
+                <p>{project.detailedDescription}</p>
+              )}
+            </div>
+
             {/* <MediaQuery maxWidth={894}>
               <div className="flex flex-col">
                 <div className="flex gap-2">
