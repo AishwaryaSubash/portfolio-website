@@ -12,6 +12,13 @@ export default {
       "2xl": "1536px",
     },
     extend: {
+      textShadow: {
+        sm: "1px 1px 2px rgba(0, 0, 0, 0.5)",
+        md: "2px 2px 4px rgba(0, 0, 0, 0.5)",
+        lg: "3px 3px 6px rgba(0, 0, 0, 0.5)",
+        xl: "4px 4px 8px rgba(0, 0, 0, 0.5)",
+        none: "none",
+      },
       fontFamily: {
         // customFont: ['"Manrope"', "sans-serif"],
         headingFont: ['"Philosopher"', "sans-serif"],
@@ -25,9 +32,10 @@ export default {
       },
       colors: {
         lightBg: "#f7f2f5",
-        lightText: "#5d0560",
-        lightTextOpacity: "#5d0560ea",
-        lightHighlight: "#c2410c",
+        // lightText: "#808080",
+        lightText: "#606060",
+        lightHighlightOpacity: "#5d0560ea",
+        lightHighlight: "#5d0560",
         lightAltHighlight: "#450A0A",
         lightHighlightBg: "#9CA3AF",
         darkBg: "#0b0b0b",
@@ -77,5 +85,27 @@ export default {
     },
   },
   darkMode: "class",
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      const newUtilities = {
+        ".text-shadow-sm": {
+          textShadow: "1px 1px 2px rgba(0, 0, 0, 0.5)",
+        },
+        ".text-shadow-md": {
+          textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)",
+        },
+        ".text-shadow-lg": {
+          textShadow: "3px 3px 6px rgba(0, 0, 0, 0.5)",
+        },
+        ".text-shadow-xl": {
+          textShadow: "4px 4px 8px rgba(0, 0, 0, 0.5)",
+        },
+        ".text-shadow-none": {
+          textShadow: "none",
+        },
+      };
+
+      addUtilities(newUtilities, ["responsive", "hover"]);
+    },
+  ],
 };

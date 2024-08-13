@@ -108,7 +108,7 @@ const Home = () => {
   // }, []);
 
   return (
-    <div className="pt-40 pb-20 flex flex-col justify-center items-center bg-lightBg text-lightText dark:bg-darkBg dark:text-darkText">
+    <div className="pt-40 pb-20 flex flex-col justify-center items-center bg-lightBg text-lightbg-lightHighlight dark:bg-darkBg dark:text-darkText">
       {/* <p className="text-6xl font-headingFont my-4">Home</p> */}
       <div className="w-9/12 flex items-center justify-between max-[1440px]:flex-col max-[1440px]:gap-12 max-[680px]:w-11/12 max-sm:gap-10">
         {/* <canvas id="photoCanvas" width="350" height="485"></canvas> */}
@@ -116,36 +116,46 @@ const Home = () => {
           <img
             src="PictureSquare.jpg"
             alt="Picture"
-            className="w-[350px] h-[350px] rounded-full bg-black dark:shadow-2xl-dark shadow-light bg-cover bg-center max-md:w-[250px] max-md:h-[250px] max-sm:w-[200px] max-sm:h-[200px]"
+            className="w-[350px] h-[350px] rounded-full bg-lightText dark:shadow-2xl-dark shadow-light bg-cover bg-center max-md:w-[250px] max-md:h-[250px] max-sm:w-[200px] max-sm:h-[200px]"
           />
         </MediaQuery>
         <MediaQuery minWidth={1440}>
           <img
             src="Picture.jpg"
             alt="Picture"
-            className="w-[350px] h-[485px] rounded-3xl bg-black dark:shadow-2xl-dark shadow-light"
+            className="w-[350px] h-[485px] rounded-3xl bg-lightText dark:shadow-2xl-dark shadow-light"
           />
         </MediaQuery>
         <div className="w-[650px] h-[485px] flex flex-col justify-between p-8 rounded-3xl font-textFont bg-lightBg text-darkBg dark:bg-darkBg dark:text-lightBg max-[1440px]:items-center max-md:w-full max-md:h-auto max-md:gap-4">
-          <div className="flex gap-3 font-headingFont text-5xl font-bold max-md:text-4xl max-md:gap-2 max-sm:text-3xl max-xs:flex-col max-xs:items-center">
+          <div className="flex gap-3 font-headingFont text-5xl text-lightText dark:text-darkText font-bold max-md:text-4xl max-md:gap-2 max-sm:text-3xl max-xs:flex-col max-xs:items-center">
             <MediaQuery maxWidth={500}>
               <p>Hi there!!</p>
               <div className="flex items-center gap-2">
                 <p>This is</p>
-                <p className="text-[#867571] dark:text-darkHighlight">
+                <p
+                  className="text-lightHighlight dark:text-darkHighlight"
+                  style={{
+                    textShadow: "4px 2px 7px rgba(93,5,96,0.6)",
+                  }}
+                >
                   Aishwarya
                 </p>
               </div>
             </MediaQuery>
             <MediaQuery minWidth={501}>
               <p>Hi there!! This is</p>
-              <p className="text-[#867571] dark:text-darkHighlight">
+              <p
+                className="text-lightHighlight dark:text-darkHighlight"
+                // style={{
+                //   textShadow: "4px 2px 7px rgba(93,5,96,0.2)",
+                // }}
+              >
                 Aishwarya
               </p>
             </MediaQuery>
           </div>
-          <hr className="h-1 w-9/12 border-2 mt-2 mb-4 bg-black border-black rounded-full dark:bg-white dark:border-white max-md:h-0.5 max-md:my-0" />
-          <p className="text-xl leading-relaxed mb-4 max-[1440px]:text-center max-md:text-lg max-sm:text-sm">
+          <hr className="h-1 w-9/12 border-2 mt-2 mb-4 bg-lightText border-lightText rounded-full dark:bg-white dark:border-white max-md:h-0.5 max-md:my-0" />
+          <p className="text-xl text-lightText dark:text-darkText leading-relaxed mb-4 max-[1440px]:text-center max-md:text-lg max-sm:text-sm">
             Fueled by a passion for coding and innovation, I'm a skilled
             Full-Stack Developer crafting dynamic and scalable solutions. I love
             tackling complex problems and exploring new technologies. But code
@@ -157,7 +167,7 @@ const Home = () => {
               variants={buttonHover}
               initial="initial"
               animate="animate"
-              className="flex font-semibold items-center justify-center w-[200px] py-2 px-3 mt-2 rounded-2xl text-white bg-[#867571] dark:text-darkBg dark:bg-darkHighlight dark:border-2 dark:border-darkHighlight dark:hover:bg-transparent dark:hover:border-2 dark:hover:border-darkHighlightOpacity dark:hover:text-darkHighlightOpacity text-lg max-sm:text-base max-sm:justify-around max-sm:w-[160px]"
+              className="flex font-semibold items-center justify-center w-[200px] py-2 px-3 mt-2 rounded-2xl bg-lightHighlight text-white border-2 border-lightbg-lightHighlight hover:bg-transparent hover:border-2 hover:border-lightbg-lightHighlightOpacity hover:text-lightbg-lightHighlightOpacity dark:text-darkBg dark:bg-darkHighlight dark:border-2 dark:border-darkHighlight dark:hover:bg-transparent dark:hover:border-2 dark:hover:border-darkHighlightOpacity dark:hover:text-darkHighlightOpacity text-lg max-sm:text-base max-sm:justify-around max-sm:w-[160px]"
             >
               <p>My Profile</p>
               <svg
@@ -194,11 +204,11 @@ const Home = () => {
           />
         </MediaQuery>
         <div className="w-[650px] h-[485px] flex flex-col items-end justify-between rounded-3xl font-textFont text-darkBg dark:text-lightBg max-[1440px]:gap-8 max-[1440px]:justify-start max-[1440px]:items-center max-md:w-full max-md:h-auto max-md:gap-4">
-          <div className="flex gap-3 font-headingFont text-5xl font-bold max-md:text-4xl max-md:gap-2 max-sm:text-3xl max-xs:flex-col max-xs:items-center">
+          <div className="flex gap-3 font-headingFont text-5xl text-lightText dark:text-darkText font-bold max-md:text-4xl max-md:gap-2 max-sm:text-3xl max-xs:flex-col max-xs:items-center">
             <p>My Digital Alchemy</p>
           </div>
-          <hr className="h-1 w-8/12 border-2 mt-2 mb-4 bg-black border-black rounded-full dark:bg-white dark:border-white max-md:h-0.5 max-md:my-0" />
-          <p className="text-xl text-right leading-relaxed max-[1440px]:text-center max-md:text-lg max-sm:text-sm">
+          <hr className="h-1 w-8/12 border-2 mt-2 mb-4 bg-lightText border-lightText rounded-full dark:bg-white dark:border-white max-md:h-0.5 max-md:my-0" />
+          <p className="text-xl text-lightText dark:text-darkText text-right leading-relaxed max-[1440px]:text-center max-md:text-lg max-sm:text-sm">
             With a passion for every aspect of web development, I create
             holistic digital solutions that shine from the user interface to the
             database. My projects showcase how I leverage the full stack to
@@ -211,7 +221,8 @@ const Home = () => {
               variants={buttonHover}
               initial="initial"
               animate="animate"
-              className="flex font-semibold items-center justify-center w-[250px] py-2 px-3 mt-2 rounded-2xl text-white bg-[#867571] dark:text-darkBg dark:bg-darkHighlight dark:border-2 dark:border-darkHighlight dark:hover:bg-transparent dark:hover:border-2 dark:hover:border-darkHighlightOpacity dark:hover:text-darkHighlightOpacity text-lg max-sm:text-base max-sm:justify-around max-sm:w-[200px]"
+              className="flex font-semibold items-center justify-center w-[250px] py-2 px-3 mt-2 rounded-2xl bg-lightHighlight text-white border-2 border-lightbg-lightHighlight hover:bg-transparent hover:border-2 hover:border-lightbg-lightHighlightOpacity hover:text-lightbg-lightHighlightOpacity dark:text-darkBg dark:bg-darkHighlight dark:border-2 dark:border-darkHighlight dark:hover:bg-transparent dark:hover:border-2 dark:hover:border-darkHighlightOpacity dark:hover:text-darkHighlightOpacity text-lg max-sm:text-base max-sm:justify-around max-sm:w-[200px]"
+              // className="flex font-semibold items-center justify-center w-[250px] py-2 px-3 mt-2 rounded-2xl text-white bg-[#867571] dark:text-darkBg dark:bg-darkHighlight dark:border-2 dark:border-darkHighlight dark:hover:bg-transparent dark:hover:border-2 dark:hover:border-darkHighlightOpacity dark:hover:text-darkHighlightOpacity text-lg max-sm:text-base max-sm:justify-around max-sm:w-[200px]"
             >
               <p>Explore my work</p>
               <svg

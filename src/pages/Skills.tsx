@@ -17,8 +17,8 @@ const Skills = () => {
   // });
 
   return (
-    <div className="mt-20 flex flex-col justify-center items-center bg-lightBg text-lightText dark:bg-darkBg dark:text-darkText">
-      <p className="font-headingFont text-5xl font-bold my-8 max-md:text-4xl max-sm:text-3xl max-sm:my-0">
+    <div className="mt-20 flex flex-col justify-center items-center bg-lightBg text-lightHighlight dark:bg-darkBg dark:text-darkText">
+      <p className="font-headingFont text-5xl text-lightText dark:text-darkText font-bold my-8 max-md:text-4xl max-sm:text-3xl max-sm:my-0">
         My Skills
       </p>
       <div className="flex flex-col justify-center">
@@ -29,7 +29,7 @@ const Skills = () => {
           {skills.map((skill, index) => {
             return (
               <div className="flex flex-col gap-4 max-sm:gap-0" key={index}>
-                <p className="text-3xl pl-8 font-semibold font-headingFont mt-6 max-lg:px-4 max-md:text-2xl max-sm:text-xl">
+                <p className="text-3xl pl-8 text-lightText dark:text-darkText font-semibold font-headingFont mt-6 max-lg:px-4 max-md:text-2xl max-sm:text-xl">
                   {skill.skillType}
                 </p>
                 <div className="grid grid-cols-3 gap-x-8 gap-y-4 items-end max-lg:grid-cols-2 max-md:grid-cols-2 max-sm:gap-y-0">
@@ -45,10 +45,10 @@ const Skills = () => {
                             className="w-12 h-12"
                           ></div>
                           <div className="flex flex-col items-start">
-                            <p className="text-left justify-self-center max-sm:text-sm">
+                            <p className="text-left text-lightText dark:text-darkText justify-self-center max-sm:text-sm">
                               {item.name}
                             </p>
-                            <p className="max-sm:text-sm">
+                            <p className="text-lightText dark:text-darkText max-sm:text-sm">
                               {item.proficiency}%
                             </p>
                           </div>
@@ -61,11 +61,12 @@ const Skills = () => {
                               dangerouslySetInnerHTML={{ __html: item.svg }}
                               className="w-12 h-12"
                             ></div>
-                            <p className="text-left justify-self-center max-sm:text-sm">
+                            <p className="text-left text-lightText dark:text-darkText justify-self-center max-sm:text-sm">
                               {item.name}
                             </p>
                           </div>
                           <CountUp
+                            className="text-lightText dark:text-darkText"
                             start={0}
                             end={item.proficiency}
                             duration={1}
@@ -76,7 +77,7 @@ const Skills = () => {
                       </MediaQuery>
                       <div className="flex flex-start overflow-hidden w-full font-sans rounded-full text-xs font-medium h-2 bg-lightHighlightBg dark:bg-gray-800">
                         <motion.div
-                          className="flex justify-center items-center h-full overflow-hidden break-all rounded-full bg-lightAltHighlight dark:bg-darkHighlight"
+                          className="flex justify-center items-center h-full overflow-hidden break-all rounded-full bg-lightHighlight dark:bg-darkHighlight"
                           initial={{ width: 0 }}
                           animate={{ width: `${item.proficiency}%` }}
                           transition={{ duration: 1, delay: 1 }}
@@ -112,12 +113,12 @@ const Skills = () => {
                       dangerouslySetInnerHTML={{ __html: item.svg }}
                       className="w-12 h-12"
                     ></div>
-                    <p className="text-left justify-self-center max-sm:text-sm">
+                    <p className="text-left text-lightText dark:text-darkText justify-self-center max-sm:text-sm">
                       {item.name}
                     </p>
                   </div>
                   <CountUp
-                    className="w-6"
+                    className="w-6 text-lightText dark:text-darkText"
                     start={0}
                     end={item.proficiency}
                     duration={1}
@@ -142,7 +143,7 @@ const Skills = () => {
               </MediaQuery>
               <div className="flex flex-start overflow-hidden w-full font-sans rounded-full text-xs font-medium h-2 bg-gray-400 dark:bg-gray-800">
                 <motion.div
-                  className="flex justify-center items-center h-full overflow-hidden break-all rounded-full  bg-red-950 dark:bg-darkHighlight"
+                  className="flex justify-center items-center h-full overflow-hidden break-all rounded-full  bg-lightHighlight dark:bg-darkHighlight"
                   initial={{ width: 0 }}
                   animate={{ width: `${item.proficiency}%` }}
                   transition={{ duration: 0.5, delay: 1 }}

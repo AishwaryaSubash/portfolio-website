@@ -14,13 +14,13 @@ import Skills from "./Skills";
 
 const About = () => {
   return (
-    <div className="pt-40 pb-20 flex flex-col justify-center items-center bg-lightBg text-lightText dark:bg-darkBg dark:text-darkText">
+    <div className="pt-40 pb-20 flex flex-col justify-center items-center bg-lightBg text-lightHighlight dark:bg-darkBg dark:text-darkText">
       <div className="flex flex-col items-center justify-center gap-8 max-sm:gap-6">
-        <p className="font-headingFont text-5xl font-bold max-md:text-4xl max-sm:text-3xl">
+        <p className="font-headingFont text-5xl text-lightText dark:text-darkText font-bold max-md:text-4xl max-sm:text-3xl">
           About Me
         </p>
         <div className="w-11/12 flex items-center justify-center">
-          <div className="flex flex-col items-center gap-4 w-11/12 font-textFont text-xl text-lightHighlightBg max-md:text-lg max-md:text-center max-sm:text-sm">
+          <div className="flex flex-col items-center gap-4 w-11/12 font-textFont text-xl text-darkHighlightBg dark:text-lightHighlightBg max-md:text-lg max-md:text-center max-sm:text-sm">
             {aboutMeContent.map((item, index) => (
               <div className="w-11/12" key={index}>
                 <p>{item}</p>
@@ -39,7 +39,7 @@ const About = () => {
         </p>
         <div className="grid grid-cols-3 grid-rows-6 gap-16 font-textFont items-center justify-items-center">
           <div></div>
-          // bg-gradient-to-b from-0% from-black to-95% to-[#26272c] w-64 h-40
+          // bg-gradient-to-b from-0% from-lightText to-95% to-[#26272c] w-64 h-40
           //
           <div className="w-56 h-36 row-span-2 p-4 flex flex-col gap-2 items-center justify-center border-2 border-gray-900 rounded-2xl">
             <svg

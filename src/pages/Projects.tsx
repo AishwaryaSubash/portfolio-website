@@ -37,12 +37,12 @@ const Projects = () => {
   // };
 
   return (
-    <div className="pt-40 pb-20 flex flex-col gap-16 overflow-hidden justify-center items-center bg-lightBg text-lightText dark:bg-darkBg dark:text-darkText max-md:gap-12 max-sm:gap-8">
+    <div className="pt-40 pb-20 flex flex-col gap-16 overflow-hidden justify-center items-center bg-lightBg text-lightHighlight dark:bg-darkBg dark:text-darkText max-md:gap-12 max-sm:gap-8">
       <div className="flex flex-col gap-4 items-center max-md:gap-3 max-sm:gap-2">
-        <p className="font-headingFont text-5xl font-bold max-md:text-4xl max-sm:text-3xl">
+        <p className="font-headingFont text-5xl text-lightText dark:text-darkText font-bold max-md:text-4xl max-sm:text-3xl">
           My Projects
         </p>
-        <div className="flex gap-2 text-2xl font-textFont text-lightHighlight dark:text-darkText max-md:text-xl max-sm:text-lg max-sm:flex-col max-sm:text-center max-sm:gap-0 max-sm:leading-tight">
+        <div className="flex gap-2 text-2xl font-textFont text-lightText dark:text-darkText max-md:text-xl max-sm:text-lg max-sm:flex-col max-sm:text-center max-sm:gap-0 max-sm:leading-tight">
           <p>Take a peek at</p>
           <p>what I've been building</p>
         </div>
@@ -54,7 +54,7 @@ const Projects = () => {
               key={index}
               onMouseEnter={() => handleHover(index)}
               onMouseLeave={() => handleLeave(index)}
-              className="relative flex flex-col justify-between items-center p-4 w-11/12 h-full rounded-2xl bg-lightTextOpacity text-lightBg dark:bg-darkTextOpacity dark:text-darkBg"
+              className="relative flex flex-col justify-between items-center p-4 w-11/12 h-full rounded-2xl bg-lightHighlightOpacity text-lightBg dark:bg-darkTextOpacity dark:text-darkBg"
             >
               {isHovered[index] && (
                 <div className="absolute top-1/3 left-1/2">

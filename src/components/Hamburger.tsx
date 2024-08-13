@@ -45,7 +45,7 @@ const Hamburger = ({ theme }: { theme: string | undefined }) => {
         </div>
         <div
           onClick={toggleHamMenu}
-          className="text-lightText dark:text-darkHighlight"
+          className="text-lightHighlight dark:text-darkHighlight"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -92,7 +92,7 @@ const Hamburger = ({ theme }: { theme: string | undefined }) => {
                 </div>
                 <div
                   onClick={toggleHamMenu}
-                  className="text-lightText dark:text-darkBg"
+                  className="text-lightHighlight dark:text-darkBg"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -120,7 +120,7 @@ const Hamburger = ({ theme }: { theme: string | undefined }) => {
                       <div className="overflow-hidden">
                         <motion.div
                           variants={hamWrapperAnimation}
-                          className="text-4xl font-headingFont font-bold text-lightText dark:text-darkBg uppercase"
+                          className="text-4xl font-headingFont font-bold text-lightHighlight dark:text-darkBg uppercase"
                         >
                           <Link to={item.href}>{item.title}</Link>
                         </motion.div>
