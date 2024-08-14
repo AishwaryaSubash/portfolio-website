@@ -45,67 +45,8 @@ export default {
         darkAltHighlight: "#FEF9C3",
         darkHighlightBg: "#525252",
       },
-      // colors: {
-      //   lightBg: "#f7f2f5",
-      //   lightText: "#5d0560",
-      //   lightTextOpacity: "#5d0560ea",
-      //   lightHighlight: "#c2410c",
-      //   lightAltHighlight: "#450A0A",
-      //   lightHighlightBg: "#9CA3AF",
-      //   darkBg: "#1d1b26",
-      //   darkText: "#d3c1f0",
-      //   darkTextOpacity: "#d3c1f0ea",
-      //   darkHighlight: "#bef264",
-      //   darkAltHighlight: "#FEF9C3",
-      //   darkHighlightBg: "#525252",
-      // },
-      animation: {
-        marquee: "marquee 25s linear infinite",
-        marquee2: "marquee2 25s linear infinite",
-      },
-      keyframes: {
-        marquee: {
-          "0%": { transform: "translateX(0%)" },
-          "100%": { transform: "translateX(-100%)" },
-        },
-        marquee2: {
-          "0%": { transform: "translateX(100%)" },
-          "100%": { transform: "translateX(0%)" },
-        },
-      },
-      // animation: {
-      //   marquee: "marquee 25s linear infinite",
-      // },
-      // keyframes: {
-      //   marquee: {
-      //     "0%": { transform: "translateX(0%)" },
-      //     "100%": { transform: "translateX(-100%)" },
-      //   },
-      // },
     },
   },
   darkMode: "class",
-  plugins: [
-    function ({ addUtilities }) {
-      const newUtilities = {
-        ".text-shadow-sm": {
-          textShadow: "1px 1px 2px rgba(0, 0, 0, 0.5)",
-        },
-        ".text-shadow-md": {
-          textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)",
-        },
-        ".text-shadow-lg": {
-          textShadow: "3px 3px 6px rgba(0, 0, 0, 0.5)",
-        },
-        ".text-shadow-xl": {
-          textShadow: "4px 4px 8px rgba(0, 0, 0, 0.5)",
-        },
-        ".text-shadow-none": {
-          textShadow: "none",
-        },
-      };
-
-      addUtilities(newUtilities, ["responsive", "hover"]);
-    },
-  ],
+  plugins: [],
 };
