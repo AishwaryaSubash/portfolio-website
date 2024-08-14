@@ -1,9 +1,13 @@
 import pageTransition from "../utils/pageTransition";
 import { contactDetails } from "../utils/constants";
 import { motion } from "framer-motion";
+import { useContext } from "react";
+import { ThemeContext } from "../utils/contexts/ThemeContext";
 // import { buttonHover } from "../utils/motion";
 
 const Contact = () => {
+  const { theme } = useContext(ThemeContext);
+
   return (
     // min-[1168px]:py-20
     <div className="pt-40 pb-20 flex flex-col gap-32 overflow-x-hidden justify-center items-center bg-lightBg text-lightHighlight dark:bg-darkBg dark:text-darkText">
@@ -72,7 +76,9 @@ const Contact = () => {
         <div className="">
           <img
             // src="contacts-light-image.png"
-            src="contact-pg-dark.png"
+            src={
+              theme === "dark" ? "contact-pg-dark.png" : "contact-pg-light.png"
+            }
             alt="Image"
             width={391}
             height={562}

@@ -15,10 +15,13 @@ import ErrorPage from "./pages/ErrorPage";
 import ProjectPage from "./pages/ProjectPage";
 import Footer from "./components/Footer";
 import axios, { AxiosResponse } from "axios";
+import { ThemeContext } from "./utils/contexts/ThemeContext";
 
 function App() {
   const location = useLocation();
   const [theme, setTheme] = useState(localStorage.theme);
+  const themeContextValue = { theme, setTheme };
+
   const [currentRoute, setCurrentRoute] = useState("/");
 
   const toggleTheme = () => {
@@ -77,18 +80,20 @@ function App() {
       <MediaQuery minWidth={768}>
         <Navbar currentRoute={currentRoute} theme={theme} />
       </MediaQuery>
-      <AnimatePresence mode="wait">
-        <Routes location={location} key={location.pathname}>
-          <Route index element={<Home />} />
-          <Route path="/about" element={<About />} />
-          {/* <Route path="/skills" element={<Skills />} /> */}
-          {/* <Route path="/experience" element={<Experience />} /> */}
-          <Route path="/projects" element={<Projects />} />
-          <Route path="projects/:id" element={<ProjectPage />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="*" element={<ErrorPage />} />
-        </Routes>
-      </AnimatePresence>
+      <ThemeContext.Provider value={themeContextValue}>
+        <AnimatePresence mode="wait">
+          <Routes location={location} key={location.pathname}>
+            <Route index element={<Home />} />
+            <Route path="/about" element={<About />} />
+            {/* <Route path="/skills" element={<Skills />} /> */}
+            {/* <Route path="/experience" element={<Experience />} /> */}
+            <Route path="/projects" element={<Projects />} />
+            <Route path="projects/:id" element={<ProjectPage />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="*" element={<ErrorPage />} />
+          </Routes>
+        </AnimatePresence>
+      </ThemeContext.Provider>
       <Footer />
     </>
   );
