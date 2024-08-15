@@ -1,16 +1,7 @@
-// import Globe from "../components/Globe";
-// import { Link } from "react-router-dom";
-import {
-  aboutMeContent,
-  // interests,
-  // longTermGoals,
-  // shortTermGoals,
-  // topSkills,
-} from "../utils/constants";
 import pageTransition from "../utils/pageTransition";
 import Experience from "./Experience";
 import Skills from "./Skills";
-// import { circleStyles } from "../utils/style";
+import { aboutMeContent } from "../utils/constants";
 
 const About = () => {
   return (
@@ -326,8 +317,7 @@ const About = () => {
               </div>
             </div>
           ))}
-        </div>{" "}
-        //
+        </div>
       </div> */}
     </div>
   );

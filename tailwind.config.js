@@ -20,19 +20,11 @@ export default {
         none: "none",
       },
       fontFamily: {
-        // customFont: ['"Manrope"', "sans-serif"],
         headingFont: ['"Philosopher"', "sans-serif"],
-        // headingFont: ['"Black Ops One"', "system-ui"],
-        // textFont: ['"Russo One"', "sans-serif"],
-
-        // headingFont: ['"DM Serif Display"', "serif"],
-        // headingFont: ['"Poppins"', "sans-serif"],
-        // textFont: ['"Noto Sans"', "sans-serif"],
         textFont: ['"Montserrat"', "sans-serif"],
       },
       colors: {
         lightBg: "#f7f2f5",
-        // lightText: "#808080",
         lightText: "#707070",
         lightHighlightOpacity: "#936993",
         lightHighlight: "#5d0560",

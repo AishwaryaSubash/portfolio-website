@@ -3,18 +3,14 @@ import { contactDetails } from "../utils/constants";
 import { motion } from "framer-motion";
 import { useContext } from "react";
 import { ThemeContext } from "../utils/contexts/ThemeContext";
-// import { buttonHover } from "../utils/motion";
 
 const Contact = () => {
   const { theme } = useContext(ThemeContext);
 
   return (
-    // min-[1168px]:py-20
     <div className="pt-40 pb-20 flex flex-col gap-32 overflow-x-hidden justify-center items-center bg-lightBg text-lightHighlight dark:bg-darkBg dark:text-darkText">
-      {/* mt-6 mb-12 */}
       <div className="h-full w-9/12 flex items-center justify-center max-lg:flex-col max-lg:items-center max-lg:gap-8 max-lg:w-11/12">
         <div className="h-full flex flex-col justify-between items-start w-9/12 max-lg:items-center max-lg:gap-6 max-lg:mb-6 max-lg:w-full">
-          {/* max-md:text-xl max-sm:text-lg max-sm:flex-col max-sm:text-center max-sm:gap-0 max-sm:leading-tight */}
           <div className="flex flex-col gap-4 font-headingFont text-5xl text-lightText dark:text-darkText font-bold items-start mb-4 max-lg:flex-col max-lg:items-center max-lg:justify-center max-lg:w-full max-tablet:flex-col max-tablet:items-center max-md:text-4xl max-lg:mb-0 max-md:gap-2 max-sm:text-3xl">
             <p>Happy to connect.</p>
             <p>Feel free to reach out!</p>
@@ -30,23 +26,10 @@ const Contact = () => {
             happy to connect. Feel free to reach out - let's explore the
             possibilities together!
           </p>
-          <div
-            // variants={buttonHover}
-            // initial="initial"
-            // animate="animate"
-            className="flex items-center gap-6 font-textFont font-semibold text-lg max-sm:gap-4 max-lg:justify-center"
-          >
-            <a
-              href="#contact-form"
-              // href={`mailto:${emailContact.link}`}
-              // target="_blank"
-              // rel="noopener noreferrer"
-            >
+          <div className="flex items-center gap-6 font-textFont font-semibold text-lg max-sm:gap-4 max-lg:justify-center">
+            <a href="#contact-form">
               <motion.div
-                // initial={{ backgroundColor: "" }}
-                // transition={{ duration: 0.25, delay: 0.25 }}
                 whileHover={{ transition: { duration: 0.25, delay: 0.25 } }}
-                // className="flex font-semibold items-center justify-center w-[250px] py-2 px-3 mt-2 rounded-2xl bg-lightHighlight text-white border-2 border-lightHighlight hover:bg-transparent hover:border-2 hover:border-lightHighlightOpacity hover:text-lightHighlightOpacity dark:text-darkBg dark:bg-darkHighlight dark:border-2 dark:border-darkHighlight dark:hover:bg-transparent dark:hover:border-2 dark:hover:border-darkHighlightOpacity dark:hover:text-darkHighlightOpacity text-lg max-sm:text-base max-sm:justify-around max-sm:w-[200px]"
                 className="py-2 px-4 bg-lightHighlight text-white border-2 border-lightHighlight hover:bg-transparent hover:border-2 hover:border-lightHighlight hover:text-lightHighlight dark:text-darkBg dark:bg-darkHighlight dark:border-2 dark:border-darkHighlight dark:hover:bg-transparent dark:hover:border-2 dark:hover:border-darkHighlightOpacity dark:hover:text-darkHighlightOpacity rounded-xl max-sm:text-base"
               >
                 Get In Touch
@@ -75,7 +58,6 @@ const Contact = () => {
         </div>
         <div className="">
           <img
-            // src="contacts-light-image.png"
             src={
               theme === "dark" ? "contact-pg-dark.png" : "contact-pg-light.png"
             }
@@ -84,19 +66,11 @@ const Contact = () => {
             height={562}
             className="max-md:w-[300px] max-sm:w-[200px]"
           />
-          {/* <img
-            src="contacts-dark-image.png"
-            alt="Image"
-            width={341}
-            height={512}
-          /> */}
         </div>
       </div>
       <div
         id="contact-form"
-        // bg-gradient-to-br from-[rgba(240,182,254,0.8)] from-0% via-darkBg via-70% to-[rgba(240,182,254,0.8)] to-100%
         className="w-6/12 bg-[#c0c0c0aa] dark:bg-[#202020] p-8 rounded-3xl flex flex-col items-center gap-12"
-        // className="w-6/12 bg-gradient-to-br from-darkHighlightOpacity from-0% via-darkBg via-50% to-darkHighlightOpacity to-100% p-8 rounded-3xl flex flex-col items-center gap-12"
       >
         <div className="flex flex-col gap-2 items-center text-lightText dark:text-darkText">
           <p className="font-headingFont text-center text-5xl font-bold max-md:text-4xl max-sm:text-3xl">
@@ -134,8 +108,6 @@ const Contact = () => {
           </div>
         </div>
         <motion.div
-          // initial={{ backgroundColor: "" }}
-          // transition={{ duration: 0.25, delay: 0.25 }}
           whileHover={{ transition: { duration: 0.25, delay: 0.25 } }}
           className="cursor-pointer flex items-center gap-4 py-2 px-4 w-fit rounded-xl font-textFont font-semibold text-lg border-2 border-lightHighlight text-lightBg bg-lightHighlight hover:bg-transparent hover:text-lightHighlight dark:text-darkBg dark:bg-darkHighlight dark:border-2 dark:border-darkHighlight dark:hover:bg-transparent dark:hover:border-darkHighlightOpacity dark:hover:text-darkHighlight max-sm:text-base"
         >

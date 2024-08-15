@@ -3,11 +3,6 @@ interface NavLinksInterface {
   href: string;
 }
 
-interface HexPositionsInterface {
-  top: number;
-  left: number;
-}
-
 interface TechSkillsInterface {
   name: string;
   svg: string;
@@ -60,19 +55,17 @@ interface ContactDetailsInterface {
   icon: string;
 }
 
-interface GoalsInterface {
-  content: string;
-  image: string;
-}
+// interface GoalsInterface {
+//   content: string;
+//   image: string;
+// }
 
 export type {
   NavLinksInterface,
-  HexPositionsInterface,
   TechSkillsInterface,
   SkillsInterface,
   EducationDetailsInterface,
   WorkExperienceInterface,
   ProjectsInterface,
   ContactDetailsInterface,
-  GoalsInterface,
 };

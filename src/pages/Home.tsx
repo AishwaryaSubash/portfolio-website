@@ -109,7 +109,6 @@ const Home = () => {
 
   return (
     <div className="pt-40 pb-20 flex flex-col justify-center items-center bg-lightBg text-lightbg-lightHighlight dark:bg-darkBg dark:text-darkText">
-      {/* <p className="text-6xl font-headingFont my-4">Home</p> */}
       <div className="w-9/12 flex items-center justify-between max-[1440px]:flex-col max-[1440px]:gap-12 max-[680px]:w-11/12 max-sm:gap-10">
         {/* <canvas id="photoCanvas" width="350" height="485"></canvas> */}
         <MediaQuery maxWidth={1439}>
@@ -144,12 +143,7 @@ const Home = () => {
             </MediaQuery>
             <MediaQuery minWidth={501}>
               <p>Hi there!! This is</p>
-              <p
-                className="text-lightHighlight dark:text-darkHighlight"
-                // style={{
-                //   textShadow: "4px 2px 7px rgba(93,5,96,0.2)",
-                // }}
-              >
+              <p className="text-lightHighlight dark:text-darkHighlight">
                 Aishwarya
               </p>
             </MediaQuery>
@@ -191,7 +185,6 @@ const Home = () => {
           <img
             src="/projects/all-projects2.png"
             alt="Projects"
-            // w-[350px] h-[350px]
             className="w-[450px] bg-cover bg-center max-md:w-[350px] max-sm:w-[290px]"
           />
         </MediaQuery>
@@ -199,7 +192,6 @@ const Home = () => {
           <img
             src="/projects/all-projects2.png"
             alt="Projects"
-            // w-[350px] h-[485px]
             className="w-[600px]"
           />
         </MediaQuery>

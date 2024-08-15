@@ -1,28 +1,28 @@
-import { Routes, Route, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
+import { Routes, Route, useLocation } from "react-router-dom";
+import axios, { AxiosResponse } from "axios";
 import { AnimatePresence } from "framer-motion";
 import MediaQuery from "react-responsive";
+
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
-// import Skills from "./pages/Skills";
-// import Experience from "./pages/Experience";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
+import ProjectPage from "./pages/ProjectPage";
 import Contact from "./pages/Contact";
 import Hamburger from "./components/Hamburger";
 import ThemeToggle from "./components/ThemeToggle";
-import ErrorPage from "./pages/ErrorPage";
-import ProjectPage from "./pages/ProjectPage";
 import Footer from "./components/Footer";
-import axios, { AxiosResponse } from "axios";
+import ErrorPage from "./pages/ErrorPage";
+
 import { ThemeContext } from "./utils/contexts/ThemeContext";
 
 function App() {
   const location = useLocation();
+  const [currentRoute, setCurrentRoute] = useState("/");
+
   const [theme, setTheme] = useState(localStorage.theme);
   const themeContextValue = { theme, setTheme };
-
-  const [currentRoute, setCurrentRoute] = useState("/");
 
   const toggleTheme = () => {
     localStorage.theme = localStorage.theme === "dark" ? "light" : "dark";
@@ -85,8 +85,6 @@ function App() {
           <Routes location={location} key={location.pathname}>
             <Route index element={<Home />} />
             <Route path="/about" element={<About />} />
-            {/* <Route path="/skills" element={<Skills />} /> */}
-            {/* <Route path="/experience" element={<Experience />} /> */}
             <Route path="/projects" element={<Projects />} />
             <Route path="projects/:id" element={<ProjectPage />} />
             <Route path="/contact" element={<Contact />} />

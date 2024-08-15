@@ -1,5 +1,4 @@
 import { educationDetails, workExperience } from "../utils/constants";
-// import pageTransition from "../utils/pageTransition";
 
 const Experience = () => {
   return (

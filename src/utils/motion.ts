@@ -1,5 +1,3 @@
-/* all framer motion var */
-
 const hamMenuAnimation = {
   initial: {
     scaleY: 0,

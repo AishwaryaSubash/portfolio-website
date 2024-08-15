@@ -1,10 +1,10 @@
-import { useParams } from "react-router-dom";
-import { projectsList } from "../utils/constants";
-import { ProjectsInterface } from "../utils/types";
 import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 import pageTransition from "../utils/pageTransition";
 import ProjectCards from "../components/ProjectCards";
 import ErrorPage from "./ErrorPage";
+import { ProjectsInterface } from "../utils/types";
+import { projectsList } from "../utils/constants";
 
 const ProjectPage = () => {
   const [subProjectList, setSubProjectList] = useState<ProjectsInterface[]>([]);
@@ -118,24 +118,6 @@ const ProjectPage = () => {
                 <p>{project.detailedDescription}</p>
               )}
             </div>
-
-            {/* <MediaQuery maxWidth={894}>
-              <div className="flex flex-col">
-                <div className="flex gap-2">
-                  <p>Team</p>
-                  <p>{project.team}</p>
-                </div>
-                <div className="flex gap-2">
-                  <p>Duration</p>
-                  <p>{project.duration} Months</p>
-                </div>
-                <div className="flex gap-2">
-                  <p>Time</p>
-                  <p>{project.time}</p>
-                </div>
-              </div>
-            </MediaQuery>
-            <MediaQuery minWidth={895}> */}
             <div className="grid grid-cols-3 gap-4 text-lg max-[895px]:justify-items-center max-md:text-base max-[895px]:gap-x-3 max-[895px]:gap-y-1 max-sm:text-sm">
               <p>Team</p>
               <p>Duration</p>
@@ -144,7 +126,6 @@ const ProjectPage = () => {
               <p>{project.duration} Months</p>
               <p>{project.time}</p>
             </div>
-            {/* </MediaQuery> */}
           </div>
           <div className="flex flex-col items-start gap-4 max-sm:gap-3">
             <div className="w-[185px] text-3xl font-headingFont font-semibold max-md:text-2xl">
