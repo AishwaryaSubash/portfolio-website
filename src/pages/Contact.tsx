@@ -1,10 +1,17 @@
 import pageTransition from "../utils/pageTransition";
 import { contactDetails } from "../utils/constants";
 import { motion } from "framer-motion";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { ThemeContext } from "../utils/contexts/ThemeContext";
+import Snackbar from "../components/SnackBar";
 
 const Contact = () => {
+  const [snackbarMessage, setSnackbarMessage] = useState<string>("");
+
+  const handleSnackbarClick = () => {
+    setSnackbarMessage("Message sent successfully!!");
+  };
+
   const { theme } = useContext(ThemeContext);
 
   return (
@@ -108,6 +115,7 @@ const Contact = () => {
           </div>
         </div>
         <motion.div
+          onClick={handleSnackbarClick}
           whileHover={{ transition: { duration: 0.25, delay: 0.25 } }}
           className="cursor-pointer flex items-center gap-4 py-2 px-4 w-fit rounded-xl font-textFont font-semibold text-lg border-2 border-lightHighlight text-lightBg bg-lightHighlight hover:bg-transparent hover:text-lightHighlight dark:text-darkBg dark:bg-darkHighlight dark:border-2 dark:border-darkHighlight dark:hover:bg-transparent dark:hover:border-darkHighlightOpacity dark:hover:text-darkHighlight max-sm:text-base"
         >
@@ -125,6 +133,7 @@ const Contact = () => {
           </svg>
         </motion.div>
       </div>
+      <Snackbar message={snackbarMessage} duration={3000} />
     </div>
   );
 };

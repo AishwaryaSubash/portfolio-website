@@ -61,6 +61,11 @@ interface ContactDetailsInterface {
 //   image: string;
 // }
 
+interface SnackbarProps {
+  message: string;
+  duration?: number;
+}
+
 export type {
   NavLinksInterface,
   TechSkillsInterface,
@@ -69,4 +74,5 @@ export type {
   WorkExperienceInterface,
   ProjectsInterface,
   ContactDetailsInterface,
+  SnackbarProps,
 };
