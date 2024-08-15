@@ -47,7 +47,7 @@ const ProjectCards = ({
                 {item.oneLineDescription}
               </p>
               <p
-                className={`font-textFont text-sm text-[#080808] dark:text-darkText rounded-md py-1 px-3 mt-1 bg-lightHighlightBg dark:bg-[#3333339A] w-fit max-sm:text-xs max-sm:px-2`}
+                className={`font-textFont text-sm text-[#080808] dark:text-darkText rounded-md py-1 px-3 mt-1 bg-[#e6e6e6] dark:bg-[#3333339A] w-fit max-sm:text-xs max-sm:px-2`}
               >
                 {item.category}
               </p>
