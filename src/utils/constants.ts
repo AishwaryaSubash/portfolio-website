@@ -699,7 +699,7 @@ const contactDetails: ContactDetailsInterface[] = [
 
 const aboutMeContent: string[] = [
   "My fascination with technology started early during my school days and I discovered the joy of coding to solve problems and build innovative solutions. My education in Information Technology provided a strong foundation in programming languages like Python, C++ and JavaScript. However, I craved practical experience, wanting to go beyond theory.",
-  "This led me to explore technologies like React, Angular and Flutter through personal projects. Learning was an ongoing process, but with each challenge overcome and solution built, my passion for software development grew. My internship experience not only honed my technical skills but also highlighted the importance of teamwork in the software development world.",
+  "This led me to explore technologies like React, Angular and Flutter through personal projects. Learning was, and is, an ongoing process, but with each challenge overcome and solution built, my passion for software development grew. My internship experience not only honed my technical skills but also highlighted the importance of teamwork in the software development world.",
   "Now, as a recent graduate, I am eager to leverage my knowledge and skillset in a professional setting. My commitment to continuous learning ensures I stay up-to-date with the latest advancements in technology. In essence, I'm a passionate developer who thrives on bridging the gap between technical expertise and user expectations.",
 ];
 
