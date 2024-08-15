@@ -189,7 +189,7 @@ const Home = () => {
         {/* <canvas id="photoCanvas" width="350" height="485"></canvas> */}
         <MediaQuery maxWidth={1439}>
           <img
-            src="/projects/projects-display.png"
+            src="/projects/all-projects2.png"
             alt="Projects"
             // w-[350px] h-[350px]
             className="w-[450px] bg-cover bg-center max-md:w-[350px] max-sm:w-[290px]"
@@ -197,7 +197,7 @@ const Home = () => {
         </MediaQuery>
         <MediaQuery minWidth={1440}>
           <img
-            src="/projects/projects-display.png"
+            src="/projects/all-projects2.png"
             alt="Projects"
             // w-[350px] h-[485px]
             className="w-[600px]"
@@ -211,10 +211,11 @@ const Home = () => {
           <p className="text-xl text-lightText dark:text-darkText text-right leading-relaxed max-[1440px]:text-center max-md:text-lg max-sm:text-sm">
             With a passion for every aspect of web development, I create
             holistic digital solutions that shine from the user interface to the
-            database. My projects showcase how I leverage the full stack to
-            build robust, scalable, and user-friendly applications. Each project
-            demonstrates my ability to create seamless, efficient, and
-            innovative web applications. Dive into my work!!
+            database. My projects highlight my ability to leverage the full
+            stack, showcasing skills in building robust, scalable, and
+            user-friendly applications. Each project reflects my commitment to
+            developing seamless, efficient, and innovative web experiences. Dive
+            into my work!!
           </p>
           <Link to="/projects">
             <motion.div

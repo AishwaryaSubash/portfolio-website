@@ -47,7 +47,7 @@ const ProjectPage = () => {
         className="w-9/12 rounded-2xl max-[895px]:w-11/12"
       />
       <div className="w-9/12 pt-40 flex gap-4 items-start max-[895px]:w-11/12 max-[895px]:pt-32 max-[895px]:flex-col max-[895px]:items-center max-sm:pt-20 max-xs:pt-12">
-        <div className="flex flex-col gap-8 max-[895px]:w-11/12 max-[895px]:flex-row max-[895px]:justify-between">
+        <div className="min-w-[33%] flex flex-col gap-8 max-[895px]:w-11/12 max-[895px]:flex-row max-[895px]:justify-between">
           <div className="text-4xl font-headingFont font-bold max-sm:text-3xl">
             {project.title}
           </div>

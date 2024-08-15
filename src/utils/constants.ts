@@ -304,26 +304,46 @@ const educationDetails: EducationDetailsInterface[] = [
 ];
 
 const workExperience: WorkExperienceInterface[] = [
+  // {
+  //   position: "Associate Consultant",
+  //   institution: "ZoomRx Inc.",
+  //   description: "",
+  //   time: "Jul 2024 - Present",
+  // },
+  // {
+  //   position: "Frontend Developer Intern",
+  //   institution: "It's Forever Inc.",
+  //   description:
+  //     "Developed a captivating and responsive landing page for users and photographers using React, TypeScript and Tailwind CSS for end users, seamlessly integrating Razorpay payment gateway to ensure transaction security",
+  //   time: "Apr 2024 - Jun 2024",
+  // },
   {
-    position: "SDE Intern",
+    position: "Software Developer Intern",
     institution: "Imprzd Technologies Inc.",
     description:
-      "Developed engaging and responsive user interfaces using Angular, SASS and EJS, adapting to the dynamic scrum development process",
-    time: "August 2022",
+      "Developed engaging and responsive client interface - The Merchant Feed - a platform that provides the clients with valuable insights into their customers' experiences, using Angular, TypeScript and SASS, adapting to the dynamic scrum development process",
+    time: "Jan 2023 - Feb 2023",
+  },
+  {
+    position: "Software Developer Intern",
+    institution: "Imprzd Technologies Inc.",
+    description:
+      "Developed dynamic and responsive templates using Angular, SASS and EJS, ensuring seamless integration and adaptability within an agile development environment",
+    time: "Aug 2022 - Sept 2022",
   },
   {
     position: "Participant",
     institution: "Smart India Hackathon",
     description:
       "Nominated for National Level Smart India Hackathon 2022 Edition. Designed Smart Glasses by programming Arduino Uno and interfacing it with Bluetooth module and LCD display",
-    time: "March 2022",
+    time: "Mar 2022 - Apr 2022",
   },
   {
-    position: "Python Tutor",
+    position: "Python Instructor",
     institution: "Self-employed",
     description:
       "Designed and delivered an engaging 1-month Python programming course to young programmers in the US and assessed their understanding through weekly tests, culminating in a final project",
-    time: "July 2021",
+    time: "Jul 2021 - Aug 2021",
   },
 ];
 
