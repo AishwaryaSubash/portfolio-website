@@ -123,7 +123,20 @@ const ProjectPage = () => {
               <p>Duration</p>
               <p>Time</p>
               <p>{project.team}</p>
-              <p>{project.duration} Months</p>
+              <p>
+                {project.duration}{" "}
+                {project.durationType === 0
+                  ? project.duration > 1
+                    ? "Months"
+                    : "Month"
+                  : project.durationType === 1
+                  ? project.duration > 1
+                    ? "Weeks"
+                    : "Week"
+                  : project.duration > 1
+                  ? "Days"
+                  : "Day"}
+              </p>
               <p>{project.time}</p>
             </div>
           </div>

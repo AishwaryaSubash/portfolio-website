@@ -46,6 +46,7 @@ interface ProjectsInterface {
   techStack: string[];
   team: string;
   duration: number;
+  durationType: number; // 0-months, 1-weeks, 2-days
   time: string;
 }
 
