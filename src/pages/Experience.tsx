@@ -2,8 +2,8 @@ import { educationDetails, workExperience } from "../utils/constants";
 
 const Experience = () => {
   return (
-    <div className="mt-32 flex flex-col gap-40 justify-center items-center bg-lightBg text-lightHighlight dark:bg-darkBg dark:text-darkText">
-      <div className="w-10/12 flex flex-col gap-20 justify-center items-center max-md:gap-16 max-sm:gap-8">
+    <div className="mt-48 flex flex-col gap-40 justify-center items-center bg-lightBg text-lightHighlight dark:bg-darkBg dark:text-darkText">
+      <div className="w-10/12 flex flex-col gap-20 justify-center items-center max-xl:w-full max-md:gap-16 max-sm:gap-8">
         <p className="font-headingFont text-5xl text-lightText dark:text-darkText font-bold max-md:text-4xl max-sm:text-3xl">
           Work Experience
         </p>
@@ -18,14 +18,17 @@ const Experience = () => {
                   <p className="text-[28px] text-lightText dark:text-darkText font-semibold leading-snug max-md:text-2xl max-sm:text-xl">
                     {work.position}
                   </p>
-                  <div className="flex rounded-lg p-2 font-medium text-sm text-right bg-lightHighlight text-lightBg dark:bg-darkHighlight dark:text-darkBg max-sm:text-xs">
+                  <div className="flex rounded-lg p-2 font-medium text-sm text-right bg-lightHighlight text-lightBg dark:bg-darkHighlight dark:text-darkBg max-[895px]:hidden">
                     <p>{work.time}</p>
                   </div>
                 </div>
                 <p className="text-lg text-lightHighlight dark:text-darkHighlight font-semibold max-md:text-base max-sm:text-sm">
                   {work.institution}
                 </p>
-                <p className="text-lg text-darkHighlightBg dark:text-lightHighlightBg mt-2 max-md:text-base max-sm:text-sm">
+                <p className="font-medium text-sm mt-1 text-lightText dark:text-darkText min-[895px]:hidden max-sm:text-xs max-sm:mt-0">
+                  {work.time}
+                </p>
+                <p className="text-lg text-darkHighlightBg dark:text-lightHighlightBg mt-3 max-md:text-base max-sm:mt-2 max-sm:text-sm">
                   {work.description}
                 </p>
               </div>

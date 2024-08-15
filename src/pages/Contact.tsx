@@ -70,9 +70,9 @@ const Contact = () => {
       </div>
       <div
         id="contact-form"
-        className="w-6/12 bg-[#c0c0c0aa] dark:bg-[#202020] p-8 rounded-3xl flex flex-col items-center gap-12"
+        className="w-6/12 bg-[#c0c0c0aa] dark:bg-[#202020] p-8 rounded-3xl flex flex-col items-center gap-12 max-xl:w-8/12 max-lg:w-9/12 max-md:gap-8"
       >
-        <div className="flex flex-col gap-2 items-center text-lightText dark:text-darkText">
+        <div className="flex flex-col gap-2 items-center text-lightText dark:text-darkText max-sm:gap-1">
           <p className="font-headingFont text-center text-5xl font-bold max-md:text-4xl max-sm:text-3xl">
             Contact Me
           </p>
@@ -80,30 +80,30 @@ const Contact = () => {
             Feel free to drop a message!
           </p>
         </div>
-        <div className="w-full flex flex-col gap-8 items-center font-textFont text-lightText dark:text-darkText">
-          <div className="w-full flex items-center justify-between gap-8">
+        <div className="w-full flex flex-col gap-8 items-center font-textFont text-lightText dark:text-darkText max-md:gap-4">
+          <div className="w-full flex items-center justify-between gap-8 max-md:flex-col max-md:gap-4">
             <div className="w-full flex flex-col gap-1">
-              <p className="text-lg">Name</p>
+              <p className="text-lg max-md:text-base">Name</p>
               <input
                 type="text"
                 placeholder="Enter your name"
-                className="p-2 rounded-lg text-lightHighlight dark:text-darkText border border-lightHighlightBg dark:border-darkHighlightBg bg-transparent focus:ring-2 focus:ring-darkHighlightBg"
+                className="p-2 rounded-lg text-lightHighlight dark:text-darkText border border-lightHighlightBg dark:border-darkHighlightBg bg-transparent focus:ring-2 focus:ring-darkHighlightBg max-md:text-sm"
               />
             </div>
             <div className="w-full flex flex-col gap-1">
-              <p className="text-lg">Email</p>
+              <p className="text-lg max-md:text-base">Email</p>
               <input
                 type="email"
                 placeholder="Enter your email"
-                className="p-2 rounded-lg text-lightHighlight dark:text-darkText border border-lightHighlightBg dark:border-darkHighlightBg bg-transparent focus:ring-2 focus:ring-darkHighlightBg"
+                className="p-2 rounded-lg text-lightHighlight dark:text-darkText border border-lightHighlightBg dark:border-darkHighlightBg bg-transparent focus:ring-2 focus:ring-darkHighlightBg max-md:text-sm"
               />
             </div>
           </div>
           <div className="w-full flex flex-col gap-1">
-            <p className="text-lg">Message</p>
+            <p className="text-lg max-md:text-base">Message</p>
             <textarea
               placeholder="Enter your message"
-              className="p-2 rounded-lg text-lightHighlight dark:text-darkText border border-lightHighlightBg dark:border-darkHighlightBg bg-transparent focus:ring-2 focus:ring-darkHighlightBg"
+              className="p-2 rounded-lg text-lightHighlight dark:text-darkText border border-lightHighlightBg dark:border-darkHighlightBg bg-transparent focus:ring-2 focus:ring-darkHighlightBg max-md:text-sm"
             />
           </div>
         </div>

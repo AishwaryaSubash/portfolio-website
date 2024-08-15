@@ -1,7 +1,3 @@
-// import MediaQuery from "react-responsive";
-// import CountUp from "react-countup";
-// import { motion } from "framer-motion";
-
 import { professionalSkills, skills } from "../utils/constants";
 
 const Skills = () => {
@@ -10,21 +6,21 @@ const Skills = () => {
       <p className="font-headingFont text-5xl text-lightText dark:text-darkText font-bold my-8 max-md:text-4xl max-sm:text-3xl max-sm:my-0">
         My Skills
       </p>
-      <div className="w-full flex flex-col justify-center">
-        <p className="text-4xl font-semibold font-headingFont my-4 text-center text-lightHighlight dark:text-darkHighlight max-lg:px-4 max-md:text-3xl max-sm:text-2xl">
+      <div className="w-full flex flex-col justify-center gap-20">
+        <p className="text-4xl font-semibold font-headingFont text-center text-lightHighlight dark:text-darkHighlight max-lg:px-4 max-md:text-3xl max-sm:text-2xl">
           Technical Skills
         </p>
         <div className="flex flex-col gap-20">
           {skills.map((skill, index) => {
             return (
               <div
-                className="w-full flex flex-col gap-4 max-sm:gap-0"
+                className="w-full flex flex-col gap-10 max-sm:gap-0"
                 key={index}
               >
-                <p className="text-3xl text-lightText dark:text-darkText font-semibold font-headingFont max-lg:px-4 max-md:text-2xl max-sm:text-xl">
+                <p className="text-3xl text-center text-lightText dark:text-darkText font-semibold font-headingFont max-lg:px-4 max-md:text-2xl max-sm:text-xl">
                   {skill.skillType}
                 </p>
-                <div className="w-full grid grid-cols-5 gap-8 justify-items-center items-end max-lg:grid-cols-2 max-md:grid-cols-2 max-sm:gap-y-0">
+                <div className="w-full grid grid-cols-5 gap-8 justify-items-center items-end max-lg:grid-cols-4 max-md:grid-cols-3">
                   {skill.skillArray.map((item, index) => (
                     <div key={index} className="relative group">
                       <div
@@ -97,11 +93,11 @@ const Skills = () => {
           })}
         </div>
       </div>
-      <div className="w-full mt-24 flex flex-col gap-4 items-center justify-center max-sm:gap-0">
-        <p className="text-4xl font-semibold font-headingFont my-4 text-center text-lightHighlight dark:text-darkHighlight max-lg:px-4 max-md:text-3xl max-sm:text-2xl">
+      <div className="w-full mt-24 flex flex-col gap-10 items-center justify-center max-sm:gap-0">
+        <p className="text-4xl font-semibold font-headingFont text-center text-lightHighlight dark:text-darkHighlight max-lg:px-4 max-md:text-3xl max-sm:text-2xl">
           Professional Skills
         </p>
-        <div className="w-full grid grid-cols-5 gap-8 justify-items-center items-end justify-center max-lg:grid-cols-2 max-md:grid-cols-2 max-sm:gap-y-0">
+        <div className="w-full grid grid-cols-5 gap-8 justify-items-center items-end justify-center max-lg:grid-cols-4 max-md:grid-cols-3 max-sm:gap-y-0">
           {professionalSkills.map((item, index) => (
             <div key={index} className="relative group">
               <div

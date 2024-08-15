@@ -107,7 +107,7 @@ const ProjectPage = () => {
         </div>
         <div className="w-[78%] flex flex-col gap-16 max-[895px]:w-11/12">
           <div className="flex flex-col gap-12 font-textFont">
-            <div className="text-lg">
+            <div className="text-lg max-sm:text-base">
               {Array.isArray(project.detailedDescription) ? (
                 project.detailedDescription.map((item, index) => (
                   <div key={index}>

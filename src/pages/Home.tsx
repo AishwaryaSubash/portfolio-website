@@ -131,12 +131,7 @@ const Home = () => {
               <p>Hi there!!</p>
               <div className="flex items-center gap-2">
                 <p>This is</p>
-                <p
-                  className="text-lightHighlight dark:text-darkHighlight"
-                  style={{
-                    textShadow: "4px 2px 7px rgba(93,5,96,0.6)",
-                  }}
-                >
+                <p className="text-lightHighlight dark:text-darkHighlight">
                   Aishwarya
                 </p>
               </div>
@@ -179,7 +174,7 @@ const Home = () => {
           </Link>
         </div>
       </div>
-      <div className="pt-52 w-10/12 flex flex-row-reverse gap-24 items-center justify-between max-[1440px]:flex-col max-[1440px]:gap-12 max-[680px]:w-11/12 max-sm:w-10/12 max-sm:gap-8">
+      <div className="pt-52 w-10/12 flex flex-row-reverse gap-24 items-center justify-between max-[1440px]:flex-col max-[1440px]:gap-12 max-[680px]:w-11/12 max-sm:w-10/12 max-sm:gap-8 max-sm:pt-40">
         {/* <canvas id="photoCanvas" width="350" height="485"></canvas> */}
         <MediaQuery maxWidth={1439}>
           <img
