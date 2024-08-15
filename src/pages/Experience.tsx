@@ -2,7 +2,7 @@ import { educationDetails, workExperience } from "../utils/constants";
 
 const Experience = () => {
   return (
-    <div className="mt-48 flex flex-col gap-40 justify-center items-center bg-lightBg text-lightHighlight dark:bg-darkBg dark:text-darkText">
+    <div className="mt-48 flex flex-col gap-40 justify-center items-center bg-lightBg text-lightHighlight dark:bg-darkBg dark:text-darkText max-sm:mt-36 max-sm:gap-32">
       <div className="w-10/12 flex flex-col gap-20 justify-center items-center max-xl:w-full max-md:gap-16 max-sm:gap-8">
         <p className="font-headingFont text-5xl text-lightText dark:text-darkText font-bold max-md:text-4xl max-sm:text-3xl">
           Work Experience

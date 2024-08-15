@@ -6,26 +6,26 @@ const Skills = () => {
       <p className="font-headingFont text-5xl text-lightText dark:text-darkText font-bold my-8 max-md:text-4xl max-sm:text-3xl max-sm:my-0">
         My Skills
       </p>
-      <div className="w-full flex flex-col justify-center gap-20">
+      <div className="w-full flex flex-col justify-center gap-20 max-sm:gap-12">
         <p className="text-4xl font-semibold font-headingFont text-center text-lightHighlight dark:text-darkHighlight max-lg:px-4 max-md:text-3xl max-sm:text-2xl">
           Technical Skills
         </p>
-        <div className="flex flex-col gap-20">
+        <div className="flex flex-col gap-20 max-sm:gap-12">
           {skills.map((skill, index) => {
             return (
               <div
-                className="w-full flex flex-col gap-10 max-sm:gap-0"
+                className="w-full flex flex-col gap-10 max-sm:gap-6"
                 key={index}
               >
                 <p className="text-3xl text-center text-lightText dark:text-darkText font-semibold font-headingFont max-lg:px-4 max-md:text-2xl max-sm:text-xl">
                   {skill.skillType}
                 </p>
-                <div className="w-full grid grid-cols-5 gap-8 justify-items-center items-end max-lg:grid-cols-4 max-md:grid-cols-3">
+                <div className="w-full grid grid-cols-5 gap-8 justify-items-center items-end max-lg:grid-cols-4 max-md:grid-cols-3 max-sm:gap-4">
                   {skill.skillArray.map((item, index) => (
                     <div key={index} className="relative group">
                       <div
                         dangerouslySetInnerHTML={{ __html: item.svg }}
-                        className="w-12 h-12"
+                        className="w-12 h-12 max-sm:w-8 max-sm:h-8"
                       ></div>
                       <div className="z-10 absolute left-1/2 transform -translate-x-1/2 top-full mb-2 w-fit p-2 bg-gray-800 text-white text-center text-sm rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         {item.name}
@@ -93,16 +93,16 @@ const Skills = () => {
           })}
         </div>
       </div>
-      <div className="w-full mt-24 flex flex-col gap-10 items-center justify-center max-sm:gap-0">
+      <div className="w-full mt-24 flex flex-col gap-10 items-center justify-center max-sm:mt-16 max-sm:gap-6">
         <p className="text-4xl font-semibold font-headingFont text-center text-lightHighlight dark:text-darkHighlight max-lg:px-4 max-md:text-3xl max-sm:text-2xl">
           Professional Skills
         </p>
-        <div className="w-full grid grid-cols-5 gap-8 justify-items-center items-end justify-center max-lg:grid-cols-4 max-md:grid-cols-3 max-sm:gap-y-0">
+        <div className="w-full grid grid-cols-5 gap-8 justify-items-center items-end justify-center max-lg:grid-cols-4 max-md:grid-cols-3 max-sm:gap-4">
           {professionalSkills.map((item, index) => (
             <div key={index} className="relative group">
               <div
                 dangerouslySetInnerHTML={{ __html: item.svg }}
-                className="w-12 h-12"
+                className="w-12 h-12 max-sm:w-8 max-sm:h-8"
               ></div>
               <div className="z-10 absolute left-1/2 transform -translate-x-1/2 top-full mb-2 w-fit p-2 bg-gray-800 text-white text-center text-sm rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 {item.name}
