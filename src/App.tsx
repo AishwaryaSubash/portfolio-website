@@ -61,15 +61,15 @@ function App() {
   }, []);
 
   // Disable right click
-  // useEffect(() => {
-  //   const handleContextMenu = (e: { preventDefault: () => void; }) => {
-  //     e.preventDefault();
-  //   };
-  //   document.addEventListener("contextmenu", handleContextMenu);
-  //   return () => {
-  //     document.removeEventListener("contextmenu", handleContextMenu);
-  //   };
-  // }, []);
+  useEffect(() => {
+    const handleContextMenu = (e: { preventDefault: () => void }) => {
+      e.preventDefault();
+    };
+    document.addEventListener("contextmenu", handleContextMenu);
+    return () => {
+      document.removeEventListener("contextmenu", handleContextMenu);
+    };
+  }, []);
 
   return (
     <>

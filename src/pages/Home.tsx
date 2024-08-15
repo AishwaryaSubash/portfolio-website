@@ -1,28 +1,25 @@
-import {
-  Link,
-  // useNavigate
-} from "react-router-dom";
-import pageTransition from "../utils/pageTransition";
-// import Projects from "./Projects";
-import { motion } from "framer-motion";
-import { buttonHover } from "../utils/motion";
+import { useEffect } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import MediaQuery from "react-responsive";
-// import { useEffect } from "react";
+import { motion } from "framer-motion";
+import pageTransition from "../utils/pageTransition";
+import { buttonHover } from "../utils/motion";
+// import Projects from "./Projects";
 
 const Home = () => {
-  // const navigate = useNavigate();
+  const navigate = useNavigate();
 
   // Disable tab switching
-  // useEffect(() => {
-  //   const handleBlur = () => {
-  //     alert("Screenshot attempt detected. Redirecting to a different page.");
-  //     navigate("/about");
-  //   };
-  //   window.addEventListener("blur", handleBlur);
-  //   return () => {
-  //     window.removeEventListener("blur", handleBlur);
-  //   };
-  // }, [navigate]);
+  useEffect(() => {
+    const handleBlur = () => {
+      alert("Screenshot attempt detected. Redirecting to a different page.");
+      navigate("/about");
+    };
+    window.addEventListener("blur", handleBlur);
+    return () => {
+      window.removeEventListener("blur", handleBlur);
+    };
+  }, [navigate]);
 
   // Image rendering using Canvas
   // useEffect(() => {
