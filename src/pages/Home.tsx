@@ -12,7 +12,7 @@ const Home = () => {
   // Disable tab switching
   useEffect(() => {
     const handleBlur = () => {
-      alert("Screenshot attempt detected. Redirecting to a different page.");
+      alert("Tab switch detected. Redirecting to a different page.");
       navigate("/about");
     };
     window.addEventListener("blur", handleBlur);
