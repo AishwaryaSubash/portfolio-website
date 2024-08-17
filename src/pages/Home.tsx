@@ -10,18 +10,18 @@ const Home = () => {
   const navigate = useNavigate();
 
   // Disable tab switching
-  useEffect(() => {
-    const handleBlur = () => {
-      alert(
-        "Tab switch/screenshot attempt detected. Redirecting to a different page."
-      );
-      navigate("/about");
-    };
-    window.addEventListener("blur", handleBlur);
-    return () => {
-      window.removeEventListener("blur", handleBlur);
-    };
-  }, [navigate]);
+  // useEffect(() => {
+  //   const handleBlur = () => {
+  //     alert(
+  //       "Tab switch/screenshot attempt detected. Redirecting to a different page."
+  //     );
+  //     navigate("/about");
+  //   };
+  //   window.addEventListener("blur", handleBlur);
+  //   return () => {
+  //     window.removeEventListener("blur", handleBlur);
+  //   };
+  // }, [navigate]);
 
   // Image rendering using Canvas
   // useEffect(() => {
@@ -111,28 +111,32 @@ const Home = () => {
       <div className="w-9/12 flex items-center justify-between max-[1440px]:flex-col max-[1440px]:gap-12 max-[680px]:w-11/12 max-sm:gap-10">
         {/* <canvas id="photoCanvas" width="350" height="485"></canvas> */}
         <MediaQuery maxWidth={1439}>
-          <img
-            src="PictureSquare.jpg"
-            alt="Picture"
-            draggable="false"
-            className="w-[350px] h-[350px] rounded-full bg-lightText dark:shadow-2xl-dark shadow-light bg-cover bg-center max-md:w-[250px] max-md:h-[250px] max-sm:w-[200px] max-sm:h-[200px]"
-          />
-          <div
-            className="absolute inset-0 bg-transparent"
-            contextMenu="return false;"
-          ></div>
+          <div className="relative">
+            <img
+              src="PictureSquare.jpg"
+              alt="Picture"
+              draggable="false"
+              className="w-[350px] h-[350px] rounded-full bg-lightText dark:shadow-2xl-dark shadow-light bg-cover bg-center max-md:w-[250px] max-md:h-[250px] max-sm:w-[200px] max-sm:h-[200px]"
+            />
+            <div
+              className="absolute inset-0 bg-transparent"
+              contextMenu="return false;"
+            ></div>
+          </div>
         </MediaQuery>
         <MediaQuery minWidth={1440}>
-          <img
-            src="Picture.jpg"
-            alt="Picture"
-            draggable="false"
-            className="w-[350px] h-[485px] rounded-3xl bg-lightText dark:shadow-2xl-dark shadow-light"
-          />
-          <div
-            className="absolute inset-0 bg-transparent"
-            contextMenu="return false;"
-          ></div>
+          <div className="relative">
+            <img
+              src="Picture.jpg"
+              alt="Picture"
+              draggable="false"
+              className="w-[350px] h-[485px] rounded-3xl bg-lightText dark:shadow-2xl-dark shadow-light"
+            />
+            <div
+              className="absolute inset-0 bg-transparent"
+              contextMenu="return false;"
+            ></div>
+          </div>
         </MediaQuery>
         <div className="w-[650px] h-[485px] flex flex-col justify-between p-8 rounded-3xl font-textFont bg-lightBg text-darkBg dark:bg-darkBg dark:text-lightBg max-[1440px]:items-center max-md:w-full max-md:h-auto max-md:gap-4">
           <div className="flex gap-3 font-headingFont text-5xl text-lightText dark:text-darkText font-bold max-md:text-4xl max-md:gap-2 max-sm:text-3xl max-xs:flex-col max-xs:items-center">
