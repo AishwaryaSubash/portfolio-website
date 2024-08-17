@@ -1,5 +1,8 @@
-import { useEffect } from "react";
-import { Link, useNavigate } from "react-router-dom";
+// import { useEffect } from "react";
+import {
+  Link,
+  // useNavigate
+} from "react-router-dom";
 import MediaQuery from "react-responsive";
 import { motion } from "framer-motion";
 import pageTransition from "../utils/pageTransition";
@@ -7,7 +10,7 @@ import { buttonHover } from "../utils/motion";
 // import Projects from "./Projects";
 
 const Home = () => {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
   // Disable tab switching
   // useEffect(() => {

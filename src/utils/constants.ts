@@ -477,10 +477,10 @@ const projectsList: ProjectsInterface[] = [
     time: "Sept 2023",
   },
   {
-    route: "code-quanta",
-    title: "CodeQuanta",
+    route: "only-svce",
+    title: "Only SVCE",
     websiteUrl: "https://only-svce.vercel.app/",
-    websiteImg: "/projects/code-quanta.png",
+    websiteImg: "/projects/only-svce.png",
     githubUrl: "https://github.com/Akash-Manikandan/svce-lab-codes",
     detailedDescription: [
       "Welcome Coders! Dive into a vibrant community platform designed to elevate your programming journey.",
@@ -531,8 +531,8 @@ const projectsList: ProjectsInterface[] = [
     time: "Feb 2024",
   },
   {
-    route: "infobot",
-    title: "InfoBot",
+    route: "conversational-agent",
+    title: "Conversational Agent",
     websiteUrl: "https://ws-graph.vercel.app/chat",
     websiteImg: "/projects/svce-ai.png",
     githubUrl: "https://github.com/Akash-Manikandan/ws-graph",
