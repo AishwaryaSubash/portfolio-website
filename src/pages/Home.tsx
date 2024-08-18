@@ -16,7 +16,7 @@ const Home = () => {
   // useEffect(() => {
   //   const handleBlur = () => {
   //     alert(
-  //       "Tab switch/screenshot attempt detected. Redirecting to a different page."
+  //       "Tab switch/ screenshot attempt detected. Redirecting to a different page."
   //     );
   //     navigate("/about");
   //   };
