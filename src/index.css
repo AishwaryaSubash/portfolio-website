@@ -46,13 +46,36 @@ html {
   .dark ::-webkit-scrollbar-thumb:hover {
     background-color: #f0b6fe;
   }
-}
 
-.shadow-light {
-  --tw-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
-    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  .light .shadow-2xl-light {
+    --tw-shadow: 25px 25px 50px -12px #5d05604e;
+    --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+      var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .dark .shadow-2xl-dark {
+    --tw-shadow: 25px 25px 50px -12px #f0b6fe4e;
+    --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+      var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  @media (max-width: 640px) {
+    .light .shadow-2xl-light {
+      --tw-shadow: 15px 15px 30px -6px #5d05604e;
+      --tw-shadow-colored: 0 15px 30px -6px var(--tw-shadow-color);
+      box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+        var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    }
+
+    .dark .shadow-2xl-dark {
+      --tw-shadow: 15px 15px 30px -6px #f0b6fe4e;
+      --tw-shadow-colored: 0 15px 30px -6px var(--tw-shadow-color);
+      box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+        var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    }
+  }
 }
 
 .drop-shadow-light {
@@ -61,22 +84,6 @@ html {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast)
     var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate)
     var(--tw-sepia) var(--tw-drop-shadow);
-}
-
-.dark\:shadow-2xl-dark {
-  --tw-shadow: 25px 25px 50px -12px #f0b6fe4e;
-  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
-    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
-@media (max-width: 640px) {
-  .dark\:shadow-2xl-dark {
-    --tw-shadow: 15px 15px 30px -6px #f0b6fe4e;
-    --tw-shadow-colored: 0 15px 30px -6px var(--tw-shadow-color);
-    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
-      var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-  }
 }
 
 .dark\:drop-shadow-md-dark {

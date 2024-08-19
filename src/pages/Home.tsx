@@ -119,7 +119,7 @@ const Home = () => {
               src="PictureSquare.jpg"
               alt="Picture"
               draggable="false"
-              className="w-[350px] h-[350px] rounded-full bg-lightText dark:shadow-2xl-dark shadow-light bg-cover bg-center max-md:w-[250px] max-md:h-[250px] max-sm:w-[200px] max-sm:h-[200px]"
+              className="w-[350px] h-[350px] rounded-full bg-lightText shadow-2xl-light dark:shadow-2xl-dark bg-cover bg-center max-md:w-[250px] max-md:h-[250px] max-sm:w-[200px] max-sm:h-[200px]"
             />
             <div
               className="absolute inset-0 bg-transparent"
@@ -133,7 +133,7 @@ const Home = () => {
               src="Picture.jpg"
               alt="Picture"
               draggable="false"
-              className="w-[350px] h-[485px] rounded-3xl bg-lightText dark:shadow-2xl-dark shadow-light"
+              className="w-[350px] h-[485px] rounded-3xl bg-lightText shadow-2xl-light dark:shadow-2xl-dark"
             />
             <div
               className="absolute inset-0 bg-transparent"

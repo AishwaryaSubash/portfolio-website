@@ -18,7 +18,10 @@ const ProjectCards = ({
       {projectsList.map((item, index) => (
         <Link to={`/projects/${item.route}`}>
           <motion.div
-            initial={{ opacity: window.innerWidth <= 768 ? 1 : initialOpacity }}
+            initial={{
+              opacity:
+                isProjectsPage && window.innerWidth <= 768 ? 1 : initialOpacity,
+            }}
             transition={{ duration: 0.25, delay: 0.25 }}
             whileHover={{ scale: scale, opacity: 1 }}
             key={index}
@@ -33,21 +36,21 @@ const ProjectCards = ({
             />
             <div className="flex flex-col gap-1">
               <p
-                className={`font-textFont text-[#080808] dark:text-darkText font-semibold text-2xl ${
+                className={`font-textFont text-lightText dark:text-darkText font-semibold text-2xl ${
                   isProjectsPage ? "max-sm:text-lg" : "max-lg:text-xl"
                 }`}
               >
                 {item.title}
               </p>
               <p
-                className={`font-textFont text-lg text-[#080808] dark:text-darkText ${
+                className={`font-textFont text-lg text-lightText dark:text-darkText ${
                   isProjectsPage ? "max-sm:text-base" : "max-lg:text-base"
                 }`}
               >
                 {item.oneLineDescription}
               </p>
               <p
-                className={`font-textFont text-sm text-[#080808] dark:text-darkText rounded-md py-1 px-3 mt-1 bg-[#e6e6e6] dark:bg-[#3333339A] w-fit max-sm:text-xs max-sm:px-2`}
+                className={`font-textFont text-sm text-lightText dark:text-darkText rounded-md py-1 px-3 mt-1 bg-[#e6e6e6] dark:bg-[#3333339A] w-fit max-sm:text-xs max-sm:px-2`}
               >
                 {item.category}
               </p>
