@@ -28,15 +28,17 @@ const Hamburger = ({ theme }: { theme: string | undefined }) => {
               <img
                 src="/main-logos/no-bg-dark-logo.png"
                 alt="Logo"
-                width={100}
-                height={100}
+                className="w-[100px] h-[100px] max-sm:w-[80px] max-sm:h-[80px]"
+                // width={100}
+                // height={100}
               />
             ) : (
               <img
                 src="/main-logos/no-bg-light-logo.png"
                 alt="Logo"
-                width={100}
-                height={100}
+                className="w-[100px] h-[100px] max-sm:w-[80px] max-sm:h-[80px]"
+                // width={100}
+                // height={100}
               />
             )}
           </Link>
@@ -74,15 +76,17 @@ const Hamburger = ({ theme }: { theme: string | undefined }) => {
                       <img
                         src="/main-logos/no-bg-dark-ham-logo.png"
                         alt="Logo"
-                        width={100}
-                        height={100}
+                        className="w-[100px] h-[100px] max-sm:w-[80px] max-sm:h-[80px]"
+                        // width={100}
+                        // height={100}
                       />
                     ) : (
                       <img
                         src="/main-logos/no-bg-light-logo.png"
                         alt="Logo"
-                        width={100}
-                        height={100}
+                        className="w-[100px] h-[100px] max-sm:w-[80px] max-sm:h-[80px]"
+                        // width={100}
+                        // height={100}
                       />
                     )}
                   </Link>

@@ -18,7 +18,7 @@ const ProjectCards = ({
       {projectsList.map((item, index) => (
         <Link to={`/projects/${item.route}`}>
           <motion.div
-            initial={{ opacity: initialOpacity }}
+            initial={{ opacity: window.innerWidth <= 768 ? 1 : initialOpacity }}
             transition={{ duration: 0.25, delay: 0.25 }}
             whileHover={{ scale: scale, opacity: 1 }}
             key={index}
