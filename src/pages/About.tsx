@@ -294,7 +294,6 @@ const About = () => {
             </>
           ))}
         </div>
-        //{" "}
         <div className="grid grid-cols-2 gap-4 max-md:grid-cols-1">
           {interests.map((goal, index) => (
             <div key={index} className="flex items-center justify-center gap-4">

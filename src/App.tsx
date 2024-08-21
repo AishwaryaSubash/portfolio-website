@@ -44,7 +44,6 @@ function App() {
   }, [theme]);
 
   useEffect(() => {
-    console.log(location);
     setCurrentRoute(location.pathname);
   }, [location]);
 
@@ -52,12 +51,11 @@ function App() {
     axios
       .post("http://localhost:3000/visitor-tracker")
       .then((response: AxiosResponse<string>) => {
-        console.log("Middleware triggered:", response.data);
+        console.log(response.data);
       })
       .catch((error) => {
         console.error("Error making request:", error);
       });
-    console.log("hell");
   }, []);
 
   // Disable right click

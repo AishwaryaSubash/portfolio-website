@@ -63,7 +63,7 @@ const Experience = () => {
           })}
         </div> */}
       </div>
-      <div className="w-10/12 pb-12 flex flex-col items-center gap-20 max-xl:w-full max-md:gap-16 max-sm:gap-8">
+      <div className="w-10/12 flex flex-col items-center gap-20 max-xl:w-full max-md:gap-16 max-sm:gap-8">
         <p className="font-headingFont text-center text-5xl text-lightText dark:text-darkText font-bold max-md:text-4xl max-sm:text-3xl">
           Educational Details
         </p>

@@ -124,7 +124,7 @@ const ProjectPage = () => {
               <p>Time</p>
               <p>{project.team}</p>
               <p>
-                {project.duration}{" "}
+                {project.duration}
                 {project.durationType === 0
                   ? project.duration > 1
                     ? "Months"
@@ -162,7 +162,7 @@ const ProjectPage = () => {
         <p className="text-5xl font-headingFont font-bold">Other Projects</p>
         <div className="w-11/12 flex items-start justify-between gap-6 max-[895px]:flex-col">
           <ProjectCards
-            isProjectsPage={false}
+            isProjectsPage={true}
             projectsList={subProjectList}
             scale={1}
             initialOpacity={0.5}

@@ -15,7 +15,7 @@ const Projects = () => {
       </div>
       <div className="w-10/12 grid grid-cols-2 gap-y-12 gap-x-20 max-lg:grid-cols-1 max-sm:gap-y-8">
         <ProjectCards
-          isProjectsPage={true}
+          isProjectsPage={false}
           projectsList={projectsList}
           scale={1.046}
           initialOpacity={0.9}

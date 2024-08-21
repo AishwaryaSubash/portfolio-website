@@ -25,26 +25,26 @@ const ProjectCards = ({
             transition={{ duration: 0.25, delay: 0.25 }}
             whileHover={{ scale: scale, opacity: 1 }}
             key={index}
-            className="flex flex-col gap-4 rounded-2xl p-4 cursor-pointer border-2 border-transparent hover:text-lightText"
+            className="flex flex-col gap-4 rounded-2xl p-4 cursor-pointer border-2 border-transparent text-lightText"
           >
             <img
               src={item.websiteImg}
               alt={item.title}
               className={`rounded-2xl ${
-                isProjectsPage ? "max-sm:rounded-xl" : "max-tablet:rounded-xl"
+                !isProjectsPage ? "max-sm:rounded-xl" : "max-tablet:rounded-xl"
               }`}
             />
             <div className="flex flex-col gap-1">
               <p
                 className={`font-textFont text-lightText dark:text-darkText font-semibold text-2xl ${
-                  isProjectsPage ? "max-sm:text-lg" : "max-lg:text-xl"
+                  !isProjectsPage ? "max-sm:text-lg" : "max-lg:text-xl"
                 }`}
               >
                 {item.title}
               </p>
               <p
                 className={`font-textFont text-lg text-lightText dark:text-darkText ${
-                  isProjectsPage ? "max-sm:text-base" : "max-lg:text-base"
+                  !isProjectsPage ? "max-sm:text-base" : "max-lg:text-base"
                 }`}
               >
                 {item.oneLineDescription}
