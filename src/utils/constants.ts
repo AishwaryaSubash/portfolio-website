@@ -352,6 +352,7 @@ const projectsList: ProjectsInterface[] = [
     duration: 3,
     durationType: 0,
     time: "Jan 2023",
+    myContribution: [],
   },
   {
     route: "review-classification",
@@ -383,6 +384,7 @@ const projectsList: ProjectsInterface[] = [
     duration: 2,
     durationType: 0,
     time: "Sept 2023",
+    myContribution: [],
   },
   {
     route: "conversational-agent",
@@ -415,6 +417,7 @@ const projectsList: ProjectsInterface[] = [
     duration: 5,
     durationType: 0,
     time: "Jan 2024",
+    myContribution: [],
   },
   {
     route: "forum-app",
@@ -443,6 +446,7 @@ const projectsList: ProjectsInterface[] = [
     duration: 2,
     durationType: 0,
     time: "Mar 2023",
+    myContribution: [],
   },
   {
     route: "only-svce",
@@ -470,6 +474,7 @@ const projectsList: ProjectsInterface[] = [
     duration: 1,
     durationType: 1,
     time: "Jun 2023",
+    myContribution: [],
   },
   {
     route: "expense-tracker-app",
@@ -497,6 +502,7 @@ const projectsList: ProjectsInterface[] = [
     duration: 1,
     durationType: 0,
     time: "Dec 2022",
+    myContribution: [],
   },
   {
     route: "pick-n-pay",
@@ -524,6 +530,7 @@ const projectsList: ProjectsInterface[] = [
     duration: 4,
     durationType: 2,
     time: "Feb 2024",
+    myContribution: [],
   },
   {
     route: "svce-redesigned",
@@ -542,6 +549,7 @@ const projectsList: ProjectsInterface[] = [
     duration: 2,
     durationType: 0,
     time: "Aug 2022",
+    myContribution: [],
   },
   {
     route: "memory-game",
@@ -561,6 +569,7 @@ const projectsList: ProjectsInterface[] = [
     duration: 3,
     durationType: 1,
     time: "Jan 2024",
+    myContribution: [],
   },
   {
     route: "svce-clone",
@@ -580,6 +589,7 @@ const projectsList: ProjectsInterface[] = [
     duration: 1,
     durationType: 0,
     time: "Feb 2022",
+    myContribution: [],
   },
   // {
   //   title: "Wildlife Website",

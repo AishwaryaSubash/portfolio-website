@@ -48,6 +48,7 @@ interface ProjectsInterface {
   duration: number;
   durationType: number; // 0-months, 1-weeks, 2-days
   time: string;
+  myContribution?: string[];
 }
 
 interface ContactDetailsInterface {
