@@ -51,7 +51,7 @@ const ProjectPage = () => {
           <div className="text-4xl font-headingFont font-bold max-sm:text-3xl">
             {project.title}
           </div>
-          <div className="flex gap-4">
+          <div className="flex gap-4 text-white">
             <a href={project.websiteUrl} target="_blank">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -103,6 +103,23 @@ const ProjectPage = () => {
                 />
               </svg>
             </a>
+            {project.backendRepoUrl && (
+              <a href={project.backendRepoUrl} target="_blank">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    fill-rule="evenodd"
+                    d="M3.516 15.725c.271-.019.618-.02 1.116-.02h14.736c.498 0 .845.001 1.117.02c.266.018.422.052.54.102c.387.161.695.47.855.86c.049.119.083.275.101.543c.019.273.019.622.019 1.123c0 .5 0 .85-.019 1.123c-.018.268-.052.424-.101.544c-.16.389-.468.698-.855.86c-.118.049-.274.083-.54.101c-.272.019-.619.019-1.117.019H4.632c-.498 0-.845 0-1.116-.019c-.267-.018-.423-.053-.541-.102a1.58 1.58 0 0 1-.855-.86c-.049-.119-.083-.275-.101-.543A18 18 0 0 1 2 18.353c0-.5 0-.85.019-1.123c.018-.268.052-.424.101-.544c.16-.389.468-.698.855-.86c.118-.049.274-.083.54-.101m1.116 3.687c.58 0 1.052-.474 1.052-1.06c0-.584-.471-1.058-1.052-1.058s-1.053.474-1.053 1.059s.471 1.059 1.053 1.059m.001-11.118c-.498 0-.845 0-1.116-.019c-.267-.018-.423-.052-.541-.102a1.58 1.58 0 0 1-.855-.86c-.049-.119-.083-.275-.101-.543A18 18 0 0 1 2 5.647c0-.5 0-.85.019-1.123c.018-.268.052-.424.101-.544c.16-.389.468-.698.855-.86c.118-.049.274-.083.54-.101A18 18 0 0 1 4.633 3h14.736c.498 0 .845 0 1.117.019c.266.018.422.052.54.102c.387.161.695.47.855.86c.049.119.083.275.101.543c.019.274.019.622.019 1.123c0 .5 0 .85-.019 1.123c-.018.268-.052.424-.101.544c-.16.389-.468.698-.855.86c-.118.049-.274.083-.54.101a18 18 0 0 1-1.117.02zm0 1.059c-.498 0-.845 0-1.116.019c-.267.018-.423.052-.541.102a1.58 1.58 0 0 0-.855.86c-.049.119-.083.275-.101.543C2 11.15 2 11.5 2 12s0 .85.019 1.123c.018.268.052.424.101.544c.16.389.468.698.855.86c.118.049.274.083.54.101c.272.019.619.02 1.117.02h14.736c.498 0 .845-.001 1.117-.02c.266-.018.422-.052.54-.102a1.58 1.58 0 0 0 .855-.86c.049-.119.083-.275.101-.543C22 12.85 22 12.5 22 12s0-.85-.019-1.123c-.018-.268-.052-.424-.101-.544a1.58 1.58 0 0 0-.855-.86c-.118-.049-.274-.083-.54-.101a18 18 0 0 0-1.117-.02zM5.684 12c0 .585-.471 1.059-1.052 1.059A1.056 1.056 0 0 1 3.579 12c0-.585.471-1.059 1.053-1.059c.58 0 1.052.474 1.052 1.059M4.632 6.706c.58 0 1.052-.474 1.052-1.059s-.471-1.059-1.052-1.059s-1.053.474-1.053 1.06c0 .584.471 1.058 1.053 1.058"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </a>
+            )}
           </div>
         </div>
         <div className="w-[78%] flex flex-col gap-16 max-[895px]:w-11/12">
@@ -118,24 +135,24 @@ const ProjectPage = () => {
                 <p>{project.detailedDescription}</p>
               )}
             </div>
-            <div className="grid grid-cols-3 gap-4 text-lg max-[895px]:justify-items-center max-md:text-base max-[895px]:gap-x-3 max-[895px]:gap-y-1 max-sm:text-sm">
-              <p>Team</p>
-              <p>Duration</p>
-              <p>Time</p>
+            <div className="grid grid-cols-3 gap-3 text-lg max-[895px]:justify-items-center max-md:text-base max-[895px]:gap-x-3 max-[895px]:gap-y-1 max-sm:text-sm">
+              <p className="font-medium">Team</p>
+              <p className="font-medium">Duration</p>
+              <p className="font-medium">Time</p>
               <p>{project.team}</p>
               <p>
                 {project.duration}
                 {project.durationType === 0
                   ? project.duration > 1
-                    ? "Months"
-                    : "Month"
+                    ? " Months"
+                    : " Month"
                   : project.durationType === 1
                   ? project.duration > 1
-                    ? "Weeks"
-                    : "Week"
+                    ? " Weeks"
+                    : " Week"
                   : project.duration > 1
-                  ? "Days"
-                  : "Day"}
+                  ? " Days"
+                  : " Day"}
               </p>
               <p>{project.time}</p>
             </div>
@@ -155,6 +172,20 @@ const ProjectPage = () => {
                 </div>
               ))}
             </div>
+          </div>
+          <div>
+            {project.myContribution && (
+              <div className="flex flex-col items-start gap-4 max-sm:gap-3">
+                <div className="w-56 text-3xl font-headingFont font-semibold max-md:text-2xl">
+                  My Contribution
+                </div>
+                <div className="flex flex-wrap font-textFont text-lg max-sm:text-base">
+                  {project.myContribution.map((item, index) => (
+                    <p key={index}>{item}</p>
+                  ))}
+                </div>
+              </div>
+            )}
           </div>
         </div>
       </div>

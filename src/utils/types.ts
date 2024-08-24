@@ -40,6 +40,7 @@ interface ProjectsInterface {
   category: string;
   websiteUrl: string;
   githubUrl: string;
+  backendRepoUrl?: string;
   websiteImg: string;
   websiteVideo?: string;
   detailedDescription: string | string[];
