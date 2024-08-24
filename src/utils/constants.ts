@@ -463,7 +463,11 @@ const projectsList: ProjectsInterface[] = [
     duration: 2,
     durationType: 0,
     time: "Mar 2023",
-    myContribution: [],
+    myContribution: [
+      "I played a pivotal role in designing and implementing the data models that power this community platform.",
+      "My responsibilities included building the user authentication and authorisation system, creating the homepage interface, and integrating the Neo4j graph database to facilitate powerful connections between data.",
+      "To ensure data security, I implemented robust password hashing mechanisms. My contributions were instrumental in creating a scalable and secure platform for community engagement.",
+    ],
   },
   {
     route: "only-svce",

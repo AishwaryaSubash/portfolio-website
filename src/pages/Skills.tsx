@@ -27,7 +27,7 @@ const Skills = () => {
                         dangerouslySetInnerHTML={{ __html: item.svg }}
                         className="w-12 h-12 max-sm:w-8 max-sm:h-8"
                       ></div>
-                      <div className="z-10 absolute left-1/2 transform -translate-x-1/2 top-full font-textFont mb-2 w-fit p-2 bg-gray-700 text-lightBg dark:bg-gray-200 dark:text-darkBg text-center text-sm rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      <div className="z-10 absolute left-full top-3/4 transform -translate-x-1/2 font-textFont w-max p-2 bg-gray-700 text-lightBg dark:bg-gray-200 dark:text-darkBg text-center text-sm rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         {item.name}
                       </div>
                     </div>
@@ -104,7 +104,7 @@ const Skills = () => {
                 dangerouslySetInnerHTML={{ __html: item.svg }}
                 className="w-12 h-12 max-sm:w-8 max-sm:h-8"
               ></div>
-              <div className="z-10 absolute left-1/2 transform -translate-x-1/2 top-full mb-2 w-fit p-2 bg-gray-700 text-lightBg dark:bg-gray-200 dark:text-darkBg text-center text-sm rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <div className="z-10 absolute left-full top-3/4 transform -translate-x-1/2 font-textFont w-fit p-2 bg-gray-700 text-lightBg dark:bg-gray-200 dark:text-darkBg text-center text-sm rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 {item.name}
               </div>
             </div>
