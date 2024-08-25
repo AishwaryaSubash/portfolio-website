@@ -3,7 +3,7 @@ import { projectsList } from "../utils/constants";
 
 const Projects = () => {
   return (
-    <div className="pt-40 pb-20 flex flex-col gap-16 overflow-hidden justify-center items-center bg-lightBg text-lightHighlight dark:bg-darkBg dark:text-darkText max-md:gap-12 max-sm:gap-8">
+    <div className="pt-40 pb-20 flex flex-col gap-16 overflow-hidden justify-center items-center bg-lightBg text-lightHighlight dark:bg-darkBg dark:text-darkText max-md:gap-12 max-sm:gap-8 max-sm:pt-32">
       <div className="flex flex-col gap-4 items-center max-md:gap-3 max-sm:gap-2">
         <p className="font-headingFont text-5xl text-lightText dark:text-darkText font-bold max-md:text-4xl max-sm:text-3xl">
           My Projects

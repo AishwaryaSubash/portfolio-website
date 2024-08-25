@@ -40,18 +40,18 @@ const ProjectPage = () => {
   }
 
   return (
-    <div className="pt-40 pb-20 w-full flex flex-col items-center gap-8 overflow-hidden bg-lightBg text-lightText dark:bg-darkBg dark:text-darkText">
+    <div className="pt-40 pb-20 w-full flex flex-col items-center gap-8 overflow-hidden bg-lightBg text-lightText dark:bg-darkBg dark:text-darkText max-sm:pt-32">
       <img
         src={project.websiteImg}
         alt={project.title}
         className="w-9/12 rounded-2xl max-[895px]:w-11/12"
       />
-      <div className="w-9/12 pt-40 flex gap-4 items-start max-[895px]:w-11/12 max-[895px]:pt-32 max-[895px]:flex-col max-[895px]:items-center max-sm:pt-20 max-xs:pt-12">
-        <div className="min-w-[33%] flex flex-col gap-8 max-[895px]:w-11/12 max-[895px]:flex-row max-[895px]:justify-between">
+      <div className="w-9/12 pt-40 flex gap-4 items-start max-[895px]:w-11/12 max-[895px]:pt-32 max-[895px]:flex-col max-[895px]:items-center max-sm:pt-20 max-xs:pt-12 max-sm:gap-4">
+        <div className="min-w-[33%] flex flex-col gap-8 max-[895px]:w-11/12 max-[895px]:flex-row max-[895px]:justify-between max-sm:flex-col max-sm:gap-4">
           <div className="text-4xl font-headingFont font-bold max-sm:text-3xl">
             {project.title}
           </div>
-          <div className="flex gap-4 text-lightText dark:text-darkText">
+          <div className="flex w-fit h-fit gap-4 text-lightText dark:text-darkText">
             <a
               href={project.websiteUrl}
               target="_blank"

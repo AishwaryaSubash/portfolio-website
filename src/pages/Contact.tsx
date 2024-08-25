@@ -15,7 +15,7 @@ const Contact = () => {
   const { theme } = useContext(ThemeContext);
 
   return (
-    <div className="pt-40 pb-20 flex flex-col gap-32 overflow-x-hidden justify-center items-center bg-lightBg text-lightHighlight dark:bg-darkBg dark:text-darkText">
+    <div className="pt-40 pb-20 flex flex-col gap-32 overflow-x-hidden justify-center items-center bg-lightBg text-lightHighlight dark:bg-darkBg dark:text-darkText max-sm:pt-32">
       <div className="h-full w-9/12 flex items-center justify-center max-lg:flex-col max-lg:items-center max-lg:gap-8 max-lg:w-11/12">
         <div className="h-full flex flex-col justify-between items-start w-9/12 max-lg:items-center max-lg:gap-6 max-lg:mb-6 max-lg:w-full">
           <div className="flex flex-col gap-4 font-headingFont text-5xl text-lightText dark:text-darkText font-bold items-start mb-4 max-lg:flex-col max-lg:items-center max-lg:justify-center max-lg:w-full max-tablet:flex-col max-tablet:items-center max-md:text-4xl max-lg:mb-0 max-md:gap-2 max-sm:text-3xl">
