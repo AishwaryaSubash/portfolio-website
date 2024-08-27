@@ -51,7 +51,7 @@ function App() {
     axios
       .post("http://localhost:3000/visitor-tracker")
       .then((response: AxiosResponse<string>) => {
-        console.log(response.data);
+        console.log(response);
       })
       .catch((error) => {
         console.error("Error making request:", error);
