@@ -110,7 +110,7 @@ const Home = () => {
   // }, []);
 
   return (
-    <div className="pt-40 pb-20 flex flex-col justify-center items-center bg-lightBg text-lightbg-lightHighlight dark:bg-darkBg dark:text-darkText max-sm:pt-32">
+    <main className="pt-40 pb-20 flex flex-col justify-center items-center bg-lightBg text-lightbg-lightHighlight dark:bg-darkBg dark:text-darkText max-sm:pt-32">
       <div className="w-9/12 flex items-center justify-between max-[1440px]:flex-col max-[1440px]:gap-12 max-[680px]:w-11/12 max-sm:gap-10">
         {/* <canvas id="photoCanvas" width="350" height="485"></canvas> */}
         <MediaQuery maxWidth={1439}>
@@ -243,7 +243,7 @@ const Home = () => {
           </Link>
         </div>
       </div>
-    </div>
+    </main>
   );
 };
 

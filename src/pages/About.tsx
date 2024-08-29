@@ -5,7 +5,7 @@ import { aboutMeContent } from "../utils/constants";
 
 const About = () => {
   return (
-    <div className="pt-40 pb-20 flex flex-col justify-center items-center bg-lightBg text-lightHighlight dark:bg-darkBg dark:text-darkText max-sm:pt-32">
+    <main className="pt-40 pb-20 flex flex-col justify-center items-center bg-lightBg text-lightHighlight dark:bg-darkBg dark:text-darkText max-sm:pt-32">
       <div className="flex flex-col items-center justify-center gap-8 max-sm:gap-6">
         <p className="font-headingFont text-5xl text-lightText dark:text-darkText font-bold max-md:text-4xl max-sm:text-3xl">
           About Me
@@ -318,7 +318,7 @@ const About = () => {
           ))}
         </div>
       </div> */}
-    </div>
+    </main>
   );
 };
 

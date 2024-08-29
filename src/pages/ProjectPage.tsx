@@ -40,7 +40,7 @@ const ProjectPage = () => {
   }
 
   return (
-    <div className="pt-40 pb-20 w-full flex flex-col items-center gap-8 overflow-hidden bg-lightBg text-lightText dark:bg-darkBg dark:text-darkText max-sm:pt-32">
+    <main className="pt-40 pb-20 w-full flex flex-col items-center gap-8 overflow-hidden bg-lightBg text-lightText dark:bg-darkBg dark:text-darkText max-sm:pt-32">
       <img
         src={project.websiteImg}
         alt={project.title}
@@ -221,7 +221,7 @@ const ProjectPage = () => {
           />
         </div>
       </div>
-    </div>
+    </main>
   );
 };
 
