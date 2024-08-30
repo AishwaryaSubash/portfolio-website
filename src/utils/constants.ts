@@ -325,7 +325,7 @@ const projectsList: ProjectsInterface[] = [
   {
     route: "chat-app",
     title: "Flutter Websockets Chat Application",
-    websiteUrl: "https://flutter-chat-app.vercel.app/",
+    websiteUrl: "https://flutter-chat-app.vercel.app",
     websiteImg: "/projects/chat-app.png",
     githubUrl: "https://github.com/Akash-Manikandan/flutter_chat_app",
     backendRepoUrl: "https://github.com/karthie2002/nest_chat_backend",
@@ -362,7 +362,7 @@ const projectsList: ProjectsInterface[] = [
   {
     route: "review-classification",
     title: "Aspect Based Sentiment Analysis",
-    websiteUrl: "https://mini-project-a1.vercel.app/",
+    websiteUrl: "https://mini-project-a1.vercel.app",
     websiteImg: "/projects/absa.png",
     githubUrl: "https://github.com/KE2002/Review_Classification",
     backendRepoUrl: "https://github.com/AishwaryaSubash/backend_absa",
@@ -472,7 +472,7 @@ const projectsList: ProjectsInterface[] = [
   {
     route: "only-svce",
     title: "Only SVCE",
-    websiteUrl: "https://only-svce.vercel.app/",
+    websiteUrl: "https://only-svce.vercel.app",
     websiteImg: "/projects/only-svce.png",
     githubUrl: "https://github.com/Akash-Manikandan/svce-lab-codes",
     detailedDescription: [
@@ -504,7 +504,7 @@ const projectsList: ProjectsInterface[] = [
   {
     route: "expense-tracker-app",
     title: "Expense Tracker Application",
-    websiteUrl: "https://expense-tracker-flutter.vercel.app/",
+    websiteUrl: "https://expense-tracker-flutter.vercel.app",
     websiteImg: "/projects/expense-tracker.png",
     githubUrl: "https://github.com/AishwaryaSubash/expense_tracker",
     backendRepoUrl: "https://github.com/Akash-Manikandan/expense_backend",
@@ -537,7 +537,7 @@ const projectsList: ProjectsInterface[] = [
   {
     route: "pick-n-pay",
     title: "Pick-N-Pay",
-    websiteUrl: "https://product-frontend-seven.vercel.app/",
+    websiteUrl: "https://product-frontend-seven.vercel.app",
     websiteImg: "/projects/product.png",
     githubUrl: "https://github.com/AishwaryaSubash/product-frontend",
     backendRepoUrl: "https://github.com/AishwaryaSubash/test-product-backend",
@@ -565,7 +565,7 @@ const projectsList: ProjectsInterface[] = [
   {
     route: "svce-redesigned",
     title: "Sample College Website",
-    websiteUrl: "https://svce-website.vercel.app/",
+    websiteUrl: "https://svce-website.vercel.app",
     websiteImg: "/projects/svce-redesigned.png",
     githubUrl: "https://github.com/AishwaryaSubash/svce-website",
     detailedDescription: [
@@ -587,7 +587,7 @@ const projectsList: ProjectsInterface[] = [
   {
     route: "memory-game",
     title: "Unmatched",
-    websiteUrl: "https://unmatched-memory-game.vercel.app/",
+    websiteUrl: "https://unmatched-memory-game.vercel.app",
     websiteImg: "/projects/memory-game.png",
     githubUrl: "https://github.com/AishwaryaSubash/memory_game",
     detailedDescription: [
@@ -606,7 +606,7 @@ const projectsList: ProjectsInterface[] = [
   {
     route: "svce-clone",
     title: "SVCE Clone",
-    websiteUrl: "svce-website-clone.vercel.app",
+    websiteUrl: "https://svce-website-clone.vercel.app",
     websiteImg: "/projects/svce-clone.png",
     githubUrl: "https://github.com/AishwaryaSubash/SVCE_Website_Clone",
     detailedDescription: [
@@ -615,7 +615,7 @@ const projectsList: ProjectsInterface[] = [
       "While relatively simple in scope, this project provided invaluable insights into crafting user-friendly and visually appealing interfaces, laying the groundwork for more complex endeavours",
     ],
     techStack: ["HTML", "CSS", "JavaScript"],
-    oneLineDescription: "Mastering the basics: A college website recreation",
+    oneLineDescription: "Learning the basics: A college website recreation",
     category: "Frontend App",
     team: "Collaborated",
     duration: 1,
