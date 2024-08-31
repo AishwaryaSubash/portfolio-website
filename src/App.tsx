@@ -49,7 +49,9 @@ function App() {
 
   useEffect(() => {
     axios
-      .post("http://localhost:3000/visitor-tracker")
+      .post(
+        "https://portfolio-website-backend-pied.vercel.app//visitor-tracker"
+      )
       .then((response: AxiosResponse<string>) => {
         console.log(response);
       })
