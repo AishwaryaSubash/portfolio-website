@@ -69,8 +69,8 @@ interface SnackbarProps {
 }
 
 interface ContactFormData {
-  name: string;
-  email: string;
+  senderName: string;
+  senderEmail: string;
   message: string;
 }
 

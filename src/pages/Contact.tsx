@@ -9,8 +9,8 @@ import { ContactFormData } from "../utils/types";
 const Contact = () => {
   const [snackbarMessage, setSnackbarMessage] = useState<string>("");
   const [formData, setFormData] = useState<ContactFormData>({
-    name: "",
-    email: "",
+    senderName: "",
+    senderEmail: "",
     message: "",
   });
 
@@ -29,12 +29,12 @@ const Contact = () => {
   const handleSubmit = async () => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-    if (!formData.name || !formData.email || !formData.message) {
+    if (!formData.senderName || !formData.senderEmail || !formData.message) {
       setSnackbarMessage("All fields are required");
       return;
     }
 
-    if (!emailRegex.test(formData.email)) {
+    if (!emailRegex.test(formData.senderEmail)) {
       setSnackbarMessage("Please enter a valid email address");
       return;
     }
@@ -50,7 +50,8 @@ const Contact = () => {
       };
 
       const response = await fetch(
-        "https://portfolio-website-backend-pied.vercel.app/message/post",
+        "https://aishwarya-portfolio-website-backend.vercel.app/message/post",
+        // "http://localhost:3000/message/post",
         requestOptions
       );
 
@@ -145,8 +146,8 @@ const Contact = () => {
               <p className="text-lg max-md:text-base">Name</p>
               <input
                 type="text"
-                name="name"
-                value={formData.name}
+                name="senderName"
+                value={formData.senderName}
                 onChange={(e) => handleInputChange(e)}
                 placeholder="Enter your name"
                 className="p-2 rounded-lg text-lightHighlight dark:text-darkText border border-lightHighlightBg dark:border-darkHighlightBg bg-transparent focus:ring-2 focus:ring-darkHighlightBg max-md:text-sm"
@@ -156,8 +157,8 @@ const Contact = () => {
               <p className="text-lg max-md:text-base">Email</p>
               <input
                 type="email"
-                name="email"
-                value={formData.email}
+                name="senderEmail"
+                value={formData.senderEmail}
                 onChange={(e) => handleInputChange(e)}
                 placeholder="Enter your email"
                 className="p-2 rounded-lg text-lightHighlight dark:text-darkText border border-lightHighlightBg dark:border-darkHighlightBg bg-transparent focus:ring-2 focus:ring-darkHighlightBg max-md:text-sm"

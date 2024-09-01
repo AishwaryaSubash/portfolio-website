@@ -49,7 +49,7 @@ function App() {
 
   useEffect(() => {
     axios
-      .post("https://portfolio-website-backend-pied.vercel.app/visitor/post")
+      .post("https://aishwarya-portfolio-website-backend.vercel.app/visitor/post")
       .then((response: AxiosResponse<string>) => {
         console.log(response);
       })
