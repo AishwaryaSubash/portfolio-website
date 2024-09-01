@@ -68,6 +68,12 @@ interface SnackbarProps {
   duration?: number;
 }
 
+interface ContactFormData {
+  name: string;
+  email: string;
+  message: string;
+}
+
 export type {
   NavLinksInterface,
   TechSkillsInterface,
@@ -77,4 +83,5 @@ export type {
   ProjectsInterface,
   ContactDetailsInterface,
   SnackbarProps,
+  ContactFormData,
 };

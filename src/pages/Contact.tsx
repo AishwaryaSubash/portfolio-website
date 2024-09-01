@@ -4,12 +4,64 @@ import { motion } from "framer-motion";
 import { useContext, useState } from "react";
 import { ThemeContext } from "../utils/contexts/ThemeContext";
 import Snackbar from "../components/SnackBar";
+import { ContactFormData } from "../utils/types";
 
 const Contact = () => {
   const [snackbarMessage, setSnackbarMessage] = useState<string>("");
+  const [formData, setFormData] = useState<ContactFormData>({
+    name: "",
+    email: "",
+    message: "",
+  });
 
-  const handleSnackbarClick = () => {
-    setSnackbarMessage("Message sent successfully!!");
+  const handleInputChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    const { name, value } = e.target;
+    if (Object.keys(formData).includes(name)) {
+      setFormData((prevFormData) => ({
+        ...prevFormData,
+        [name]: value,
+      }));
+    }
+  };
+
+  const handleSubmit = async () => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (!formData.name || !formData.email || !formData.message) {
+      setSnackbarMessage("All fields are required");
+      return;
+    }
+
+    if (!emailRegex.test(formData.email)) {
+      setSnackbarMessage("Please enter a valid email address");
+      return;
+    }
+
+    try {
+      const myHeaders = new Headers();
+      myHeaders.append("Content-Type", "application/json");
+      const requestOptions: RequestInit = {
+        method: "POST",
+        headers: myHeaders,
+        redirect: "follow",
+        body: JSON.stringify(formData),
+      };
+
+      const response = await fetch(
+        "https://portfolio-website-backend-pied.vercel.app/message/post",
+        requestOptions
+      );
+
+      if (response.ok) {
+        setSnackbarMessage("Message sent successfully!!");
+      } else {
+        setSnackbarMessage("Failed to send message");
+      }
+    } catch (error) {
+      console.error("Error:", error);
+    }
   };
 
   const { theme } = useContext(ThemeContext);
@@ -93,6 +145,9 @@ const Contact = () => {
               <p className="text-lg max-md:text-base">Name</p>
               <input
                 type="text"
+                name="name"
+                value={formData.name}
+                onChange={(e) => handleInputChange(e)}
                 placeholder="Enter your name"
                 className="p-2 rounded-lg text-lightHighlight dark:text-darkText border border-lightHighlightBg dark:border-darkHighlightBg bg-transparent focus:ring-2 focus:ring-darkHighlightBg max-md:text-sm"
               />
@@ -101,6 +156,9 @@ const Contact = () => {
               <p className="text-lg max-md:text-base">Email</p>
               <input
                 type="email"
+                name="email"
+                value={formData.email}
+                onChange={(e) => handleInputChange(e)}
                 placeholder="Enter your email"
                 className="p-2 rounded-lg text-lightHighlight dark:text-darkText border border-lightHighlightBg dark:border-darkHighlightBg bg-transparent focus:ring-2 focus:ring-darkHighlightBg max-md:text-sm"
               />
@@ -109,13 +167,16 @@ const Contact = () => {
           <div className="w-full flex flex-col gap-1">
             <p className="text-lg max-md:text-base">Message</p>
             <textarea
+              name="message"
+              value={formData.message}
+              onChange={(e) => handleInputChange(e)}
               placeholder="Enter your message"
               className="p-2 rounded-lg text-lightHighlight dark:text-darkText border border-lightHighlightBg dark:border-darkHighlightBg bg-transparent focus:ring-2 focus:ring-darkHighlightBg max-md:text-sm"
             />
           </div>
         </div>
         <motion.div
-          onClick={handleSnackbarClick}
+          onClick={handleSubmit}
           whileHover={{ transition: { duration: 0.25, delay: 0.25 } }}
           className="cursor-pointer flex items-center gap-4 py-2 px-4 w-fit rounded-xl font-textFont font-semibold text-lg border-2 border-lightHighlight text-lightBg bg-lightHighlight hover:bg-transparent hover:text-lightHighlight dark:text-darkBg dark:bg-darkHighlight dark:border-2 dark:border-darkHighlight dark:hover:bg-transparent dark:hover:border-darkHighlightOpacity dark:hover:text-darkHighlight max-sm:text-base"
         >
