@@ -14,6 +14,7 @@ import Hamburger from "./components/Hamburger";
 import ThemeToggle from "./components/ThemeToggle";
 import Footer from "./components/Footer";
 import ErrorPage from "./pages/ErrorPage";
+// import Resume from "./pages/Resume";
 
 import { ThemeContext } from "./utils/contexts/ThemeContext";
 
@@ -49,7 +50,9 @@ function App() {
 
   useEffect(() => {
     axios
-      .post("https://aishwarya-portfolio-website-backend.vercel.app/visitor/post")
+      .post(
+        "https://aishwarya-portfolio-website-backend.vercel.app/visitor/post"
+      )
       .then((response: AxiosResponse<string>) => {
         console.log(response);
       })
@@ -86,6 +89,7 @@ function App() {
             <Route path="/projects" element={<Projects />} />
             <Route path="projects/:id" element={<ProjectPage />} />
             <Route path="/contact" element={<Contact />} />
+            {/* <Route path="/resume" element={<Resume />} /> */}
             <Route path="*" element={<ErrorPage />} />
           </Routes>
         </AnimatePresence>

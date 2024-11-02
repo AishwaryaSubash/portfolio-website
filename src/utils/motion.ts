@@ -36,6 +36,18 @@ const hamWrapperAnimation = {
   },
 };
 
+const navbarHoverAnimation = {
+  initial: { x: -25, width: 25, height: 4 },
+  animate: {
+    x: 0,
+    width: 4,
+    transition: {
+      duration: 0.25,
+      ease: [0.12, 0, 0.39, 0],
+    },
+  },
+};
+
 const linkContainer = {
   initial: {
     transition: {
@@ -69,4 +81,10 @@ const buttonHover = {
   },
 };
 
-export { hamMenuAnimation, hamWrapperAnimation, linkContainer, buttonHover };
+export {
+  hamMenuAnimation,
+  hamWrapperAnimation,
+  navbarHoverAnimation,
+  linkContainer,
+  buttonHover,
+};

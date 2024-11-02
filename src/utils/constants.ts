@@ -15,7 +15,8 @@ const navLinks: NavLinksInterface[] = [
   { title: "Contact", href: "/contact" },
   {
     title: "Resume",
-    href: "https://drive.google.com/file/d/1ln2wG-KjNx0MATWe5e6AkaTXHXIIyOD-/view?usp=drive_link",
+    // href: "/resume",
+    href: "https://drive.google.com/file/d/1n7JrntUXoNvVw8cc_PC8rCbiuTShun7F/view?usp=drive_link",
   },
 ];
 
@@ -278,24 +279,24 @@ const educationDetails: EducationDetailsInterface[] = [
 ];
 
 const workExperience: WorkExperienceInterface[] = [
-  // {
-  //   position: "Associate Consultant",
-  //   institution: "ZoomRx Inc.",
-  //   description: "",
-  //   time: "Jul 2024 - Present",
-  // },
-  // {
-  //   position: "Frontend Developer Intern",
-  //   institution: "It's Forever Inc.",
-  //   description:
-  //     "Developed a captivating and responsive landing page for users and photographers using React, TypeScript and Tailwind CSS for end users, seamlessly integrating Razorpay payment gateway to ensure transaction security",
-  //   time: "Apr 2024 - Jun 2024",
-  // },
+  {
+    position: "Associate Consultant",
+    institution: "ZoomRx Inc.",
+    description: "",
+    time: "Jul 2024 - Present",
+  },
+  {
+    position: "Frontend Developer Intern",
+    institution: "It's Forever Inc.",
+    description:
+      "Developed a captivating and responsive landing page for users and photographers using React, TypeScript and Tailwind CSS, seamlessly integrating Razorpay payment gateway to ensure transaction security",
+    time: "Apr 2024 - Jun 2024",
+  },
   {
     position: "Software Developer Intern",
     institution: "Imprzd Technologies Inc.",
     description:
-      "Developed engaging and responsive client interface - The Merchant Feed - a platform that provides the clients with valuable insights into their customers' experiences, using Angular, TypeScript and SASS, adapting to the dynamic scrum development process",
+      "Developed an engaging and responsive client interface - The Merchant Feed - a platform that provides the clients with valuable insights into their customers' experiences, using Angular, TypeScript and SASS, adapting to the dynamic scrum development process",
     time: "Jan 2023 - Feb 2023",
   },
   {
