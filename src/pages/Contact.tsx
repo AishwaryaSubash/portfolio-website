@@ -8,6 +8,7 @@ import { ContactFormData } from "../utils/types";
 
 const Contact = () => {
   const [snackbarMessage, setSnackbarMessage] = useState<string>("");
+  const [showLoader, setShowLoader] = useState<boolean>(false);
   const [formData, setFormData] = useState<ContactFormData>({
     senderName: "",
     senderEmail: "",
@@ -38,6 +39,7 @@ const Contact = () => {
       setSnackbarMessage("Please enter a valid email address");
       return;
     }
+    setShowLoader(true);
 
     try {
       const myHeaders = new Headers();
@@ -56,6 +58,7 @@ const Contact = () => {
       );
 
       if (response.ok) {
+        setShowLoader(false);
         setSnackbarMessage("Message sent successfully!!");
       } else {
         setSnackbarMessage("Failed to send message");
@@ -176,24 +179,77 @@ const Contact = () => {
             />
           </div>
         </div>
-        <motion.div
-          onClick={handleSubmit}
-          whileHover={{ transition: { duration: 0.25, delay: 0.25 } }}
-          className="cursor-pointer flex items-center gap-4 py-2 px-4 w-fit rounded-xl font-textFont font-semibold text-lg border-2 border-lightHighlight text-lightBg bg-lightHighlight hover:bg-transparent hover:text-lightHighlight dark:text-darkBg dark:bg-darkHighlight dark:border-2 dark:border-darkHighlight dark:hover:bg-transparent dark:hover:border-darkHighlightOpacity dark:hover:text-darkHighlight max-sm:text-base"
-        >
-          <p>Send Message</p>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="32"
-            height="32"
-            viewBox="0 0 24 24"
+        {!showLoader ? (
+          <motion.div
+            onClick={handleSubmit}
+            whileHover={{ transition: { duration: 0.25, delay: 0.25 } }}
+            className="cursor-pointer flex items-center gap-4 py-2 px-4 w-fit rounded-xl font-textFont font-semibold text-lg border-2 border-lightHighlight text-lightBg bg-lightHighlight hover:bg-transparent hover:text-lightHighlight dark:text-darkBg dark:bg-darkHighlight dark:border-2 dark:border-darkHighlight dark:hover:bg-transparent dark:hover:border-darkHighlightOpacity dark:hover:text-darkHighlight max-sm:text-base"
           >
-            <path
-              fill="currentColor"
-              d="M4.4 19.425q-.5.2-.95-.088T3 18.5V14l8-2l-8-2V5.5q0-.55.45-.837t.95-.088l15.4 6.5q.625.275.625.925t-.625.925z"
-            />
-          </svg>
-        </motion.div>
+            <p>Send Message</p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="currentColor"
+                d="M4.4 19.425q-.5.2-.95-.088T3 18.5V14l8-2l-8-2V5.5q0-.55.45-.837t.95-.088l15.4 6.5q.625.275.625.925t-.625.925z"
+              />
+            </svg>
+          </motion.div>
+        ) : (
+          <div className="cursor-not-allowed flex items-center gap-4 py-2 px-4 w-fit rounded-xl font-textFont font-semibold text-lg border-2 border-lightHighlight text-lightBg bg-lightHighlight dark:text-darkBg dark:bg-darkHighlight dark:border-2 dark:border-darkHighlight max-sm:text-base">
+            <p>Sending</p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+            >
+              <g
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+              >
+                <path
+                  stroke-dasharray="16"
+                  stroke-dashoffset="16"
+                  d="M12 3c4.97 0 9 4.03 9 9"
+                >
+                  <animate
+                    fill="freeze"
+                    attributeName="stroke-dashoffset"
+                    dur="0.3s"
+                    values="16;0"
+                  />
+                  <animateTransform
+                    attributeName="transform"
+                    dur="1.5s"
+                    repeatCount="indefinite"
+                    type="rotate"
+                    values="0 12 12;360 12 12"
+                  />
+                </path>
+                <path
+                  stroke-dasharray="64"
+                  stroke-dashoffset="64"
+                  stroke-opacity=".3"
+                  d="M12 3c4.97 0 9 4.03 9 9c0 4.97 -4.03 9 -9 9c-4.97 0 -9 -4.03 -9 -9c0 -4.97 4.03 -9 9 -9Z"
+                >
+                  <animate
+                    fill="freeze"
+                    attributeName="stroke-dashoffset"
+                    dur="1.2s"
+                    values="64;0"
+                  />
+                </path>
+              </g>
+            </svg>
+          </div>
+        )}
       </div>
       <Snackbar message={snackbarMessage} duration={3000} />
     </main>

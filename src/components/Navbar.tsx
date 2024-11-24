@@ -25,15 +25,15 @@ const Navbar = ({
             <img
               src="/main-logos/no-bg-dark-logo.png"
               alt="Logo"
-              width={100}
-              height={100}
+              width={90}
+              height={90}
             />
           ) : (
             <img
               src="/main-logos/no-bg-light-logo.png"
               alt="Logo"
-              width={100}
-              height={100}
+              width={90}
+              height={90}
             />
           )}
         </Link>

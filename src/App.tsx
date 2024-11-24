@@ -49,9 +49,19 @@ function App() {
   }, [location]);
 
   useEffect(() => {
+    const myHeaders = new Headers();
+    myHeaders.append("Content-Type", "application/json");
+    const requestOptions: RequestInit = {
+      method: "POST",
+      headers: myHeaders,
+      redirect: "follow",
+      body: JSON.stringify({}),
+    };
+
     axios
       .post(
-        "https://aishwarya-portfolio-website-backend.vercel.app/visitor/post"
+        "https://aishwarya-portfolio-website-backend.vercel.app/visitor/post",
+        requestOptions
       )
       .then((response: AxiosResponse<string>) => {
         console.log(response);

@@ -17,7 +17,7 @@ const Snackbar: React.FC<SnackbarProps> = ({ message, duration = 3000 }) => {
 
   return (
     <div
-      className={`fixed bottom-4 left-4 px-4 py-2 bg-gray-700 text-lightBg dark:bg-gray-200 dark:text-darkBg rounded-lg shadow-lg transition-opacity duration-300 ${
+      className={`fixed bottom-4 left-4 px-4 py-2 font-textFont bg-gray-700 text-lightBg dark:bg-gray-200 dark:text-darkBg rounded-lg shadow-lg transition-opacity duration-300 ${
         isVisible ? "opacity-100" : "opacity-0 pointer-events-none"
       }`}
     >
