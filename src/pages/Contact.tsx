@@ -1,7 +1,7 @@
 import pageTransition from "../utils/pageTransition";
 import { contactDetails } from "../utils/constants";
 import { motion } from "framer-motion";
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { ThemeContext } from "../utils/contexts/ThemeContext";
 import Snackbar from "../components/SnackBar";
 import { ContactFormData } from "../utils/types";
@@ -13,6 +13,7 @@ const Contact = () => {
     senderName: "",
     senderEmail: "",
     message: "",
+    // date: Date.now(),
   });
 
   const handleInputChange = (
@@ -56,7 +57,7 @@ const Contact = () => {
         // "http://localhost:3000/message/post",
         requestOptions
       );
-
+      console.log(formData, response);
       if (response.ok) {
         setShowLoader(false);
         setSnackbarMessage("Message sent successfully!!");
@@ -67,6 +68,15 @@ const Contact = () => {
       console.error("Error:", error);
     }
   };
+
+  useEffect(() => {
+    if (snackbarMessage) {
+      const timer = setTimeout(() => {
+        setSnackbarMessage("");
+      }, 3000);
+      return () => clearTimeout(timer);
+    }
+  }, [snackbarMessage]);
 
   const { theme } = useContext(ThemeContext);
 
@@ -210,18 +220,18 @@ const Contact = () => {
               <g
                 fill="none"
                 stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
               >
                 <path
-                  stroke-dasharray="16"
-                  stroke-dashoffset="16"
+                  strokeDasharray="16"
+                  strokeDashoffset="16"
                   d="M12 3c4.97 0 9 4.03 9 9"
                 >
                   <animate
                     fill="freeze"
-                    attributeName="stroke-dashoffset"
+                    attributeName="strokeDashoffset"
                     dur="0.3s"
                     values="16;0"
                   />
@@ -234,14 +244,14 @@ const Contact = () => {
                   />
                 </path>
                 <path
-                  stroke-dasharray="64"
-                  stroke-dashoffset="64"
-                  stroke-opacity=".3"
+                  strokeDasharray="64"
+                  strokeDashoffset="64"
+                  strokeOpacity=".3"
                   d="M12 3c4.97 0 9 4.03 9 9c0 4.97 -4.03 9 -9 9c-4.97 0 -9 -4.03 -9 -9c0 -4.97 4.03 -9 9 -9Z"
                 >
                   <animate
                     fill="freeze"
-                    attributeName="stroke-dashoffset"
+                    attributeName="strokeDashoffset"
                     dur="1.2s"
                     values="64;0"
                   />
@@ -251,7 +261,9 @@ const Contact = () => {
           </div>
         )}
       </div>
-      <Snackbar message={snackbarMessage} duration={3000} />
+      {snackbarMessage && (
+        <Snackbar message={snackbarMessage} duration={3000} />
+      )}
     </main>
   );
 };

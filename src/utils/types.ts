@@ -72,6 +72,7 @@ interface ContactFormData {
   senderName: string;
   senderEmail: string;
   message: string;
+  // date: number;
 }
 
 export type {
