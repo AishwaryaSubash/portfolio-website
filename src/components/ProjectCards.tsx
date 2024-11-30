@@ -44,7 +44,7 @@ const ProjectCards = ({
               </p>
               <p
                 className={`font-textFont text-lg text-lightText dark:text-darkText ${
-                  !isProjectsPage ? "max-sm:text-base" : "max-lg:text-base"
+                  !isProjectsPage ? "max-sm:text-sm" : "max-lg:text-base"
                 }`}
               >
                 {item.oneLineDescription}

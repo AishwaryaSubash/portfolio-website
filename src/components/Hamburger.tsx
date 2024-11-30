@@ -45,7 +45,7 @@ const Hamburger = ({ theme }: { theme: string | undefined }) => {
         </div>
         <div
           onClick={toggleHamMenu}
-          className="text-lightHighlight dark:text-darkHighlight"
+          className="cursor-pointer text-lightHighlight dark:text-darkHighlight"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -93,7 +93,7 @@ const Hamburger = ({ theme }: { theme: string | undefined }) => {
                 </div>
                 <div
                   onClick={toggleHamMenu}
-                  className="text-lightHighlight dark:text-darkBg"
+                  className="cursor-pointer text-lightHighlight dark:text-darkBg"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
