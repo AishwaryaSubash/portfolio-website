@@ -111,7 +111,7 @@ const Home = () => {
 
   return (
     <main className="pt-40 pb-20 flex flex-col justify-center items-center bg-lightBg text-lightbg-lightHighlight dark:bg-darkBg dark:text-darkText max-sm:pt-32">
-      <div className="w-9/12 flex items-center justify-between max-[1440px]:flex-col max-[1440px]:gap-12 max-[680px]:w-11/12 max-sm:gap-10">
+      <div className="w-9/12 flex items-center justify-between max-[1440px]:flex-col max-[1440px]:gap-12 max-[680px]:w-11/12 max-sm:gap-6">
         {/* <canvas id="photoCanvas" width="350" height="485"></canvas> */}
         <MediaQuery maxWidth={1439}>
           <div className="relative">
@@ -172,7 +172,7 @@ const Home = () => {
               variants={buttonHover}
               initial="initial"
               animate="animate"
-              className="flex font-semibold items-center justify-center w-[200px] py-2 px-3 mt-2 rounded-2xl bg-lightHighlight text-white border-2 border-lightHighlight hover:bg-transparent hover:border-2 hover:border-lightHighlight hover:text-lightHighlight dark:text-darkBg dark:bg-darkHighlight dark:border-2 dark:border-darkHighlight dark:hover:bg-transparent dark:hover:border-2 dark:hover:border-darkHighlightOpacity dark:hover:text-darkHighlightOpacity text-lg max-sm:text-base max-sm:justify-around max-sm:w-[160px]"
+              className="flex font-semibold items-center justify-center w-[200px] py-2 px-3 mt-2 rounded-2xl bg-lightHighlight text-white border-2 border-lightHighlight hover:bg-transparent hover:border-2 hover:border-lightHighlight hover:text-lightHighlight dark:text-darkBg dark:bg-darkHighlight dark:border-2 dark:border-darkHighlight dark:hover:bg-transparent dark:hover:border-2 dark:hover:border-darkHighlightOpacity dark:hover:text-darkHighlightOpacity text-lg max-sm:text-base max-sm:justify-around max-sm:w-[160px] max-sm:rounded-[10px] max-sm:py-1 max-sm:px-4 max-sm:mt-0"
             >
               <p>My Profile</p>
               <svg
@@ -211,7 +211,7 @@ const Home = () => {
             <p>My Digital Alchemy</p>
           </div>
           <hr className="h-1 w-8/12 border-2 mt-2 mb-4 bg-lightText border-lightText rounded-full dark:bg-white dark:border-white max-md:h-0.5 max-md:my-0" />
-          <p className="text-xl text-lightText dark:text-darkText text-right leading-relaxed max-[1440px]:text-center max-md:text-lg max-sm:text-sm">
+          <p className="text-xl text-lightText dark:text-darkText text-right leading-relaxed mb-4 max-[1440px]:text-center max-md:text-lg max-sm:text-sm">
             With a passion for every aspect of web development, I create
             holistic digital solutions that shine from the user interface to the
             database. My projects highlight my ability to leverage the full
@@ -225,7 +225,7 @@ const Home = () => {
               variants={buttonHover}
               initial="initial"
               animate="animate"
-              className="flex font-semibold items-center justify-center w-[250px] py-2 px-3 mt-2 rounded-2xl bg-lightHighlight text-white border-2 border-lightHighlight hover:bg-transparent hover:border-2 hover:border-lightHighlight hover:text-lightHighlight dark:text-darkBg dark:bg-darkHighlight dark:border-2 dark:border-darkHighlight dark:hover:bg-transparent dark:hover:border-2 dark:hover:border-darkHighlightOpacity dark:hover:text-darkHighlightOpacity text-lg max-sm:text-base max-sm:justify-around max-sm:w-[200px]"
+              className="flex font-semibold items-center justify-center w-[250px] py-2 px-3 mt-2 rounded-2xl bg-lightHighlight text-white border-2 border-lightHighlight hover:bg-transparent hover:border-2 hover:border-lightHighlight hover:text-lightHighlight dark:text-darkBg dark:bg-darkHighlight dark:border-2 dark:border-darkHighlight dark:hover:bg-transparent dark:hover:border-2 dark:hover:border-darkHighlightOpacity dark:hover:text-darkHighlightOpacity text-lg max-sm:text-base max-sm:justify-around max-sm:w-[200px] max-sm:rounded-[10px] max-sm:py-1 max-sm:mt-0"
             >
               <p>Explore my work</p>
               <svg
