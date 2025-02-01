@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
-import axios, { AxiosResponse } from "axios";
 import { AnimatePresence } from "framer-motion";
 import MediaQuery from "react-responsive";
 
@@ -48,28 +47,28 @@ function App() {
     setCurrentRoute(location.pathname);
   }, [location]);
 
-  useEffect(() => {
-    const myHeaders = new Headers();
-    myHeaders.append("Content-Type", "application/json");
-    const requestOptions: RequestInit = {
-      method: "POST",
-      headers: myHeaders,
-      redirect: "follow",
-      body: JSON.stringify({}),
-    };
+  // useEffect(() => {
+  //   const myHeaders = new Headers();
+  //   myHeaders.append("Content-Type", "application/json");
+  //   const requestOptions: RequestInit = {
+  //     method: "POST",
+  //     headers: myHeaders,
+  //     redirect: "follow",
+  //     body: JSON.stringify({}),
+  //   };
 
-    axios
-      .post(
-        "https://aishwarya-portfolio-website-backend.vercel.app/visitor/post",
-        requestOptions
-      )
-      .then((response: AxiosResponse<string>) => {
-        console.log(response);
-      })
-      .catch((error) => {
-        console.error("Error making request:", error);
-      });
-  }, []);
+  //   axios
+  //     .post(
+  //       "https://aishwarya-portfolio-website-backend.vercel.app/visitor/post",
+  //       requestOptions
+  //     )
+  //     .then((response: AxiosResponse<string>) => {
+  //       console.log(response);
+  //     })
+  //     .catch((error) => {
+  //       console.error("Error making request:", error);
+  //     });
+  // }, []);
 
   // Disable right click
   // useEffect(() => {

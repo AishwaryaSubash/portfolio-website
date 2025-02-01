@@ -54,10 +54,8 @@ const Contact = () => {
 
       const response = await fetch(
         "https://aishwarya-portfolio-website-backend.vercel.app/message/post",
-        // "http://localhost:3000/message/post",
         requestOptions
       );
-      console.log(formData, response);
       if (response.ok) {
         setShowLoader(false);
         setSnackbarMessage("Message sent successfully!!");
@@ -193,6 +191,7 @@ const Contact = () => {
           <motion.div
             onClick={handleSubmit}
             whileHover={{ transition: { duration: 0.25, delay: 0.25 } }}
+            tabIndex={0}
             className="cursor-pointer flex items-center gap-4 py-2 px-4 w-fit rounded-xl font-textFont font-semibold text-lg border-2 border-lightHighlight text-lightBg bg-lightHighlight hover:bg-transparent hover:text-lightHighlight dark:text-darkBg dark:bg-darkHighlight dark:border-2 dark:border-darkHighlight dark:hover:bg-transparent dark:hover:border-darkHighlightOpacity dark:hover:text-darkHighlight max-sm:text-base"
           >
             <p>Send Message</p>
@@ -220,18 +219,18 @@ const Contact = () => {
               <g
                 fill="none"
                 stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
               >
                 <path
-                  strokeDasharray="16"
-                  strokeDashoffset="16"
+                  stroke-dasharray="16"
+                  stroke-dashoffset="16"
                   d="M12 3c4.97 0 9 4.03 9 9"
                 >
                   <animate
                     fill="freeze"
-                    attributeName="strokeDashoffset"
+                    attributeName="stroke-dashoffset"
                     dur="0.3s"
                     values="16;0"
                   />
@@ -244,14 +243,14 @@ const Contact = () => {
                   />
                 </path>
                 <path
-                  strokeDasharray="64"
-                  strokeDashoffset="64"
-                  strokeOpacity=".3"
+                  stroke-dasharray="64"
+                  stroke-dashoffset="64"
+                  stroke-opacity=".3"
                   d="M12 3c4.97 0 9 4.03 9 9c0 4.97 -4.03 9 -9 9c-4.97 0 -9 -4.03 -9 -9c0 -4.97 4.03 -9 9 -9Z"
                 >
                   <animate
                     fill="freeze"
-                    attributeName="strokeDashoffset"
+                    attributeName="stroke-dashoffset"
                     dur="1.2s"
                     values="64;0"
                   />

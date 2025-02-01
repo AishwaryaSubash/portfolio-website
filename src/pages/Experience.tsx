@@ -87,9 +87,19 @@ const Experience = () => {
                 <p className="text-lg text-darkHighlightBg dark:text-lightHighlightBg font-medium max-md:text-base max-sm:text-sm">
                   {edu.institution}
                 </p>
-                <p className="text-lg text-lightHighlight dark:text-darkHighlight mt-2 font-bold max-md:text-base max-sm:text-sm">
-                  {edu.grade}
-                </p>
+                <div className="flex gap-1 items-center">
+                  <p className="text-lg text-lightHighlight dark:text-darkHighlight mt-2 font-bold max-md:text-base max-sm:text-sm">
+                    {edu.grade}
+                  </p>
+                  {edu.additional && (
+                    <div className="flex gap-1 items-center">
+                      <p className="font-semibold mt-2">-</p>
+                      <p className="text-lg text-lightHighlight dark:text-darkHighlight mt-2 font-semibold max-md:text-base max-sm:text-sm">
+                        {edu.additional}
+                      </p>
+                    </div>
+                  )}
+                </div>
               </div>
             );
           })}

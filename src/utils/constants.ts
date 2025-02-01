@@ -257,6 +257,7 @@ const educationDetails: EducationDetailsInterface[] = [
       from: 2020,
       to: 2024,
     },
+    additional: "Silver Medalist in the Department of Information Technology"
   },
   {
     education: "Senior School Certificate Examination",
