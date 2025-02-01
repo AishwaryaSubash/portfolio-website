@@ -172,7 +172,7 @@ const Home = () => {
               variants={buttonHover}
               initial="initial"
               animate="animate"
-              className="flex font-semibold items-center justify-center w-[200px] py-2 px-3 mt-2 rounded-2xl bg-lightHighlight text-white border-2 border-lightHighlight hover:bg-transparent hover:border-2 hover:border-lightHighlight hover:text-lightHighlight dark:text-darkBg dark:bg-darkHighlight dark:border-2 dark:border-darkHighlight dark:hover:bg-transparent dark:hover:border-2 dark:hover:border-darkHighlightOpacity dark:hover:text-darkHighlightOpacity text-lg max-sm:text-base max-sm:justify-around max-sm:w-[160px] max-sm:rounded-[10px] max-sm:py-1 max-sm:px-4 max-sm:mt-0"
+              className="flex font-semibold items-center justify-center w-[200px] py-2 px-3 mt-2 rounded-xl shadow-2xl shadow-neutral-400 dark:shadow-neutral-700 bg-lightHighlight text-white border-2 border-lightHighlight hover:bg-transparent hover:border-2 hover:border-lightHighlight hover:text-lightHighlight dark:text-darkBg dark:bg-darkHighlight dark:border-2 dark:border-darkHighlight dark:hover:bg-transparent dark:hover:border-2 dark:hover:border-darkHighlightOpacity dark:hover:text-darkHighlightOpacity text-lg max-sm:text-base max-sm:justify-around max-sm:w-[160px] max-sm:rounded-[10px] max-sm:py-1 max-sm:px-4 max-sm:mt-0"
             >
               <p>My Profile</p>
               <svg
@@ -225,7 +225,7 @@ const Home = () => {
               variants={buttonHover}
               initial="initial"
               animate="animate"
-              className="flex font-semibold items-center justify-center w-[250px] py-2 px-3 mt-2 rounded-2xl bg-lightHighlight text-white border-2 border-lightHighlight hover:bg-transparent hover:border-2 hover:border-lightHighlight hover:text-lightHighlight dark:text-darkBg dark:bg-darkHighlight dark:border-2 dark:border-darkHighlight dark:hover:bg-transparent dark:hover:border-2 dark:hover:border-darkHighlightOpacity dark:hover:text-darkHighlightOpacity text-lg max-sm:text-base max-sm:justify-around max-sm:w-[200px] max-sm:rounded-[10px] max-sm:py-1 max-sm:mt-0"
+              className="flex font-semibold items-center justify-center w-[250px] py-2 px-3 mt-2 rounded-xl shadow-2xl shadow-neutral-400 dark:shadow-neutral-700 bg-lightHighlight text-white border-2 border-lightHighlight hover:bg-transparent hover:border-2 hover:border-lightHighlight hover:text-lightHighlight dark:text-darkBg dark:bg-darkHighlight dark:border-2 dark:border-darkHighlight dark:hover:bg-transparent dark:hover:border-2 dark:hover:border-darkHighlightOpacity dark:hover:text-darkHighlightOpacity text-lg max-sm:text-base max-sm:justify-around max-sm:w-[200px] max-sm:rounded-[10px] max-sm:py-1 max-sm:mt-0"
             >
               <p>Explore my work</p>
               <svg

@@ -3,7 +3,7 @@ import { contactDetails } from "../utils/constants";
 const Footer = () => {
   return (
     <div className="py-4 flex flex-col gap-2 justify-center items-center bg-lightBg text-lightHighlight dark:bg-darkBg dark:text-darkText">
-      <p className="font-textFont text-lightText dark:text-darkText">
+      <p className="font-textFont text-lightText dark:text-darkText max-sm:text-sm">
         Aishwarya Subash &#169; 2024
       </p>
       <div className="flex items-center justify-center gap-6 text-lightHighlight dark:text-darkHighlight max-lg:justify-evenly">

@@ -141,7 +141,7 @@ const Contact = () => {
       </div>
       <div
         id="contact-form"
-        className="w-6/12 bg-[#c0c0c0aa] dark:bg-[#202020] p-8 rounded-3xl flex flex-col items-center gap-12 max-xl:w-8/12 max-lg:w-9/12 max-md:gap-8 max-sm:w-10/12"
+        className="w-6/12 bg-[#c0c0c0aa] dark:bg-[#202020] p-8 rounded-3xl flex flex-col items-center gap-12 shadow-md shadow-neutral-300 dark:shadow-neutral-900 max-xl:w-8/12 max-lg:w-9/12 max-md:gap-8 max-sm:w-10/12"
       >
         <div className="flex flex-col gap-2 items-center text-lightText dark:text-darkText max-sm:gap-1">
           <p className="font-headingFont text-center text-5xl font-bold max-md:text-4xl max-sm:text-3xl">
