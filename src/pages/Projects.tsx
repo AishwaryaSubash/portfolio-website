@@ -12,7 +12,7 @@ const Projects = () => {
           <p>Take a peek at</p>
           <p>what I've been building</p>
         </div>
-        {/* <div className="text-base font-medium font-textFont text-lightText dark:text-darkText max-md:text-sm max-sm:text-xs max-sm:text-center">
+        {/* <div className="text-sm text-center font-medium font-textFont text-lightText dark:text-darkText max-md:text-sm max-sm:text-xs max-sm:text-center">
           <p>Each project has more to tell — </p>
           <p>click on a card to see the full story!</p>
         </div> */}

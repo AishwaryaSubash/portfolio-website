@@ -117,7 +117,9 @@ const Contact = () => {
                     >
                       <div
                         dangerouslySetInnerHTML={{ __html: item.icon }}
-                        className="w-10 h-10 cursor-pointer text-lightHighlight hover:text-lightHighlightOpacity dark:text-darkHighlight dark:hover:text-darkHighlightOpacity max-md:w-8 max-md:h-8"
+                        className={`${
+                          item.media == "LeetCode" ? "w-8 h-8" : "w-10 h-10"
+                        } cursor-pointer text-lightHighlight hover:text-lightHighlightOpacity dark:text-darkHighlight dark:hover:text-darkHighlightOpacity max-md:w-8 max-md:h-8`}
                         title={item.media}
                       />
                     </a>
