@@ -287,11 +287,11 @@ const workExperience: WorkExperienceInterface[] = [
     time: "Jul 2024 - Present",
   },
   {
-    position: "Frontend Developer Intern",
+    position: "Frontend Engineering Intern",
     institution: "It's Forever Inc.",
     description:
       "Developed a captivating and responsive landing page for users and photographers using React, TypeScript and Tailwind CSS, seamlessly integrating Razorpay payment gateway to ensure transaction security",
-    time: "Apr 2024 - Jun 2024",
+    time: "Jan 2024 - Jun 2024",
   },
   {
     position: "Software Developer Intern",
