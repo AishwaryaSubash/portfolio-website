@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://aishwarya-subash.vercel.app/sitemap.xml
