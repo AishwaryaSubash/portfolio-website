@@ -250,7 +250,7 @@ const techSkillsTools: TechSkillsInterface[] = [
 
 const skills: SkillsInterface[] = [
   { skillType: "Languages", skillArray: techSkillsLang },
-  { skillType: "Frameworks", skillArray: techSkillsFrameworks },
+  { skillType: "Frameworks & Libraries", skillArray: techSkillsFrameworks },
   { skillType: "Databases", skillArray: techSkillsDB },
   { skillType: "Tools", skillArray: techSkillsTools },
 ];
