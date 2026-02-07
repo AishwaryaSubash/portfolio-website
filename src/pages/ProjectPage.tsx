@@ -189,7 +189,7 @@ const ProjectPage = () => {
                   className="flex items-center justify-center gap-3 text-lg max-md:gap-2 max-sm:text-base max-sm:gap-1"
                 >
                   <p>{item}</p>
-                  {index !== project.techStack.length - 1 && <p>|</p>}
+                  {index !== project.techStack.length - 1 && <p>·</p>}
                 </div>
               ))}
             </div>
