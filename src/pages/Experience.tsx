@@ -14,20 +14,29 @@ const Experience = () => {
                 key={index}
                 className="w-full flex flex-col p-4 rounded-3xl max-sm:gap-1"
               >
-                <div className="flex items-center justify-between max-sm:items-start max-sm:gap-2">
-                  <p className="text-[28px] text-lightText dark:text-darkText font-semibold leading-snug max-md:text-2xl max-sm:text-xl">
-                    {work.position}
-                  </p>
+                <div className="flex items-start justify-between max-sm:items-start max-sm:gap-2">
+                  <div className="flex gap-5 items-center">
+                    <img
+                      src={`/about-section-logos/${work.logo}`}
+                      alt={work.institution}
+                      className="w-[60px] h-[60px] rounded-full bg-lightText dark:bg-darkText max-sm:w-[40px] max-sm:h-[40px]"
+                    />
+                    <div>
+                      <p className="text-[28px] text-lightText dark:text-darkText font-semibold leading-snug max-md:text-2xl max-sm:text-xl">
+                        {work.position}
+                      </p>
+                      <div className="text-lg text-lightHighlight dark:text-darkHighlight font-semibold max-md:text-base max-sm:text-sm">
+                        {work.institution}
+                        <p className="font-medium text-sm mt-1 text-lightText dark:text-darkText min-[895px]:hidden max-sm:text-xs">
+                          {work.time}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                   <div className="flex rounded-lg p-2 font-medium text-sm text-right bg-lightHighlight text-lightBg dark:bg-darkHighlight dark:text-darkBg max-[895px]:hidden">
                     <p>{work.time}</p>
                   </div>
                 </div>
-                <p className="text-lg text-lightHighlight dark:text-darkHighlight font-semibold max-md:text-base max-sm:text-sm">
-                  {work.institution}
-                </p>
-                <p className="font-medium text-sm mt-1 text-lightText dark:text-darkText min-[895px]:hidden max-sm:text-xs max-sm:mt-0">
-                  {work.time}
-                </p>
                 <p className="text-lg text-darkHighlightBg dark:text-lightHighlightBg mt-3 max-md:text-base max-sm:mt-2 max-sm:text-sm">
                   {work.description}
                 </p>

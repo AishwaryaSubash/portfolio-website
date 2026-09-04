@@ -22,7 +22,7 @@ const About = () => {
       </div>
 
       <Skills />
-      <Experience />
+      <Experience  />
 
       {/* <div className="mt-24 flex flex-col gap-16 items-center justify-center w-11/12">
         <p className="text-6xl text-center font-semibold font-headingFont my-4 text-lightHighlight dark:text-darkText max-lg:px-4">

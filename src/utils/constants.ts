@@ -351,7 +351,8 @@ const educationDetails: EducationDetailsInterface[] = [
       from: 2020,
       to: 2024,
     },
-    additional: "Silver Medalist in the Department of Information Technology"
+    additional: "Silver Medalist in the Department of Information Technology",
+    logo: "svce.png"
   },
   {
     education: "Senior School Certificate Examination",
@@ -361,6 +362,7 @@ const educationDetails: EducationDetailsInterface[] = [
       from: 2019,
       to: 2020,
     },
+    logo: "kendriya-vidyalaya.png"
   },
   {
     education: "Secondary School Examination",
@@ -370,6 +372,7 @@ const educationDetails: EducationDetailsInterface[] = [
       from: 2017,
       to: 2018,
     },
+    logo: "kendriya-vidyalaya.png"
   },
 ];
 
@@ -381,6 +384,7 @@ const workExperience: WorkExperienceInterface[] = [
       // "Conducting comprehensive market research for top pharmaceutical and life sciences companies, delivering data-driven insights to support strategic drug commercialisation and market positioning across 10+ therapeutic areas",
       "Lead end-to-end execution of complex analytics projects, leveraging SQL, Python and automation to deliver scalable solutions. Identify inefficiencies and implement process improvements, including AI and automation initiatives to optimize data analysis workflows. Translate business problems into structured analytical approaches, delivering actionable insights with deeper client context.",
     time: "Apr 2026 - Present",
+    logo: "zoomrx.png"
   },
   {
     position: "Associate Consultant",
@@ -389,6 +393,7 @@ const workExperience: WorkExperienceInterface[] = [
       // "Conducting comprehensive market research for top pharmaceutical and life sciences companies, delivering data-driven insights to support strategic drug commercialisation and market positioning across 10+ therapeutic areas",
       "Performed large-scale data analysis using SQL, Python (pandas) and Excel across pharmaceutical datasets, achieving ~95% accuracy. Automated data processing workflows to reduce manual effort and improve turnaround time for client deliverables. Built reusable SQL queries and data models supporting analysis across 10+ therapeutic areas. Created 14+ data-driven insight presentations, translating technical findings into actionable business strategies, and collaborated cross-functionally with data, product and business teams.",
     time: "Jul 2024 - Mar 2026",
+    logo: "zoomrx.png"
   },
   {
     position: "Frontend Engineering Intern",
@@ -397,6 +402,7 @@ const workExperience: WorkExperienceInterface[] = [
       // "Developed a captivating and responsive landing page for users and photographers using React, TypeScript and Tailwind CSS, seamlessly integrating Razorpay payment gateway to ensure transaction security",
       "Built a fully functional, responsive website using React, TypeScript, and Tailwind CSS, owning technology decisions to ensure faster development, scalability, and long-term maintainability. Implemented lazy loading for high-resolution images, reducing initial load time and improving page performance by ~40%. Integrated the Razorpay payment gateway, improving conversion rates by ~20%, and collaborated with design teams to enhance user experience and engagement.",
     time: "Jan 2024 - Jun 2024",
+    logo: "its-forever.png"
   },
   {
     position: "Frontend Developer Intern",
@@ -405,6 +411,7 @@ const workExperience: WorkExperienceInterface[] = [
       // "Developed an engaging and responsive client interface - The Merchant Feed - a platform that provides the clients with valuable insights into their customers' experiences, using Angular, TypeScript and SASS, adapting to the dynamic scrum development process",
       "Built a real-time Merchant Feed using Angular and TypeScript to track customer insights, improving engagement metrics by ~25% during the initial release.",
     time: "Jan 2023 - Feb 2023",
+    logo: "imprzd.png"
   },
   {
     position: "Software Developer Intern",
@@ -413,6 +420,7 @@ const workExperience: WorkExperienceInterface[] = [
       // "Developed an engaging and responsive client interface - The Merchant Feed - a platform that provides the clients with valuable insights into their customers' experiences, using Angular, TypeScript and SASS, adapting to the dynamic scrum development process",
       "Developed the Account Settings module for a merchant interface using Angular, TypeScript, and SASS, implementing state management and auto-save functionality that reduced data loss incidents by ~40%.",
     time: "Jan 2023 - Feb 2023",
+    logo: "imprzd.png"
   },
   {
     position: "Frontend Developer Intern",
@@ -421,6 +429,7 @@ const workExperience: WorkExperienceInterface[] = [
       // "Developed dynamic and responsive templates using Angular, SASS and EJS, ensuring seamless integration and adaptability within an agile development environment",
       "Developed 20+ customizable templates adopted by 10K+ users, enabling visual feedback sharing on social media and significantly enhancing client marketing reach.",
     time: "Aug 2022 - Sept 2022",
+    logo: "imprzd.png"
   },
   {
     position: "Participant",
@@ -428,6 +437,7 @@ const workExperience: WorkExperienceInterface[] = [
     description:
       "Nominated for National Level Smart India Hackathon 2022 Edition. Designed Smart Glasses by programming Arduino Uno and interfacing it with Bluetooth module and LCD display",
     time: "Mar 2022 - Apr 2022",
+    logo: "smart-india-hackathon.jpg"
   },
   {
     position: "Python Instructor",
@@ -435,6 +445,7 @@ const workExperience: WorkExperienceInterface[] = [
     description:
       "Designed and delivered an engaging 1-month Python programming course to young programmers in the US and assessed their understanding through weekly tests, culminating in a final project",
     time: "Jul 2021 - Aug 2021",
+    logo: "python-instructor.png"
   },
 ];
 

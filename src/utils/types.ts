@@ -25,6 +25,7 @@ interface EducationDetailsInterface {
   grade: string;
   time: TimeInterface;
   additional?: string;
+  logo: string;
 }
 
 interface WorkExperienceInterface {
@@ -32,6 +33,7 @@ interface WorkExperienceInterface {
   institution: string;
   description: string;
   time: string;
+  logo: string;
 }
 
 interface ProjectsInterface {
