@@ -6,7 +6,7 @@ const Skills = () => {
       <p className="font-headingFont text-5xl text-lightText dark:text-darkText font-bold my-8 max-md:text-4xl max-sm:text-3xl max-sm:my-0">
         My Skills
       </p>
-      <div className="w-full flex flex-col justify-center gap-20 max-sm:gap-12">
+      <div className="w-full flex flex-col justify-center gap-12 max-sm:gap-12">
         <p className="text-4xl font-semibold font-headingFont text-center text-lightHighlight dark:text-darkHighlight max-lg:px-4 max-md:text-3xl max-sm:text-2xl">
           Technical Skills
         </p>

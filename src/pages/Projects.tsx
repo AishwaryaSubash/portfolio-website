@@ -8,9 +8,14 @@ const Projects = () => {
         <p className="font-headingFont text-5xl text-lightText dark:text-darkText font-bold max-md:text-4xl max-sm:text-3xl">
           My Projects
         </p>
-        <div className="flex gap-2 text-2xl font-textFont text-lightText dark:text-darkText max-md:text-xl max-sm:text-lg max-sm:flex-col max-sm:text-center max-sm:gap-0 max-sm:leading-tight">
-          <p>Take a peek at</p>
-          <p>what I've been building</p>
+        <div className="flex flex-col items-center gap-2 font-textFont text-lightText dark:text-darkText max-md:text-xl max-sm:text-lg max-sm:flex-col max-sm:text-center max-sm:gap-0 max-sm:leading-tight">
+          <div className="text-2xl">
+            <p>Take a peek at what I've been building</p>
+          </div>
+          <div className="text-xl">
+            Each project has more to tell — click on a card to see the full
+            story!
+          </div>
         </div>
         {/* <div className="text-sm text-center font-medium font-textFont text-lightText dark:text-darkText max-md:text-sm max-sm:text-xs max-sm:text-center">
           <p>Each project has more to tell — </p>
