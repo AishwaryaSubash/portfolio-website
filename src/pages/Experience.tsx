@@ -74,9 +74,9 @@ const Experience = () => {
                     {edu.grade}
                   </p>
                   {edu.additional && (
-                    <div className="flex gap-1 items-center flex-wrap">
-                      <p className="font-semibold mt-2">-</p>
-                      <p className="text-lg text-lightHighlight dark:text-darkHighlight mt-2 font-semibold max-md:text-base max-sm:text-sm break-words">
+                    <div className="flex gap-1 items-center flex-wrap max-[963px]:flex-col">
+                      <p className="font-semibold mt-2 max-[963px]:hidden">-</p>
+                      <p className="text-lg text-lightHighlight dark:text-darkHighlight mt-2 font-semibold max-md:text-base max-sm:text-sm break-words max-[963px]:mt-0">
                         {edu.additional}
                       </p>
                     </div>
