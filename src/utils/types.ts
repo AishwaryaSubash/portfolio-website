@@ -14,16 +14,11 @@ interface SkillsInterface {
   skillArray: TechSkillsInterface[];
 }
 
-interface TimeInterface {
-  from: number;
-  to: number;
-}
-
 interface EducationDetailsInterface {
   education: string;
   institution: string;
   grade: string;
-  time: TimeInterface;
+  time: string;
   additional?: string;
   logo: string;
 }

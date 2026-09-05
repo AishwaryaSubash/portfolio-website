@@ -347,10 +347,7 @@ const educationDetails: EducationDetailsInterface[] = [
     education: "BTech Information Technology",
     institution: "Sri Venkateswara College of Engineering",
     grade: "9.343 CGPA",
-    time: {
-      from: 2020,
-      to: 2024,
-    },
+    time: "2020 - 2024",
     additional: "Silver Medalist in the Department of Information Technology",
     logo: "svce.png"
   },
@@ -358,20 +355,14 @@ const educationDetails: EducationDetailsInterface[] = [
     education: "Senior School Certificate Examination",
     institution: "Kendriya Vidyalaya AFS Thanjavur",
     grade: "94.6%",
-    time: {
-      from: 2019,
-      to: 2020,
-    },
+    time: "2019 - 2020",
     logo: "kendriya-vidyalaya.png"
   },
   {
     education: "Secondary School Examination",
     institution: "Kendriya Vidyalaya AFS Thanjavur",
     grade: "93.4%",
-    time: {
-      from: 2017,
-      to: 2018,
-    },
+    time: "2017 - 2018",
     logo: "kendriya-vidyalaya.png"
   },
 ];

@@ -19,7 +19,7 @@ const Experience = () => {
                     <img
                       src={`/about-section-logos/${work.logo}`}
                       alt={work.institution}
-                      className="w-[60px] h-[60px] rounded-full bg-lightText dark:bg-darkText max-sm:w-[40px] max-sm:h-[40px]"
+                      className="w-[60px] h-[60px] rounded-full bg-lightText dark:bg-darkText drop-shadow-[0_2px_3px_rgba(0,0,0,0.7)] dark:drop-shadow-[0_2px_3px_rgba(255,255,255,0.7)] max-sm:w-[40px] max-sm:h-[40px]"
                     />
                     <div className="min-w-0">
                       <p className="text-[28px] text-lightText dark:text-darkText font-semibold leading-snug max-md:text-2xl max-sm:text-xl break-words">
@@ -56,6 +56,57 @@ const Experience = () => {
                 key={index}
                 className="w-full flex flex-col p-4 rounded-3xl max-sm:gap-1"
               >
+                <div className="flex items-start justify-between max-sm:items-start max-sm:gap-2">
+                  <div className="flex gap-5 items-center">
+                    {/* <img
+                      src={`/about-section-logos/${edu.logo}`}
+                      alt={edu.institution}
+                      className="w-[60px] h-[60px] rounded-full bg-darkText max-sm:w-[40px] max-sm:h-[40px]"
+                    /> */}
+                    <img
+                      src={`/about-section-logos/${edu.logo}`}
+                      alt={edu.institution}
+                      className="w-[60px] h-[60px] rounded-full bg-darkText drop-shadow-[0_2px_3px_rgba(0,0,0,0.7)] dark:drop-shadow-[0_2px_3px_rgba(255,255,255,0.7)] max-sm:w-[40px] max-sm:h-[40px]"
+                    />
+                    <div className="min-w-0">
+                      <p className="text-[28px] text-lightText dark:text-darkText font-semibold leading-snug max-md:text-2xl max-sm:text-xl break-words">
+                        {edu.education}
+                      </p>
+                      <div className="text-lg text-lightHighlight dark:text-darkHighlight font-semibold max-md:text-base max-sm:text-sm break-words">
+                        {edu.institution}
+                        <p className="font-medium text-sm mt-1 text-lightText dark:text-darkText min-[1024px]:hidden max-sm:text-xs">
+                          {edu.time}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <p className="flex rounded-lg p-2 font-medium text-sm text-right bg-lightHighlight text-lightBg dark:bg-darkHighlight dark:text-darkBg max-lg:hidden">
+                    {edu.time}
+                  </p>
+                </div>
+                <div className="flex gap-2 items-center mt-2 text-xl flex-wrap">
+                  <p>Grade:</p>
+                  <p className="text-lightHighlight dark:text-darkHighlight font-bold max-md:text-base max-sm:text-sm break-words">
+                    {edu.grade}
+                  </p>
+                </div>
+                {edu.additional && (
+                  <p className="text-lg text-lightHighlight dark:text-darkHighlight mt-2 max-md:text-base max-sm:mt-1 max-sm:text-sm break-words">
+                    {edu.additional}
+                  </p>
+                )}
+              </div>
+              // </div>
+            );
+          })}
+        </div>
+        {/* <div className="w-9/12 font-textFont flex flex-col gap-8 max-md:w-10/12 max-sm:gap-6">
+          {educationDetails.map((edu, index) => {
+            return (
+              <div
+                key={index}
+                className="w-full flex flex-col p-4 rounded-3xl max-sm:gap-1"
+              >
                 <div className="flex items-center justify-between max-sm:items-start max-sm:gap-2">
                   <p className="text-[28px] text-lightText dark:text-darkText font-semibold leading-snug max-md:text-2xl max-sm:text-xl break-words">
                     {edu.education}
@@ -85,7 +136,7 @@ const Experience = () => {
               </div>
             );
           })}
-        </div>
+        </div> */}
       </div>
     </div>
   );
