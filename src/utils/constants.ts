@@ -435,7 +435,7 @@ const workExperience: WorkExperienceInterface[] = [
     position: "Participant",
     institution: "Smart India Hackathon",
     description:
-      "Nominated for National Level Smart India Hackathon 2022 Edition. Designed Smart Glasses by programming Arduino Uno and interfacing it with Bluetooth module and LCD display",
+      "Nominated for National Level Smart India Hackathon 2022 Edition. Designed Smart Glasses by programming Arduino Uno and interfacing it with Bluetooth module and LCD display.",
     time: "Mar 2022 - Apr 2022",
     logo: "smart-india-hackathon.jpg"
   },
@@ -443,7 +443,7 @@ const workExperience: WorkExperienceInterface[] = [
     position: "Python Instructor",
     institution: "Self-employed",
     description:
-      "Designed and delivered an engaging 1-month Python programming course to young programmers in the US and assessed their understanding through weekly tests, culminating in a final project",
+      "Designed and delivered an engaging 1-month Python programming course to young programmers in the US and assessed their understanding through weekly tests, culminating in a final project.",
     time: "Jul 2021 - Aug 2021",
     logo: "python-instructor.png"
   },
